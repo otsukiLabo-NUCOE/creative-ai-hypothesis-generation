@@ -1,0 +1,6 @@
+model=Llama-3.3-70B-Instruct-Q3_K_M 
+date=2026/10/05 12:41:04.50
+version: 0.5.0-dev (build 11382, commit 11fe02151)
+built with Clang 20.1.8 for Windows x86_64
+NVIDIA-SMI 591.86 Driver Version: 591.86 CUDA Version: 13.1
+0 NVIDIA GeForce RTX 4060 Ti WDDM | 00000000:01:00.0 On | N/A

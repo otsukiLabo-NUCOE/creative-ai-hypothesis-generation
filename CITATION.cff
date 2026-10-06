@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Comparing Genetic Algorithms and LLMs for Research-Hypothesis Generation: code, data and logs"
+type: software
+authors:
+  - family-names: Otsuki
+    given-names: Akira
+    affiliation: "College of Economics, Nihon University"
+version: 1.0.0
+date-released: 2026-10-06
+license: MIT
+repository-code: "https://github.com/otsukiLabo-NUCOE/creative-ai-hypothesis-generation"
+keywords:
+  - creative AI
+  - genetic algorithm
+  - hypothesis generation
+  - large language models
+  - novelty evaluation

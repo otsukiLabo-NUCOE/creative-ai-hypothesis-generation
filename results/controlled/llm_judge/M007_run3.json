@@ -1,0 +1,25 @@
+{
+ "code": "M007",
+ "run": 3,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "No",
+  "confidence": 5,
+  "rationale": "The manuscript presents a well-formulated and novel approach to mitigating bias in decision-making systems using evolutionary strategies. The method is sound, and the experimental plan is rigorous and reproducible. The significance of the work is high, with potential applications across various domains. The authors' confidence in their approach is evident, and the manuscript is well-written and concise."
+ },
+ "log": {
+  "payload_seed": 3,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"No\", \"confidence\": 5, \"rationale\": \"The manuscript presents a well-formulated and novel approach to mitigating bias in decision-making systems using evolutionary strategies. The method is sound, and the experimental plan is rigorous and reproducible. The significance of the work is high, with potential applications across various domains. The authors' confidence in their approach is evident, and the manuscript is well-written and concise.\"}",
+  "seconds": 15.4
+ }
+}

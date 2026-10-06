@@ -1,0 +1,18 @@
+{
+    "seconds":  70.5,
+    "shown_as_B":  "M029",
+    "shown_as_A":  "M028",
+    "judgment":  {
+                     "originality":  "A",
+                     "soundness":  "A",
+                     "reproducibility":  "A",
+                     "significance":  "A",
+                     "overall":  "A",
+                     "rationale":  "A\u0027s novelty in hallucination mitigation"
+                 },
+    "raw":  "{\"originality\": \"A\", \"soundness\": \"A\", \"reproducibility\": \"A\", \"significance\": \"A\", \"overall\": \"A\", \"rationale\": \"A\u0027s novelty in hallucination mitigation\"}",
+    "order":  "AB",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P030"
+}

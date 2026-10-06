@@ -1,0 +1,25 @@
+{
+ "code": "M030",
+ "run": 2,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "No",
+  "confidence": 5,
+  "rationale": "The manuscript proposes a novel federated learning framework to suppress hallucination in decentralized knowledge systems, leveraging consistency regularization and locally verified knowledge. The approach is technically sound, well-motivated, and has broad applicability across domains, including healthcare, finance, education, and edge AI. The experimental plan is detailed and follows the recommended protocols for reproducibility."
+ },
+ "log": {
+  "payload_seed": 2,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"No\", \"confidence\": 5, \"rationale\": \"The manuscript proposes a novel federated learning framework to suppress hallucination in decentralized knowledge systems, leveraging consistency regularization and locally verified knowledge. The approach is technically sound, well-motivated, and has broad applicability across domains, including healthcare, finance, education, and edge AI. The experimental plan is detailed and follows the recommended protocols for reproducibility.\"}",
+  "seconds": 18.8
+ }
+}

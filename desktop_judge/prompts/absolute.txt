@@ -1,0 +1,25 @@
+Evaluate the research manuscript below on four criteria, each as an integer from 1 to 5.
+
+CALIBRATION (important): You will see many manuscripts of this kind, all written by AI systems as research proposals without experiments. Score them relative to that population. A typical manuscript of this kind deserves 3. Reserve 5 for clearly outstanding manuscripts (roughly the top 10%) and use 1 or 2 whenever there are real weaknesses. Most manuscripts should receive scores between 2 and 4. Do not give 5 merely because a section exists or the text is fluent.
+
+1. Originality: Is the central idea (which method is used, which problem it addresses, which property it improves) new compared with research you know?
+   1 = a rephrasing of a well-known existing idea; 2 = almost the same as existing work, little that is new; 3 = a combination of existing elements with some novelty in how they are combined; 4 = a clearly new perspective that is not obvious; 5 = highly novel and non-obvious, could open a new direction.
+2. Technical soundness: Are the proposed method, the mathematical formulation, and the reasoning correct and consistent? Is the method actually connected to the problem? Are there errors, vague definitions, or logical leaps?
+   1 = serious errors, or the method does not address the problem; 2 = noticeable errors or leaps, weak support; 3 = broadly reasonable but with vague points or minor errors; 4 = no major problems, the reasoning holds; 5 = consistent and accurate, convincing to an expert.
+3. Reproducibility: Could the method be implemented and the experimental plan be carried out from the text alone? Are procedures, settings, data, and evaluation specified concretely?
+   1 = impossible to know what to do; 2 = the direction is clear but most important parts are missing; 3 = the main parts can be implemented but several important details are missing; 4 = implementable with minor additions; 5 = concrete enough to implement and run as written.
+4. Significance: Is the research worth pursuing? How large would its impact be if successful, and how broad is its applicability?
+   1 = hardly worth pursuing; 2 = some value but very limited; 3 = some value, useful to researchers in related areas; 4 = valuable to many researchers or application areas; 5 = could have a major impact on the field.
+
+Rules:
+- Do not penalize the absence of experimental results or of citations: every manuscript was asked to present experiments only as a plan and to avoid specific citations. Judge whether the plan is sound.
+- Judge the content, not the fluency, length, or formatting of the English.
+- Specific numbers stated as results are not based on real experiments; do not reward them. Presenting unsupported numbers as results may be reflected in technical soundness.
+
+First think about the main strengths and weaknesses, then answer ONLY with a JSON object of the form
+{"originality": n, "soundness": n, "reproducibility": n, "significance": n, "rationale": "at most 80 words naming the main weaknesses"}
+
+MANUSCRIPT (code {CODE}):
+<<<
+{TEXT}
+>>>

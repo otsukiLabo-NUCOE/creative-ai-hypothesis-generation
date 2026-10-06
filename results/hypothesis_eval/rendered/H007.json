@@ -1,0 +1,24 @@
+{
+ "hid": "H007",
+ "hypothesis": "A diffusion model generates calibrated uncertainty estimates for sustainability risk predictions by iteratively denoising probabilistic forecasts until confidence intervals reflect true variability",
+ "description": "The method starts from random noise and refines it through gradual denoising steps, each adjusted to match observed data variability, allowing the final output to convey realistic uncertainty bounds; by aligning the diffusion process with empirical distribution characteristics, it avoids overconfident predictions common in traditional models, thereby improving decision reliability in sustainability contexts where risk assessment depends on accurate uncertainty quantification",
+ "attempt": 1,
+ "raw": "Hypothesis: A diffusion model generates calibrated uncertainty estimates for sustainability risk predictions by iteratively denoising probabilistic forecasts until confidence intervals reflect true variability  \nDescription: The method starts from random noise and refines it through gradual denoising steps, each adjusted to match observed data variability, allowing the final output to convey realistic uncertainty bounds; by aligning the diffusion process with empirical distribution characteristics, it avoids overconfident predictions common in traditional models, thereby improving decision reliability in sustainability contexts where risk assessment depends on accurate uncertainty quantification\n",
+ "shortening_steps": [],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Diffusion Model\nProblem: Miscalibrated Uncertainty\nGoal: Sustainability"
+   }
+  ],
+  "seed": 1011,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 41.4
+}

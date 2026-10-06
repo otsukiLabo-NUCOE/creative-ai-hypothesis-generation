@@ -1,0 +1,24 @@
+{
+ "hid": "H074",
+ "hypothesis": "Neuro-symbolic fine-tuning with self-consistency regularization constrains LLM generation using structured knowledge to reduce factual errors in long-form text while maintaining creative variety",
+ "description": "This method integrates symbolic knowledge bases into LLM training and applies self-consistency penalties during sampling to align generated content with verified facts, targeting coherence without suppressing originality; by enforcing logical consistency through symbolic constraints, the model is less likely to fabricate entities, and the regularization balances accuracy with diversity, offering a practical path to more reliable open-domain generation.",
+ "attempt": 0,
+ "raw": "Hypothesis: Neuro-symbolic fine-tuning with self-consistency regularization constrains LLM generation using structured knowledge to reduce factual errors in long-form text while maintaining creative variety  \nDescription: This method integrates symbolic knowledge bases into LLM training and applies self-consistency penalties during sampling to align generated content with verified facts, targeting coherence without suppressing originality; by enforcing logical consistency through symbolic constraints, the model is less likely to fabricate entities, and the regularization balances accuracy with diversity, offering a practical path to more reliable open-domain generation.\n",
+ "shortening_steps": [],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Neuro-symbolic fine-tuning with self-consistency regularization on large language models\nProblem: Inconsistent factual coherence in long-form generative outputs despite high surface fluency\nGoal: Achieve 40% reduction in hallucinated entities while preserving creative diversity in open-domain generation"
+   }
+  ],
+  "seed": 11,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 29.2
+}

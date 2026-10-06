@@ -1,0 +1,18 @@
+{
+    "seconds":  70.2,
+    "shown_as_B":  "M006",
+    "shown_as_A":  "M026",
+    "judgment":  {
+                     "originality":  "A",
+                     "soundness":  "A",
+                     "reproducibility":  "A",
+                     "significance":  "A",
+                     "overall":  "A",
+                     "rationale":  "A\u0027s fairness focus is novel"
+                 },
+    "raw":  "{\"originality\": \"A\", \"soundness\": \"A\", \"reproducibility\": \"A\", \"significance\": \"A\", \"overall\": \"A\", \"rationale\": \"A\u0027s fairness focus is novel\"}",
+    "order":  "BA",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P037"
+}

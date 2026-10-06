@@ -1,0 +1,3 @@
+criterion,spearman_human_vs_llm,n_items
+novelty,0.207,90
+usefulness,0.085,90

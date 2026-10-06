@@ -1,0 +1,22 @@
+Below are two research manuscripts, A and B, both written by AI systems as research proposals without experiments. Compare them on each of the following criteria and decide which manuscript is better. Ties are not allowed: if they are close, choose the one you consider slightly better.
+
+- originality: Which central idea (method, problem, goal) is newer and less obvious compared with research you know?
+- soundness: Which has the more correct, consistent, and well-connected method, mathematical formulation, and reasoning, with fewer errors or logical leaps?
+- reproducibility: Which could more easily be implemented, and its experimental plan carried out, from the text alone?
+- significance: Which is more worth pursuing, with larger potential impact and broader applicability?
+- overall: Which is the better research manuscript overall?
+
+Rules: do not reward fluency, length, or formatting; do not reward specific numbers stated as results (they are not based on real experiments); the absence of experimental results and of citations is common to both manuscripts and must not decide the comparison. The order in which the manuscripts are shown is random and must not influence your judgment.
+
+Answer ONLY with a JSON object of the form
+{"originality": "A or B", "soundness": "A or B", "reproducibility": "A or B", "significance": "A or B", "overall": "A or B", "rationale": "at most 60 words"}
+
+MANUSCRIPT A:
+<<<
+{TEXT_A}
+>>>
+
+MANUSCRIPT B:
+<<<
+{TEXT_B}
+>>>

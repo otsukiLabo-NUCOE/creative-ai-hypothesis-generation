@@ -1,0 +1,9 @@
+# Condition B (pilot case study) - prompt submitted verbatim to Google Gemini 3 Deep Research.
+# Attachment: the GA Python script of the submitted version together with its printed output
+#             (selected Method/Problem/Goal, Novelty, Utility, Score).
+# NOTE (Reviewer 2 #3): because of this attachment, Condition B received structured context
+# (the script itself) in addition to the GA output, which Condition C did not. B and C therefore
+# differ in more than the presence of the GA, and the pilot B-vs-C contrast is not interpreted
+# causally in the revised manuscript.
+
+Using the model (Python file) from the previous section, conduct a survey of related work in the field of 'generative AI,' devise a research theme with novelty and validity, carry out the research, and compile the results as a manuscript with the following eight sections: Abstract; 1. Introduction; 2. Related Work; 3. Proposed Method; 4. Experimental Design; 5. Reproducibility; 6. Discussion of Applications Across Multiple Domains; 7. Limitations; 8. Conclusion.

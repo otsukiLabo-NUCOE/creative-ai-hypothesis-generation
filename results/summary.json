@@ -1,0 +1,48 @@
+{
+ "corpus": {
+  "search": 1428,
+  "eval_past": 1428,
+  "future": 1428
+ },
+ "space_size": 2700,
+ "budget": 200,
+ "global_optimum": {
+  "hypothesis": "Diffusion Model for Autonomy to solve Distribution Shift",
+  "f": 0.5857058167457581
+ },
+ "landscape": {
+  "F_mean": 0.4936296343803406,
+  "F_sd": 0.030214129015803337,
+  "N_mean": 0.44040369987487793,
+  "U_mean": 0.5734686255455017,
+  "Delta_mean": 0.009647934697568417,
+  "Delta_sd": 0.05918096378445625
+ },
+ "correlations": {
+  "spearman_Nsearch_Nout": 0.746299487145578,
+  "spearman_Nout_Ntfidf": 0.2112272452851315,
+  "spearman_Nout_Delta": 0.3899813314682458,
+  "spearman_U_Delta": -0.013817130688802734,
+  "spearman_F_Delta": -0.012246099231554276,
+  "spearman_N_U": -0.8184195243706739
+ },
+ "optimum_hit_rate": {
+  "GA": 0.03333333333333333,
+  "HillClimb": 0.1,
+  "Random": 0.0
+ },
+ "GA_distinct_best_hypotheses": 19,
+ "GA_best_hypothesis_counts": {
+  "Diffusion Model for Sustainability to solve Distribution Shift": 3,
+  "Multi-Agent System for Fairness to solve Hallucination": 3,
+  "Evolutionary Strategy for Safety to solve Hallucination": 3,
+  "Diffusion Model for Sustainability to solve Miscalibrated Uncertainty": 2,
+  "Diffusion Model for Sustainability to solve Hallucination": 2,
+  "Diffusion Model for Safety to solve Hallucination": 2,
+  "Contrastive Learning for Personalization to solve Reward Hacking": 2,
+  "Transformer for Safety to solve Privacy Leakage": 2,
+  "Multi-Agent System for Efficiency to solve Energy Consumption": 1,
+  "Contrastive Learning for Creativity to solve Privacy Leakage": 1
+ },
+ "runtime_s": 120.951591
+}

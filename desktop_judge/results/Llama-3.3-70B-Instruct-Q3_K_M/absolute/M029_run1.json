@@ -1,0 +1,15 @@
+{
+    "run":  1,
+    "attempt":  0,
+    "code":  "M029",
+    "judgment":  {
+                     "originality":  4,
+                     "soundness":  4,
+                     "reproducibility":  5,
+                     "significance":  4,
+                     "rationale":  "Limited by reliance on high-quality knowledge and expressiveness of logic."
+                 },
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "raw":  "{\"originality\": 4, \"soundness\": 4, \"reproducibility\": 5, \"significance\": 4, \"rationale\": \"Limited by reliance on high-quality knowledge and expressiveness of logic.\"}",
+    "seconds":  50.4
+}

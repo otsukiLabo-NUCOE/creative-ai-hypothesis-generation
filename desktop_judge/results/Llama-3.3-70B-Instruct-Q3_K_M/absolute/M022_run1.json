@@ -1,0 +1,15 @@
+{
+    "run":  1,
+    "attempt":  0,
+    "code":  "M022",
+    "judgment":  {
+                     "originality":  4,
+                     "soundness":  4,
+                     "reproducibility":  5,
+                     "significance":  4,
+                     "rationale":  "Limited by assumptions and potential degradation of coordination accuracy"
+                 },
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "raw":  "{\"originality\": 4, \"soundness\": 4, \"reproducibility\": 5, \"significance\": 4, \"rationale\": \"Limited by assumptions and potential degradation of coordination accuracy\"}",
+    "seconds":  47.9
+}

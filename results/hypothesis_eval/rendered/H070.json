@@ -1,0 +1,24 @@
+{
+ "hid": "H070",
+ "hypothesis": "Neuro-symbolic fine-tuning of transformer-based language models through constraint-satisfied reward modeling to address factual and logical inconsistencies in open-domain text generation",
+ "description": "This approach integrates symbolic reasoning constraints into the learning process of large language models via reward functions that penalize violations of logical and factual rules, guiding the model toward outputs that satisfy predefined conditions. By aligning training objectives with explicit knowledge representations, it may reduce errors without sacrificing fluency, offering a pathway to more reliable generation. The method leverages existing transformer architectures while adding structured oversight, making it a practical step toward more consistent AI systems.",
+ "attempt": 0,
+ "raw": "Hypothesis: Neuro-symbolic fine-tuning of transformer-based language models through constraint-satisfied reward modeling to address factual and logical inconsistencies in open-domain text generation  \nDescription: This approach integrates symbolic reasoning constraints into the learning process of large language models via reward functions that penalize violations of logical and factual rules, guiding the model toward outputs that satisfy predefined conditions. By aligning training objectives with explicit knowledge representations, it may reduce errors without sacrificing fluency, offering a pathway to more reliable generation. The method leverages existing transformer architectures while adding structured oversight, making it a practical step toward more consistent AI systems.\n",
+ "shortening_steps": [],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Neuro-symbolic fine-tuning of transformer-based language models using constraint-satisfied reward modeling\nProblem: Generative AI systems produce factually incorrect or logically inconsistent outputs despite high fluency\nGoal: Achieve human-level factual consistency and logical coherence in open-domain text generation"
+   }
+  ],
+  "seed": 11,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 30.5
+}

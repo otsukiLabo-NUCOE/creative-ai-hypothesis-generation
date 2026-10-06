@@ -1,0 +1,25 @@
+{
+ "code": "M004",
+ "run": 3,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "No",
+  "confidence": 5,
+  "rationale": "The manuscript presents a well-motivated and novel approach to address miscalibrated uncertainty in diffusion models, which is a significant challenge in sustainability decision-making. The framework integrates conformal prediction with diffusion models, enabling reliable uncertainty quantification. The experimental design is rigorous, and the reproducibility plan is comprehensive. The manuscript's significance lies in its transformative potential across diverse sustainability domains."
+ },
+ "log": {
+  "payload_seed": 3,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"No\", \"confidence\": 5, \"rationale\": \"The manuscript presents a well-motivated and novel approach to address miscalibrated uncertainty in diffusion models, which is a significant challenge in sustainability decision-making. The framework integrates conformal prediction with diffusion models, enabling reliable uncertainty quantification. The experimental design is rigorous, and the reproducibility plan is comprehensive. The manuscript's significance lies in its transformative potential across diverse sustainability domains.\"}",
+  "seconds": 17.7
+ }
+}

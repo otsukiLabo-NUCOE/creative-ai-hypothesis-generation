@@ -1,0 +1,910 @@
+{
+ "started": "2026-10-01T13:15:27.173794",
+ "queries": [
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Transformer\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Diffusion Model\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Reinforcement Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Evolutionary Strategy\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Knowledge Graph\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Symbolic AI\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Quantum Annealing\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Graph Neural Network\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Contrastive Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Federated Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Retrieval-Augmented Generation\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Bayesian Optimization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Multi-Agent System\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Neural Architecture Search\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Causal Inference\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Hallucination\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Catastrophic Forgetting\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Data Scarcity\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"High Latency\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Bias\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Lack of Novelty\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 0
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Energy Consumption\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Adversarial Vulnerability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Distribution Shift\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Privacy Leakage\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Reward Hacking\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 13
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Long-Context Reasoning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 1
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Label Noise\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Miscalibrated Uncertainty\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 1
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Opaque Decision Making\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 6
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Creativity\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Robustness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Efficiency\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Fairness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Autonomy\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Explainability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Scalability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Safety\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Generalization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Personalization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Trustworthiness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "targeted",
+   "q": "abs:\"Sustainability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001010000 TO 202312312359]",
+   "n": 25
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202001080000 TO 202001082359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202002110000 TO 202002112359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202003120000 TO 202003122359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202004270000 TO 202004272359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202005170000 TO 202005172359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202006190000 TO 202006192359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202007230000 TO 202007232359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202008210000 TO 202008212359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202009130000 TO 202009132359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202010260000 TO 202010262359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202011270000 TO 202011272359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202012040000 TO 202012042359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202101200000 TO 202101202359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202102050000 TO 202102052359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202103070000 TO 202103072359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202104250000 TO 202104252359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202105240000 TO 202105242359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202106030000 TO 202106032359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202107220000 TO 202107222359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202108050000 TO 202108052359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202109020000 TO 202109022359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202110060000 TO 202110062359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202111150000 TO 202111152359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202112130000 TO 202112132359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202201070000 TO 202201072359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202202110000 TO 202202112359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202203070000 TO 202203072359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202204190000 TO 202204192359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202205090000 TO 202205092359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202206090000 TO 202206092359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202207270000 TO 202207272359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202208130000 TO 202208132359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202209260000 TO 202209262359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202210250000 TO 202210252359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202211070000 TO 202211072359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202212110000 TO 202212112359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202301010000 TO 202301012359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202302280000 TO 202302282359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202303080000 TO 202303082359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202304260000 TO 202304262359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202305180000 TO 202305182359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202306080000 TO 202306082359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202307240000 TO 202307242359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202308090000 TO 202308092359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202309160000 TO 202309162359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202310150000 TO 202310152359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202311060000 TO 202311062359]",
+   "n": 40
+  },
+  {
+   "window": "past",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202312120000 TO 202312122359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Transformer\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Diffusion Model\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Reinforcement Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Evolutionary Strategy\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Knowledge Graph\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Symbolic AI\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Quantum Annealing\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Graph Neural Network\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Contrastive Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Federated Learning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Retrieval-Augmented Generation\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Bayesian Optimization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Multi-Agent System\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Neural Architecture Search\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Causal Inference\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Hallucination\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Catastrophic Forgetting\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Data Scarcity\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"High Latency\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Bias\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Lack of Novelty\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 2
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Energy Consumption\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Adversarial Vulnerability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Distribution Shift\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Privacy Leakage\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Reward Hacking\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Long-Context Reasoning\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Label Noise\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Miscalibrated Uncertainty\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 2
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Opaque Decision Making\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 18
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Creativity\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Robustness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Efficiency\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Fairness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Autonomy\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Explainability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Scalability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Safety\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Generalization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Personalization\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Trustworthiness\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "targeted",
+   "q": "abs:\"Sustainability\" AND (cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407010000 TO 202512312359]",
+   "n": 25
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202407130000 TO 202407132359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202408170000 TO 202408172359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202409230000 TO 202409232359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202410270000 TO 202410272359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202411240000 TO 202411242359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202412020000 TO 202412022359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202501150000 TO 202501152359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202502130000 TO 202502132359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202503190000 TO 202503192359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202504210000 TO 202504212359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202505160000 TO 202505162359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202506040000 TO 202506042359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202507040000 TO 202507042359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202508270000 TO 202508272359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202509220000 TO 202509222359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202510160000 TO 202510162359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202511130000 TO 202511132359]",
+   "n": 40
+  },
+  {
+   "window": "future",
+   "route": "background",
+   "q": "(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.NE) AND submittedDate:[202512060000 TO 202512062359]",
+   "n": 40
+  }
+ ],
+ "finished": "2026-10-01T13:31:45.086951",
+ "n_records": {
+  "past": 2856,
+  "future": 1697
+ }
+}

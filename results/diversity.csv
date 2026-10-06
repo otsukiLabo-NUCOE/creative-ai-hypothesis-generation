@@ -1,0 +1,7 @@
+condition,n,distinct,mean_pairwise_cos,most_frequent_method,share_most_frequent_method
+GA,30,19,0.29,Diffusion Model,0.4
+Random,30,14,0.452,Diffusion Model,0.767
+HillClimb,30,16,0.334,Diffusion Model,0.5
+Uniform(no search),30,30,0.284,Graph Neural Network,0.133
+Typical-30,30,30,0.722,Federated Learning,0.9
+LLM-proposed,30,30,0.513,Neural architecture search with evolutionary multi-objective optimization,0.067

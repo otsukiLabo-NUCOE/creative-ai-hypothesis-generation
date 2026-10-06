@@ -1,0 +1,7 @@
+who,criterion,comparison,friedman_chi2,friedman_p,share_triplets_a_above_b,p,p_holm
+LLM,usefulness,GA vs Random,4.6038,0.1001,0.4667,0.7495,0.7495
+LLM,usefulness,GA vs LLM-proposed,4.6038,0.1001,0.2667,0.048,0.0959
+LLM,usefulness,Random vs LLM-proposed,4.6038,0.1001,0.3,0.0267,0.0802
+LLM,novelty,GA vs Random,12.2143,0.0022,0.5333,0.4773,0.4773
+LLM,novelty,GA vs LLM-proposed,12.2143,0.0022,0.2,0.004,0.0121
+LLM,novelty,Random vs LLM-proposed,12.2143,0.0022,0.2333,0.0042,0.0121

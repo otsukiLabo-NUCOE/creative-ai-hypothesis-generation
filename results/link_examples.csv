@@ -1,0 +1,7 @@
+support,link,s,nearest_paper
+highest,Federated Learning – Privacy Leakage,0.856,Constrained Differentially Private Federated Learning for Low-bandwidth Devices
+highest,Federated Learning – Adversarial Vulnerability,0.799,"Survey on Federated Learning Threats: concepts, taxonomy on attacks and defences, experimental study and challenges"
+highest,Causal Inference – Adversarial Vulnerability,0.771,Mitigating Adversarial Vulnerability through Causal Parameter Estimation by Adversarial Double Machine Learning
+lowest,Transformer – Miscalibrated Uncertainty,0.347,Looped Transformers are Better at Learning Learning Algorithms
+lowest,Diffusion Model – Lack of Novelty,0.364,Diffusion Models in Bioinformatics: A New Wave of Deep Learning Revolution in Action
+lowest,Diffusion Model – Miscalibrated Uncertainty,0.379,Diffusion Models in Vision: A Survey

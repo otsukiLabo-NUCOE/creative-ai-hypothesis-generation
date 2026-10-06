@@ -1,0 +1,25 @@
+{
+ "code": "M003",
+ "run": 2,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "No",
+  "confidence": 5,
+  "rationale": "The manuscript presents an original and well-motivated approach to addressing miscalibrated uncertainty in sustainability decision-making. The proposed method is theoretically sound, and the experimental design is comprehensive and systematic. The significance of the research is substantial, with potential applications across multiple sustainability domains."
+ },
+ "log": {
+  "payload_seed": 2,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"No\", \"confidence\": 5, \"rationale\": \"The manuscript presents an original and well-motivated approach to addressing miscalibrated uncertainty in sustainability decision-making. The proposed method is theoretically sound, and the experimental design is comprehensive and systematic. The significance of the research is substantial, with potential applications across multiple sustainability domains.\"}",
+  "seconds": 15.0
+ }
+}

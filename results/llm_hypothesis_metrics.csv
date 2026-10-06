@@ -1,0 +1,31 @@
+method,f_search,N_out,N_out_tfidf,U_out,FS_future,Delta,Delta_pct_matched
+Neuro-symbolic feedback loops with self-correcting latent space regularization,0.48057163,0.42088515,0.8310492303378039,0.55296797,0.5938219,0.014707029,60.91549295774647
+Neural architecture search with evolutionary selection and self-critical feedback loops,0.47508377,0.36907518,0.8054719006519094,0.59517974,0.621166,-0.00975883,48.78048780487805
+Neuro-symbolic fine-tuning with self-critiquing reinforcement learning,0.5005078,0.49492913,0.8085846344318005,0.5203339,0.5317035,0.026632607,57.20338983050848
+Neuro-symbolic fine-tuning of large language models using structured knowledge graphs derived from formal verification traces,0.47461447,0.42653537,0.7945255617893747,0.5341962,0.55660146,-0.016863167,33.68055555555556
+Neural Architecture Search with Evolutionary Constraints on Latent Space Topology,0.44322455,0.45798558,0.8216368439166262,0.51593137,0.51003695,-0.031977475,17.770034843205575
+Adversarial Multi-Modal Pre-Training with Dynamic Semantic Drift Injection,0.48919123,0.4526047,0.8337002309367784,0.5456989,0.6035743,0.056178987,80.7017543859649
+Neural architecture search with evolutionary constraints on latent space continuity,0.46436995,0.49058616,0.7900746416754465,0.50696635,0.5331673,0.023753464,53.00751879699248
+Neural Architecture Search with Reinforcement Learning guided by interpretability constraints,0.46842635,0.37918925,0.8137497489476762,0.5746955,0.61876535,-0.002045393,58.63874345549738
+Neuro-symbolic fine-tuning with self-critiquing latent space regularization,0.47119516,0.4244976,0.8101185345031412,0.5809371,0.59272945,0.017227054,61.37931034482759
+Neuro-symbolic fine-tuning of transformer-based language models using constraint-satisfied reward modeling,0.48200834,0.4293638,0.8070988897404036,0.5595353,0.56682456,-0.0038116574,45.11784511784512
+Self-critical reinforcement learning with multi-agent feedback on model-generated rationales,0.49874735,0.48757672,0.7907819093160482,0.5224312,0.5392434,0.026820123,54.41176470588235
+Neuro-Symbolic Fine-Tuning with Memory-Augmented Reinforcement Learning,0.49377966,0.42013288,0.805006154499461,0.55547243,0.596442,0.01657486,62.63345195729537
+Neuro-Symbolic Reinforcement Learning with Dynamic Knowledge Graphs,0.48102123,0.40596497,0.8055279400886239,0.5751696,0.60506475,0.01102972,59.83263598326359
+Neuro-symbolic fine-tuning with self-consistency regularization on large language models,0.4681793,0.4498642,0.8090603809014769,0.5463795,0.6041402,0.05400443,80.63380281690141
+Self-critique via multi-agent feedback loops using emotionally grounded large language models,0.50657475,0.46831644,0.8630451488957164,0.519961,0.5816818,0.049998224,74.21602787456446
+Neuro-symbolic reinforcement learning with self-critiquing generative models,0.49656475,0.4786352,0.7908280804387275,0.50845027,0.5438831,0.022518277,53.874538745387454
+Neural architecture search with evolutionary multi-objective optimization,0.47252816,0.41022718,0.8478886026154798,0.58211935,0.58820534,-0.001567483,47.199999999999996
+Neural Architecture Search with evolutionary constraints for dynamic prompt adaptation,0.4755066,0.3739605,0.7987132029985343,0.597169,0.6380485,0.012009025,71.89189189189189
+Neural architecture search with evolutionary multi-objective optimization,0.48306072,0.3632422,0.8227237008517031,0.6158774,0.6965227,0.05976492,94.19354838709677
+Neural architecture search using differentiable reinforcement learning on transformer-based generative models,0.46895322,0.4113993,0.8558947220723481,0.5647692,0.5965669,0.00796622,57.874015748031496
+Multi-modal latent space alignment via constrained diffusion with ethical adversarial regularization,0.48022157,0.45718604,0.803912544213693,0.5098724,0.6141983,0.07138437,84.91228070175438
+Neuro-symbolic reinforcement learning with self-critiquing large language models,0.4814868,0.40543115,0.7872269983869289,0.5628188,0.58479,-0.009778857,44.25531914893617
+Neuro-symbolic architecture with causal reasoning modules integrated into diffusion transformer models,0.5076568,0.43042505,0.819632922194145,0.546198,0.545719,-0.023855925,30.313588850174217
+Neuro-symbolic fine-tuning of diffusion models with constraint-based validation,0.50493056,0.5252401,0.7489150146853228,0.4596282,0.53491604,0.060156167,72.8395061728395
+Neuro-symbolic reinforcement learning with self-critiquing generative models,0.4822092,0.43287337,0.8033104778761776,0.5466381,0.5191268,-0.04799986,15.547703180212014
+Self-critiquing reinforcement learning with synthetic adversarial feedback loops,0.50411385,0.49827772,0.8203428823520147,0.539812,0.5367632,0.035040915,59.33609958506224
+Neuro-symbolic reinforcement learning with dynamic schema adaptation,0.48844945,0.4202199,0.8240221449261027,0.55305076,0.56635714,-0.013422966,42.142857142857146
+Neural Architecture Search with reinforcement learning guided by human preference gradients,0.48561317,0.4204812,0.7919696531421256,0.5519752,0.5870131,0.0074943304,54.96453900709219
+Multi-agent reinforcement learning with self-critiquing language models,0.48483938,0.4617387,0.8215371792070034,0.5375018,0.55318904,0.014927745,49.158249158249156
+Neuro-Symbolic Fine-Tuning of Transformer Language Models using Formal Concept Hierarchies,0.4823383,0.37995887,0.7977598304842064,0.5949253,0.6263498,0.006308675,64.28571428571429

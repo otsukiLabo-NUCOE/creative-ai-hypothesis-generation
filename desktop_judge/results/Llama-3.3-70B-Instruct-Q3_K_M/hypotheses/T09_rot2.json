@@ -1,0 +1,19 @@
+{
+    "seconds":  36.4,
+    "least_novel":  "B",
+    "least_useful":  "C",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "2",
+                     "most_novel":  "3",
+                     "least_novel":  "1",
+                     "rationale":  "Hypothesis 1 is most useful, Hypothesis 3 is most novel"
+                 },
+    "attempt":  0,
+    "most_useful":  "B",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"2\", \"most_novel\": \"3\", \"least_novel\": \"1\", \"rationale\": \"Hypothesis 1 is most useful, Hypothesis 3 is most novel\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "A",
+    "tid":  "T09",
+    "rotation":  "BCA"
+}

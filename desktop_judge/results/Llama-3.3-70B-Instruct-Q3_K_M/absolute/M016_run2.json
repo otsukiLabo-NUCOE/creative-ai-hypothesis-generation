@@ -1,0 +1,15 @@
+{
+    "run":  2,
+    "attempt":  0,
+    "code":  "M016",
+    "judgment":  {
+                     "originality":  4,
+                     "soundness":  4,
+                     "reproducibility":  5,
+                     "significance":  5,
+                     "rationale":  "Main weaknesses: computational intensity, qualitative interpretability metrics."
+                 },
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "raw":  "{\"originality\": 4, \"soundness\": 4, \"reproducibility\": 5, \"significance\": 5, \"rationale\": \"Main weaknesses: computational intensity, qualitative interpretability metrics.\"}",
+    "seconds":  32.4
+}

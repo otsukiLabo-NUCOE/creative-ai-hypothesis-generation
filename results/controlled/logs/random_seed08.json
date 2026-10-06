@@ -1,0 +1,181 @@
+{
+ "run_id": "random_seed08",
+ "condition": "random",
+ "seed": 8,
+ "writer_seed": 108,
+ "hypothesis": {
+  "method": "Evolutionary Strategy",
+  "problem": "Lack of Novelty",
+  "goal": "Scalability"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 108,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 472.4,
+ "check": {
+  "words": 1854,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 175,
+    "prompt_tokens": 353,
+    "total_tokens": 528,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Evolutionary Strategies for Enhancing Novelty in Scalable Optimization\n\n## Abstract  \nThis paper explores the application of evolutionary strategies to address the challenge of novelty generation in complex, high-dimensional optimization landscapes. Existing evolutionary approaches often prioritize convergence speed and solution quality at the expense of diverse, innovative outcomes, particularly as problem scale increases. We investigate how adaptive mutation operators and population diversity metrics can be systematically integrated to sustain novelty while maintaining scalability. The proposed framework leverages self-adaptive evolutionary mechanisms to dynamically adjust search behavior in response to stagnation and redundancy. By emphasizing behavioral flexibility over fixed parameters, the method remains tractable for large-scale, real-world problems where exhaustive exploration is infeasible. The paper outlines the theoretical underpinnings, mathematical formulation, and a forward-looking experimental design to assess the trade-offs between novelty retention and computational efficiency across diverse domains."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 309,
+    "prompt_tokens": 562,
+    "total_tokens": 871,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nOptimization problems in engineering, economics, and artificial intelligence frequently demand not only high-quality solutions but also novel, unexpected outcomes that drive innovation. Traditional gradient-based and heuristic search methods excel in efficiency and convergence but often converge to local optima or repetitive solution spaces, limiting their capacity to generate genuinely novel results. This phenomenon, known as the *lack of novelty*, becomes increasingly pronounced in high-dimensional and complex search spaces where exploration opportunities diminish as search pressure intensifies. Evolutionary algorithms (EAs) offer a promising alternative due to their population-based nature and inherent stochasticity, yet many conventional EA implementations still prioritize exploitation over exploration, resulting in diminishing diversity over time. Recent work has begun to address this gap by incorporating diversity-preserving mechanisms such as niching, crowding, and adaptive mutation, yet scalability remains a critical challenge when applied to large-scale or dynamic environments.  \n\nThis paper introduces a novel framework grounded in evolutionary strategy principles, specifically designed to reconcile novelty generation with computational tractability. Unlike methods that treat diversity as a static constraint, our approach dynamically modulates search behavior through self-adaptive operators that respond to observed solution redundancy. By decoupling the objectives of quality and novelty into complementary evolutionary pressures, the method maintains scalability across increasing problem dimensions. The remainder of this paper outlines the problem formulation, proposes a mathematically grounded solution strategy, and establishes the foundation for future experimental validation. Our work bridges a critical gap between evolutionary computation and the pursuit of innovative, unforeseen solutions in scalable optimization landscapes."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 263,
+    "prompt_tokens": 914,
+    "total_tokens": 1177,
+    "prompt_tokens_details": {
+     "cached_tokens": 524
+    }
+   },
+   "content": "## 2. Related Work  \nEvolutionary computation has long been studied for its capacity to balance exploration and exploitation in complex optimization landscapes. Early work on diversity preservation, such as fitness sharing and crowding distances, sought to maintain population variety by penalizing similarity among individuals. More recently, niching techniques and multi-objective optimization frameworks have been employed to explicitly encourage the discovery of distinct solutions, implicitly addressing novelty generation. However, these approaches often introduce computational overhead or require careful parameter tuning, limiting their scalability in high-dimensional or rapidly changing environments.  \n\nA growing body of research explores self-adaptive evolutionary strategies, where mutation rates, selection intensities, or crossover operators evolve during the search process. These methods enhance adaptability to changing fitness landscapes but typically focus on solution quality rather than novelty. Few works explicitly model novelty as a measurable, dynamically responsive trait within the evolutionary process. Moreover, scalability remains a persistent challenge: as problem dimensionality increases, maintaining meaningful diversity becomes computationally intractable with traditional mechanisms. Existing frameworks rarely achieve both sustained novelty and linear-time complexity, highlighting a gap between theoretical promise and practical deployment. This paper contributes by integrating novelty-driven adaptation within a scalable evolutionary strategy, offering a fresh perspective on how evolutionary systems can be engineered to favor unexpected, innovative outcomes without sacrificing efficiency."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 522,
+    "prompt_tokens": 1220,
+    "total_tokens": 1742,
+    "prompt_tokens_details": {
+     "cached_tokens": 867
+    }
+   },
+   "content": "## 3. Proposed Method  \n\nWe introduce a self-adaptive evolutionary strategy (SES) framework designed to explicitly promote novelty while preserving computational scalability. The core innovation lies in treating novelty as a dynamic, evolving objective that co-evolves with solution quality through adaptive mutation operators and diversity-aware selection pressures. Unlike conventional methods that treat diversity as a static constraint, our approach continuously estimates solution redundancy using a normalized pairwise distance metric derived from the current population’s feature space. This metric is updated incrementally to avoid quadratic computational cost, enabling linear-time complexity with respect to population size.  \n\nThe mutation operator in our framework is self-adaptive: each individual carries a personal mutation intensity parameter that evolves according to its contribution to population novelty. Specifically, individuals with low novelty contribution — identified via low local density in the solution space — experience increased mutation intensity in subsequent generations, while those contributing to high redundancy undergo reduced mutation to prevent wasteful exploration. The update rule for the personal mutation intensity $ \\sigma_i $ of individual $ i $ is given by:  \n\n$$\n\\sigma_i^{(t+1)} = \\sigma_i^{(t)} + \\eta \\cdot \\left( \\alpha \\cdot \\Delta_{\\text{novelty}}^{(t)} - \\beta \\cdot \\Delta_{\\text{redundancy}}^{(t)} \\right)\n$$  \n\nwhere $ \\Delta_{\\text{novelty}}^{(t)} $ and $ \\Delta_{\\text{redundancy}}^{(t)} $ are the novelty and redundancy contributions of individual $ i $ at generation $ t $, $ \\eta $ is a learning rate, and $ \\alpha, \\beta > 0 $ are weighting parameters. The novelty contribution is computed as the proportion of population members exceeding a distance threshold $ \\tau $ in the normalized feature space:  \n\n$$\n\\Delta_{\\text{novelty}}^{(t)} = \\frac{1}{N-1} \\sum_{j \\neq i} \\mathbb{I}\\left( d(\\mathbf{x}_i, \\mathbf{x}_j) > \\tau \\right)\n$$  \n\nwith $ d(\\cdot,\\cdot) $ a Mahalanobis distance computed using a running estimate of the population covariance matrix. The redundancy term is the complement, measuring overlap with nearby solutions.  \n\nBy dynamically adjusting mutation intensity based on observed novelty and redundancy, the proposed method sustains diverse, innovative solutions across scales. The adaptive mechanism ensures that exploration pressure intensifies only where needed, preserving scalability while encouraging emergent, unexpected outcomes."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 335,
+    "prompt_tokens": 1785,
+    "total_tokens": 2120,
+    "prompt_tokens_details": {
+     "cached_tokens": 1173
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed self-adaptive evolutionary strategy will be evaluated through a systematic experimental plan designed to assess its ability to balance novelty generation with scalability across diverse problem domains. The design will consist of three principal phases: benchmarking, scalability testing, and comparative analysis.  \n\nIn the benchmarking phase, the method will be applied to a suite of synthetic and real-world optimization problems spanning low-, medium-, and high-dimensional spaces. Problems will include continuous function optimization, combinatorial search, and constrained multi-modal landscapes, each characterized by varying levels of solution redundancy and difficulty. For each problem, the algorithm will be run under controlled conditions with fixed population sizes ranging from 50 to 1,000, enabling analysis of performance trends as problem scale increases.  \n\nTo quantify novelty, a dynamic diversity metric will be computed at each generation using normalized pairwise distances in feature space, as defined in the proposed framework. This metric will be tracked alongside traditional fitness measures to evaluate the trade-off between solution quality and innovation. Additionally, a novelty decay curve will be generated to assess the algorithm’s ability to sustain diverse solutions over time.  \n\nA dedicated scalability analysis will measure runtime and memory usage as problem dimensionality increases, verifying that computational complexity remains linear. Comparative experiments will contrast the proposed method against baseline evolutionary strategies that prioritize convergence speed or diversity preservation, without explicit novelty guidance. Results will be summarized through qualitative performance profiles and quantitative comparisons of novelty retention and scalability.  \n\nThis design provides a rigorous, repeatable framework for future validation, enabling a clear assessment of the method’s theoretical claims in practical, scalable optimization settings."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 198,
+    "prompt_tokens": 2160,
+    "total_tokens": 2358,
+    "prompt_tokens_details": {
+     "cached_tokens": 1738
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nThe proposed framework is designed to be fully reproducible through open-source implementation and transparent documentation. All algorithmic components, including the self-adaptive mutation update rule, novelty estimation metric, and population management logic, will be released under a permissive license alongside a complete codebase written in a widely used scientific computing language. Experimental configurations, such as parameter ranges, random seeds, and problem instances, will be documented in a public repository with version-controlled scripts to ensure identical runs across environments. A detailed configuration file format will be provided to enable automated parameter sweeping and result aggregation. Performance metrics will be logged in standardized JSON or CSV formats, facilitating cross-study comparison. Additionally, a containerization approach using Docker will be offered to encapsulate dependencies and ensure consistent runtime behavior. By adhering to open science principles and providing reproducible code, data, and evaluation protocols, this work aims to enable independent verification, extension, and application of the methodology across domains."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 262,
+    "prompt_tokens": 2404,
+    "total_tokens": 2666,
+    "prompt_tokens_details": {
+     "cached_tokens": 2116
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe proposed self-adaptive evolutionary strategy, designed to sustain novelty while maintaining scalability, holds broad applicability across domains where innovation and efficient exploration are jointly critical. In drug discovery, for instance, the method could generate structurally diverse compound candidates beyond those predictable by conventional optimization, accelerating the identification of novel therapeutic agents. Similarly, in materials science, the algorithm’s capacity to explore unconventional compositional or structural spaces may uncover emergent properties not accessible through gradient-based or local search methods.  \n\nIn artificial intelligence, particularly in the design of neural architectures or evolutionary robotics, the framework could promote the evolution of unexpected, high-performing solutions that resist overfitting to known patterns. This is especially valuable in reinforcement learning, where novelty in policy behavior often correlates with improved generalization.  \n\nBeyond technical domains, the method may support creative industries such as generative design, music composition, or visual art, where novelty is a primary objective. By dynamically balancing exploration and exploitation, it enables systems to avoid stagnation and produce serendipitous, high-quality outputs.  \n\nThe scalability of the approach ensures feasibility in large-scale simulations and real-time adaptive systems, making it suitable for deployment in complex, evolving environments where both efficiency and innovation are paramount."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 214,
+    "prompt_tokens": 2700,
+    "total_tokens": 2914,
+    "prompt_tokens_details": {
+     "cached_tokens": 2354
+    }
+   },
+   "content": "## 7. Limitations  \n\nThe proposed self-adaptive evolutionary strategy, while designed to balance novelty and scalability, operates within theoretical and practical constraints. Its performance is contingent on accurate estimation of solution redundancy, which relies on a running covariance matrix and distance thresholds that may be sensitive to noisy or non-stationary fitness landscapes. In highly multimodal or deceptive problems, novelty metrics may misrepresent meaningful diversity, leading to suboptimal exploration.  \n\nThe method assumes that mutation intensity adjustments based on local density provide sufficient guidance, but may struggle in sparse or disconnected solution spaces where global structure is poorly observable. Additionally, the computational overhead of maintaining pairwise distance estimates, though linear in theory, may become prohibitive for extremely large populations or high-dimensional continuous spaces.  \n\nThe framework has not been empirically validated, and its effectiveness depends on carefully tuned learning rates and weighting parameters. Finally, while designed for scalability, performance in dynamic or non-deterministic environments remains untested, and real-time adaptation may require further refinement to ensure stability under stochastic fitness evaluations."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 162,
+    "prompt_tokens": 2948,
+    "total_tokens": 3110,
+    "prompt_tokens_details": {
+     "cached_tokens": 2662
+    }
+   },
+   "content": "## 8. Conclusion  \n\nThis work introduces a self-adaptive evolutionary strategy that explicitly addresses the challenge of sustaining novelty within scalable optimization frameworks. By dynamically linking mutation intensity to locally observed solution redundancy, the proposed method bridges a critical gap between exploration-driven innovation and computational tractability. Unlike traditional approaches that treat diversity as a static constraint, our framework treats novelty as an evolving objective, enabling adaptive search behavior without sacrificing efficiency. The mathematical formulation provides a clear, implementable mechanism for personalizing exploration pressure, while the experimental design outlines a rigorous path for future validation. Though limitations remain — particularly in untested domains and complex landscapes — the approach offers a promising foundation for applications where unconventional, high-quality solutions are valuable. Future work will focus on empirical evaluation and extension to dynamic, real-world problems."
+  }
+ ],
+ "time": "2026-10-01T22:00:06.587337"
+}

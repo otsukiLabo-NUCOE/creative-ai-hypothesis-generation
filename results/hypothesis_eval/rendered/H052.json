@@ -1,0 +1,24 @@
+{
+ "hid": "H052",
+ "hypothesis": "Diffusion Model generates coherent long-context reasoning by iteratively refining partial knowledge into globally consistent narratives, addressing fragmentation in extended inference, to enhance trustworthiness",
+ "description": "The method builds sequential representations through probabilistic diffusion, gradually reducing noise while preserving contextual coherence over thousands of tokens; unlike sliding-window or compression-based approaches, it maintains full context awareness during refinement, enabling more reliable chain-of-thought generation in complex, multi-turn scenarios where consistency is critical for user confidence",
+ "attempt": 0,
+ "raw": "Hypothesis: Diffusion Model generates coherent long-context reasoning by iteratively refining partial knowledge into globally consistent narratives, addressing fragmentation in extended inference, to enhance trustworthiness  \nDescription: The method builds sequential representations through probabilistic diffusion, gradually reducing noise while preserving contextual coherence over thousands of tokens; unlike sliding-window or compression-based approaches, it maintains full context awareness during refinement, enabling more reliable chain-of-thought generation in complex, multi-turn scenarios where consistency is critical for user confidence\n",
+ "shortening_steps": [],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Diffusion Model\nProblem: Long-Context Reasoning\nGoal: Trustworthiness"
+   }
+  ],
+  "seed": 11,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 24.5
+}

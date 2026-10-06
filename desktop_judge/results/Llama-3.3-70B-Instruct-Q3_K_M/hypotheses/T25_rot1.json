@@ -1,0 +1,19 @@
+{
+    "seconds":  29.3,
+    "least_novel":  "A",
+    "least_useful":  "C",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "1",
+                     "rationale":  "Novelty in constraints"
+                 },
+    "attempt":  0,
+    "most_useful":  "A",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"1\", \"rationale\": \"Novelty in constraints\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "B",
+    "tid":  "T25",
+    "rotation":  "ABC"
+}

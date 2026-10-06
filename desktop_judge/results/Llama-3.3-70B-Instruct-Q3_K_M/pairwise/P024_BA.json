@@ -1,0 +1,18 @@
+{
+    "seconds":  66.2,
+    "shown_as_B":  "M009",
+    "shown_as_A":  "M026",
+    "judgment":  {
+                     "originality":  "B",
+                     "soundness":  "A",
+                     "reproducibility":  "A",
+                     "significance":  "B",
+                     "overall":  "B",
+                     "rationale":  "B\u0027s novelty"
+                 },
+    "raw":  "{\"originality\": \"B\", \"soundness\": \"A\", \"reproducibility\": \"A\", \"significance\": \"B\", \"overall\": \"B\", \"rationale\": \"B\u0027s novelty\"}",
+    "order":  "BA",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P024"
+}

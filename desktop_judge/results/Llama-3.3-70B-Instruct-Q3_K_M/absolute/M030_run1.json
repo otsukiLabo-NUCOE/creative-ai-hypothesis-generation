@@ -1,0 +1,15 @@
+{
+    "run":  1,
+    "attempt":  0,
+    "code":  "M030",
+    "judgment":  {
+                     "originality":  4,
+                     "soundness":  4,
+                     "reproducibility":  5,
+                     "significance":  4,
+                     "rationale":  "Main weaknesses: dependence on local knowledge quality, potential bias propagation, and limited handling of novel inputs."
+                 },
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "raw":  "{\"originality\": 4, \"soundness\": 4, \"reproducibility\": 5, \"significance\": 4, \"rationale\": \"Main weaknesses: dependence on local knowledge quality, potential bias propagation, and limited handling of novel inputs.\"}",
+    "seconds":  56.6
+}

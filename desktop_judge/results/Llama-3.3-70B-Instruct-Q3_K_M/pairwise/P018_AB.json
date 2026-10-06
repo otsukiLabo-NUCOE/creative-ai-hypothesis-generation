@@ -1,0 +1,18 @@
+{
+    "seconds":  73,
+    "shown_as_B":  "M024",
+    "shown_as_A":  "M006",
+    "judgment":  {
+                     "originality":  "A",
+                     "soundness":  "A",
+                     "reproducibility":  "A",
+                     "significance":  "A",
+                     "overall":  "A",
+                     "rationale":  "A\u0027s privacy focus is novel"
+                 },
+    "raw":  "{\"originality\": \"A\", \"soundness\": \"A\", \"reproducibility\": \"A\", \"significance\": \"A\", \"overall\": \"A\", \"rationale\": \"A\u0027s privacy focus is novel\"}",
+    "order":  "AB",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P018"
+}

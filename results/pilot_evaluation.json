@@ -1,0 +1,99 @@
+{
+ "instrument": {
+  "A).docx": {
+   "recovered_MPG": [
+    "Quantum Annealing",
+    "High Latency",
+    "Robustness"
+   ],
+   "Novelty_text": 0.905,
+   "Novelty_combinatorial": 1.0,
+   "NonTriviality": 0.994,
+   "SO": 4.99,
+   "SQ": 4.47,
+   "SR": 4.6,
+   "SS": 3.54,
+   "Stotal": 4.4,
+   "SO_textlevel_variant": 4.76,
+   "circular": {
+    "SQ": true,
+    "SS": true,
+    "SO": false,
+    "SR": false
+   },
+   "Generality": 0.8,
+   "code": true,
+   "data": true,
+   "params": false
+  },
+  "B).docx": {
+   "recovered_MPG": [
+    "Symbolic AI",
+    "Lack of Novelty",
+    "Robustness"
+   ],
+   "Novelty_text": 0.876,
+   "Novelty_combinatorial": 0.569,
+   "NonTriviality": 0.983,
+   "SO": 3.94,
+   "SQ": 4.29,
+   "SR": 5.0,
+   "SS": 2.76,
+   "Stotal": 4.0,
+   "SO_textlevel_variant": 4.68,
+   "circular": {
+    "SQ": true,
+    "SS": true,
+    "SO": false,
+    "SR": false
+   },
+   "Generality": 0.6,
+   "code": true,
+   "data": true,
+   "params": true
+  },
+  "C).docx": {
+   "recovered_MPG": [
+    "Multi-Agent System",
+    "Lack of Novelty",
+    "Efficiency"
+   ],
+   "Novelty_text": 0.967,
+   "Novelty_combinatorial": 1.0,
+   "NonTriviality": 0.988,
+   "SO": 4.98,
+   "SQ": 3.08,
+   "SR": 5.0,
+   "SS": 1.0,
+   "Stotal": 3.52,
+   "SO_textlevel_variant": 4.9,
+   "circular": {
+    "SQ": true,
+    "SS": true,
+    "SO": false,
+    "SR": false
+   },
+   "Generality": 0.0,
+   "code": true,
+   "data": true,
+   "params": true
+  }
+ },
+ "semantic_ceiling_check": {
+  "A).docx": {
+   "N_vs_3papers": 0.829,
+   "N_vs_full_corpus": 0.424,
+   "nearest_corpus_paper": "Boosting the Performance of Quantum Annealers using Machine Learning"
+  },
+  "B).docx": {
+   "N_vs_3papers": 0.665,
+   "N_vs_full_corpus": 0.301,
+   "nearest_corpus_paper": "Building Trustworthy NeuroSymbolic AI Systems: Consistency, Reliability, Explainability, and Safety"
+  },
+  "C).docx": {
+   "N_vs_3papers": 0.913,
+   "N_vs_full_corpus": 0.743,
+   "nearest_corpus_paper": "From Local Pseudorandom Generators to Hardness of Learning"
+  }
+ }
+}

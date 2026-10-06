@@ -1,0 +1,18 @@
+{
+    "seconds":  75.6,
+    "shown_as_B":  "M016",
+    "shown_as_A":  "M010",
+    "judgment":  {
+                     "originality":  "B",
+                     "soundness":  "A",
+                     "reproducibility":  "A",
+                     "significance":  "B",
+                     "overall":  "B",
+                     "rationale":  "B\u0027s novelty in integrating NAS and RL for interpretability"
+                 },
+    "raw":  "{\"originality\": \"B\", \"soundness\": \"A\", \"reproducibility\": \"A\", \"significance\": \"B\", \"overall\": \"B\", \"rationale\": \"B\u0027s novelty in integrating NAS and RL for interpretability\"}",
+    "order":  "AB",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P023"
+}

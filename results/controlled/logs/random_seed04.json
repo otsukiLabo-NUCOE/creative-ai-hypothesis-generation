@@ -1,0 +1,181 @@
+{
+ "run_id": "random_seed04",
+ "condition": "random",
+ "seed": 4,
+ "writer_seed": 104,
+ "hypothesis": {
+  "method": "Evolutionary Strategy",
+  "problem": "Bias",
+  "goal": "Robustness"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 104,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 474.6,
+ "check": {
+  "words": 1732,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 181,
+    "prompt_tokens": 350,
+    "total_tokens": 531,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Evolutionary Strategies for Mitigating Bias in Decision-Making Systems\n\n## Abstract  \nThis paper explores the application of evolutionary strategies to address bias in decision-making systems, aiming to enhance their robustness and fairness. Bias, often arising from skewed data distributions or incomplete modeling assumptions, can lead to systematic errors and inequitable outcomes in automated systems. We formulate the problem as one of optimizing decision policies within a stochastic environment, where evolutionary algorithms serve as a metaheuristic to iteratively refine solutions toward reduced bias. By encoding fairness criteria into the fitness landscape, the proposed approach seeks to evolve policies that perform consistently across diverse subgroups, even under distributional shifts. The goal is to develop a general framework that improves resilience without requiring exhaustive retraining or labeled data for every scenario. This work emphasizes the potential of evolutionary computation to foster adaptive, bias-aware systems capable of maintaining performance in dynamic and uncertain environments."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 277,
+    "prompt_tokens": 565,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nDecision-making systems are increasingly deployed in critical domains such as healthcare, finance, and criminal justice, where biased outcomes can have profound societal consequences. Such bias often stems from unrepresentative training data, oversimplified feature selection, or implicit assumptions embedded in model design. While traditional approaches to mitigating bias rely heavily on preprocessing, in-processing adjustments, or post-hoc correction, these methods frequently require precise knowledge of data distributions or extensive labeled examples — resources that are often unavailable in practice. This gap motivates a shift toward adaptive, population-based optimization techniques capable of navigating complex, high-dimensional search spaces without explicit distributional assumptions. Evolutionary strategies, a class of stochastic optimization algorithms inspired by natural selection, offer a promising alternative. By maintaining a diverse population of candidate solutions and iteratively selecting, recombining, and mutating them according to a fitness function, evolutionary strategies can explore trade-offs between accuracy and fairness in an implicit manner. In this work, we frame bias mitigation as an evolutionary optimization problem, where the fitness landscape is shaped by measures of equitable performance across subgroups. Our objective is to develop a framework that evolves decision policies robust to distributional shifts, ensuring consistent behavior even when encountering unseen data patterns. By integrating evolutionary computation with bias-aware evaluation, we aim to advance the design of resilient, generalizable decision-making systems."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 261,
+    "prompt_tokens": 885,
+    "total_tokens": 1146,
+    "prompt_tokens_details": {
+     "cached_tokens": 527
+    }
+   },
+   "content": "## 2. Related Work  \nA substantial body of research addresses bias in algorithmic decision-making, spanning fairness-aware machine learning, causal inference, and adversarial debiasing. Early efforts focused on post-processing rules that adjust model outputs to satisfy predefined demographic parity or equalized odds constraints, often assuming access to sensitive attribute labels. In-processing methods integrate fairness regularizers directly into loss functions, seeking to balance accuracy and equity during training. However, these approaches typically rely on explicit knowledge of data distributions and may struggle under covariate shift or when sensitive features are unobserved. Recent work has explored representation learning techniques, such as adversarial domain adaptation, to remove bias by aligning feature distributions across subgroups while preserving task relevance. In contrast, evolutionary computation offers a population-based paradigm for optimizing complex, multi-objective problems without requiring gradient-based updates or explicit distributional assumptions. Evolutionary strategies have been applied to robust control, reinforcement learning, and meta-learning, where their ability to maintain diversity and adapt to changing environments proves advantageous. While prior studies have investigated evolutionary methods for improving generalization, few have explicitly framed bias mitigation as an evolutionary optimization task. This gap underscores the novelty of our approach, which leverages evolutionary dynamics to evolve decision policies that remain stable and equitable across diverse, shifting contexts."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 531,
+    "prompt_tokens": 1189,
+    "total_tokens": 1720,
+    "prompt_tokens_details": {
+     "cached_tokens": 838
+    }
+   },
+   "content": "## 3. Proposed Method  \n\nWe propose an evolutionary framework for mitigating bias in decision-making systems by treating the optimization of fair policies as a stochastic search problem. Let $ \\mathcal{X} $ denote the input space, $ \\mathcal{Y} $ the output space, and $ \\mathcal{S} \\subset \\mathcal{X} $ a set of protected subgroups defined by sensitive attributes such as gender, race, or socioeconomic status. A decision policy $ \\pi_\\theta: \\mathcal{X} \\to \\mathcal{Y} $ parameterized by $ \\theta \\in \\Theta $ generates actions based on inputs. Our objective is to evolve $ \\pi_\\theta $ such that its performance remains equitable across subgroups despite distributional shifts in $ \\mathcal{X} $.  \n\nThe evolutionary process maintains a population $ \\mathcal{P}_t = \\{\\pi_{\\theta}^{(i)}\\}_{i=1}^{N} $ at generation $ t $, where $ N $ is the population size. Each individual $ \\pi_{\\theta}^{(i)} $ is evaluated using a fitness function $ F(\\pi_{\\theta}) $ that combines predictive accuracy and fairness constraints. Specifically, we define:  \n\n$$\nF(\\pi_{\\theta}) = \\alpha \\cdot \\underbrace{\\mathbb{E}_{x \\sim \\mathcal{D}}[\\mathbb{I}(\\pi_{\\theta}(x) = y^*)]}_{\\text{accuracy}} - (1 - \\alpha) \\cdot \\underbrace{\\max_{s \\in \\mathcal{S}} \\left| \\mathbb{E}_{x \\sim \\mathcal{D}_s}[\\mathbb{I}(\\pi_{\\theta}(x) = y^*)] - \\bar{y} \\right|}_{\\text{bias penalty}}\n$$  \n\nwhere $ \\mathcal{D} $ is the overall data distribution, $ \\mathcal{D}_s $ the distribution within subgroup $ s $, $ y^* $ the ground-truth label, $ \\bar{y} $ the global accuracy, and $ \\alpha \\in [0,1] $ balances accuracy against fairness. The bias penalty enforces subgroup parity by penalizing deviations from the global performance mean.  \n\nSelection, crossover, and Gaussian mutation operators are applied to generate offspring, with elitist replacement preserving high-fitness individuals. To enhance robustness, we introduce distributional shift simulation: during evaluation, synthetic perturbations are injected into $ \\mathcal{D} $ to mimic covariate shifts, ensuring selected policies generalize across scenarios. This evolutionary loop iteratively refines $ \\pi_\\theta $ toward solutions that are both accurate and resilient to bias under uncertainty."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 301,
+    "prompt_tokens": 1763,
+    "total_tokens": 2064,
+    "prompt_tokens_details": {
+     "cached_tokens": 1142
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThis section outlines a structured plan for future validation of the proposed evolutionary framework, emphasizing methodological rigor and generalizability across domains. The design comprises three core phases: synthetic benchmarking, controlled distributional shift simulation, and cross-domain transfer evaluation.  \n\nIn the first phase, synthetic datasets will be generated with known bias patterns and varying degrees of subgroup imbalance. These datasets will serve as controlled environments to assess the framework’s ability to detect and correct bias under different fairness criteria, including demographic parity, equal opportunity, and predictive parity. Performance metrics will include both classification accuracy and subgroup-specific disparity scores.  \n\nThe second phase introduces systematic distributional shifts by applying data augmentation techniques such as Gaussian noise injection, feature scaling, and synthetic minority oversampling. This simulates real-world covariate shifts and evaluates the robustness of evolved policies in maintaining equitable performance. A shift severity scale will be defined, ranging from mild perturbations to extreme domain changes, to quantify resilience.  \n\nThe third phase extends evaluation to multiple application domains — such as healthcare diagnosis, loan approval, and criminal risk assessment — each with distinct feature spaces and outcome structures. This cross-domain testing assesses the framework’s transferability and adaptability without task-specific retraining.  \n\nAll experiments will be conducted in a reproducible, open-source environment, with hyperparameters sampled from predefined distributions to mitigate selection bias in algorithm configuration. Results will be reported as confidence intervals derived from multiple random restarts, ensuring statistical reliability."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 193,
+    "prompt_tokens": 2104,
+    "total_tokens": 2297,
+    "prompt_tokens_details": {
+     "cached_tokens": 1716
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nTo ensure full reproducibility, the entire experimental pipeline will be implemented in an open-source Python framework, with all code, configuration files, and synthetic data generators publicly available under a permissive license. Hyperparameters and evolutionary strategy settings (population size, mutation rate, crossover operator, and fitness weighting) will be fixed or sampled from well-defined distributions, with all random seeds logged and documented. The use of containerization via Docker will standardize environment dependencies, eliminating version drift. Synthetic datasets will be generated using deterministic algorithms with fixed random seeds, and distributional shift simulations will employ reproducible noise injection protocols. Performance evaluations will be averaged across multiple random restarts, with results reported as confidence intervals. All experimental logs, including fitness evaluations and policy traces, will be stored in version-controlled repositories. By adhering to these practices, our work will be fully transparent, verifiable, and replicable by the broader research community."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 245,
+    "prompt_tokens": 2343,
+    "total_tokens": 2588,
+    "prompt_tokens_details": {
+     "cached_tokens": 2060
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe proposed evolutionary framework for bias mitigation holds broad applicability across domains where automated decision-making impacts marginalized groups. In healthcare, diagnostic models often exhibit disparities due to underrepresentation of certain demographics in training data; our approach could evolve policies that maintain equitable accuracy across age, gender, and ethnic subgroups, even as patient populations shift. For financial services, credit scoring algorithms may systematically disadvantage low-income or minority applicants; evolving fairness-aware policies could reduce discriminatory lending practices while preserving predictive validity. In criminal justice, risk assessment tools have been shown to over-predict recidivism for specific communities; applying our method could yield more balanced risk evaluations under varying demographic compositions. Additionally, hiring platforms that rely on automated resume screening may perpetuate historical biases; our framework could adapt to evolving applicant pools while enforcing equitable selection criteria. Because the method does not require labeled fairness data or domain-specific retraining, it is particularly suited for settings with limited annotated examples or frequent distributional changes. By treating fairness as an emergent property of the evolutionary process, the framework offers a scalable, general-purpose solution for building robust, equitable decision systems across diverse societal contexts."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 211,
+    "prompt_tokens": 2622,
+    "total_tokens": 2833,
+    "prompt_tokens_details": {
+     "cached_tokens": 2293
+    }
+   },
+   "content": "## 7. Limitations  \n\nWhile the proposed evolutionary framework offers a promising approach to bias mitigation, several limitations must be acknowledged. First, the method relies on synthetic distributional shifts for evaluation, which may not fully capture the complexity of real-world data imbalances or hidden confounding factors. Second, the fitness function assumes that subgroup performance can be accurately estimated from limited samples, potentially leading to over-optimization on noisy metrics. Third, the evolutionary process may converge to solutions that satisfy fairness constraints at the expense of overall utility, particularly when the bias penalty weight is not carefully calibrated. Fourth, the framework does not inherently handle cases where sensitive attributes are unobserved or protected by privacy regulations, limiting its direct applicability in such scenarios. Finally, while the method is designed for general use, domain-specific nuances — such as legal definitions of fairness or ethical thresholds — require external alignment, which falls outside the scope of algorithmic optimization. Addressing these constraints will require further refinement of evaluation protocols, adaptive weighting schemes, and integration with domain-specific fairness guidelines."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 139,
+    "prompt_tokens": 2867,
+    "total_tokens": 3006,
+    "prompt_tokens_details": {
+     "cached_tokens": 2584
+    }
+   },
+   "content": "## 8. Conclusion  \n\nThis paper introduces an evolutionary strategy framework for mitigating bias in decision-making systems, framing fairness as an emergent property of population-based optimization. By integrating subgroup-aware fitness evaluation with distributional shift simulation, the approach enables the evolution of robust policies that maintain equitable performance across diverse contexts. While the method avoids explicit distributional assumptions and requires minimal labeled fairness data, future work must address convergence trade-offs, privacy constraints, and domain-specific fairness norms. The proposed design offers a scalable, general-purpose tool for enhancing the resilience of automated systems in healthcare, finance, criminal justice, and beyond, providing a foundation for adaptive, bias-aware decision-making under uncertainty."
+  }
+ ],
+ "time": "2026-10-01T20:22:54.898778"
+}

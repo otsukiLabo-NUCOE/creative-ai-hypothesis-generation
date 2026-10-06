@@ -1,0 +1,19 @@
+{
+    "seconds":  31.3,
+    "least_novel":  "C",
+    "least_useful":  "B",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "1",
+                     "rationale":  "Reward hacking and bias are crucial issues."
+                 },
+    "attempt":  0,
+    "most_useful":  "C",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"1\", \"rationale\": \"Reward hacking and bias are crucial issues.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "A",
+    "tid":  "T20",
+    "rotation":  "CAB"
+}

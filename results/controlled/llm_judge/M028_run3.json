@@ -1,0 +1,25 @@
+{
+ "code": "M028",
+ "run": 3,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "No",
+  "confidence": 5,
+  "rationale": "The manuscript presents a well-formulated and novel approach to mitigating hallucination in generative models using evolutionary strategies. The proposed framework is sound, reproducible, and has significant implications for the development of trustworthy AI. The authors provide a clear and transparent experimental design, and their commitment to open-source code and reproducibility is commendable."
+ },
+ "log": {
+  "payload_seed": 3,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"No\", \"confidence\": 5, \"rationale\": \"The manuscript presents a well-formulated and novel approach to mitigating hallucination in generative models using evolutionary strategies. The proposed framework is sound, reproducible, and has significant implications for the development of trustworthy AI. The authors provide a clear and transparent experimental design, and their commitment to open-source code and reproducibility is commendable.\"}",
+  "seconds": 15.8
+ }
+}

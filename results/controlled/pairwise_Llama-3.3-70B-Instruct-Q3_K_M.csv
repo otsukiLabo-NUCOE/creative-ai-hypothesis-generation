@@ -1,0 +1,6 @@
+criterion,position_consistency,kruskal_p,BT_mean_GA,BT_mean_LLM-proposed,BT_mean_Random,A12_GA_vs_LLM-proposed,A12_GA_vs_Random,A12_LLM-proposed_vs_Random
+originality,0.711,0.056,-0.759,1.252,-0.493,0.21,0.45,0.75
+soundness,0.056,0.211,-0.045,0.129,-0.084,0.4,0.68,0.7
+reproducibility,0.011,0.966,-0.025,0.024,0.001,0.49,0.48,0.46
+significance,0.367,0.072,-0.546,0.555,-0.01,0.19,0.38,0.66
+overall,0.3,0.042,-0.373,0.46,-0.087,0.17,0.34,0.67

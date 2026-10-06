@@ -1,0 +1,15 @@
+{
+    "run":  2,
+    "attempt":  0,
+    "code":  "M022",
+    "judgment":  {
+                     "originality":  4,
+                     "soundness":  4,
+                     "reproducibility":  5,
+                     "significance":  4,
+                     "rationale":  "Lacks empirical validation and has limitations in precision and scalability."
+                 },
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "raw":  "{\"originality\": 4, \"soundness\": 4, \"reproducibility\": 5, \"significance\": 4, \"rationale\": \"Lacks empirical validation and has limitations in precision and scalability.\"}",
+    "seconds":  32.8
+}

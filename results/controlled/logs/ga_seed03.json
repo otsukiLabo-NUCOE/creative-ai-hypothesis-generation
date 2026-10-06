@@ -1,0 +1,181 @@
+{
+ "run_id": "ga_seed03",
+ "condition": "ga",
+ "seed": 3,
+ "writer_seed": 103,
+ "hypothesis": {
+  "method": "Diffusion Model",
+  "problem": "Hallucination",
+  "goal": "Safety"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 103,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 513.0,
+ "check": {
+  "words": 1825,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 210,
+    "prompt_tokens": 349,
+    "total_tokens": 559,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Diffusion Models for Safer Generation: Mitigating Hallucinations in AI Output  \n\n## Abstract  \nDiffusion models have emerged as powerful generative frameworks capable of producing high-fidelity text, images, and audio. However, their open-ended nature often leads to hallucinations — the generation of plausible yet factually incorrect or fabricated content — posing significant safety risks in applications ranging from healthcare to legal advice. This work proposes a principled approach to integrating safety mechanisms directly into the diffusion process, aiming to suppress hallucinatory outputs without compromising generative quality. By incorporating conditional constraints derived from knowledge graphs and factual verification signals, we guide the stochastic generation toward semantically consistent and verifiable content. The proposed method treats safety not as a post-hoc filter but as an intrinsic component of the diffusion dynamics, enabling real-time control over factual integrity. Our goal is to establish a foundation for trustworthy generative AI systems that balance creativity with reliability. This research contributes to the growing effort to align advanced diffusion models with human values and factual accuracy."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 290,
+    "prompt_tokens": 593,
+    "total_tokens": 883,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nThe rapid advancement of diffusion models has revolutionized generative artificial intelligence, enabling the creation of realistic and contextually coherent outputs across modalities such as text, image, and audio. These models operate by iteratively refining noise to reconstruct high-quality data, offering unprecedented flexibility in content generation. Yet, this very flexibility introduces a critical vulnerability: the propensity to produce hallucinations — outputs that are syntactically and stylistically fluent but semantically erroneous or entirely fabricated. In high-stakes domains like healthcare, law, and education, such inaccuracies can lead to harmful consequences, undermining trust in AI systems. Existing mitigation strategies, such as post-generation filtering or rule-based correction, often fail to preserve coherence or are computationally prohibitive. To address this gap, we propose a novel framework that embeds safety directly into the diffusion process. By integrating factual constraints derived from structured knowledge sources during the denoising trajectory, our approach steers generation away from plausible but incorrect pathways. This work introduces a safety-conditioned diffusion model where semantic consistency is enforced at each sampling step, rather than treated as an external correction layer. We argue that aligning the generative dynamics with verifiable knowledge is essential for building reliable AI systems. This introduction sets the stage for a comprehensive exploration of how diffusion models can be re-engineered to prioritize factual accuracy without sacrificing expressive power, advancing the field toward safer, more accountable generative technologies."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 266,
+    "prompt_tokens": 926,
+    "total_tokens": 1192,
+    "prompt_tokens_details": {
+     "cached_tokens": 555
+    }
+   },
+   "content": "## 2. Related Work  \nThe challenge of ensuring factual accuracy in generative AI has spurred extensive research across multiple paradigms. Early efforts in natural language generation focused on rule-based templates and templates constrained by ontological knowledge bases, offering limited flexibility but high reliability in structured domains. More recent approaches have explored adversarial training, where models are fine-tuned to reject or correct hallucinated content through supervised or reinforcement learning signals. In diffusion-based systems, preliminary work has investigated conditional generation using external knowledge graphs or factual embeddings to guide the denoising process, though these methods often require post-hoc alignment or large-scale annotation. Concurrently, the field of AI safety has emphasized robustness, interpretability, and alignment with human intent, introducing frameworks for steering generation toward ethically and semantically sound outputs. Techniques such as chain-of-thought prompting, uncertainty quantification, and self-consistency regularization have shown promise in reducing incoherence, yet they typically address surface-level plausibility rather than deep factual grounding. While these prior efforts lay the foundation for responsible generation, they largely treat safety as an external constraint rather than an intrinsic property of the generative dynamics. This work builds on this landscape by proposing a novel integration of factual verification into the core diffusion mechanism, positioning safety not as a filter but as a generative objective."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 541,
+    "prompt_tokens": 1235,
+    "total_tokens": 1776,
+    "prompt_tokens_details": {
+     "cached_tokens": 879
+    }
+   },
+   "content": "## 3. Proposed Method  \nWe introduce a Safety-Conditioned Diffusion Model (SCDM) that integrates factual verification directly into the generative process, treating safety not as a post-hoc filter but as an intrinsic component of the diffusion dynamics. The core idea is to modulate the denoising trajectory using knowledge-informed constraints that penalize semantically inconsistent or factually unsupported outputs at each sampling step. This is achieved by embedding a factual consistency signal derived from a structured knowledge source — such as a knowledge graph or verified fact database — into the diffusion model’s conditioning mechanism.  \n\nLet $ p_\\theta(\\mathbf{x} | \\mathbf{c}, \\mathbf{f}) $ denote the diffusion model’s probability distribution over generated samples $ \\mathbf{x} $, conditioned on input context $ \\mathbf{c} $ and a factual signal $ \\mathbf{f} $. The factual signal $ \\mathbf{f} $ encodes verifiable relationships — for example, entity attributes, temporal facts, or logical entailments — represented as latent embeddings from a knowledge retriever. During the reverse diffusion process, the model updates its prediction using a modified diffusion coefficient $ \\kappa(\\mathbf{f}) $, which adaptively scales the denoising strength based on the confidence of the factual signal:  \n\n$$\n\\kappa(\\mathbf{f}) = \\kappa_0 \\cdot \\left(1 - \\sigma(\\|\\mathbf{f} - \\mathbf{f}_{\\text{base}}\\|_2)\\right)\n$$  \n\nHere, $ \\kappa_0 $ is the baseline diffusion step size, $ \\mathbf{f}_{\\text{base}} $ is the expected factual embedding under correct knowledge, and $ \\sigma(\\cdot) $ is a sigmoidal function that suppresses denoising strength when $ \\mathbf{f} $ deviates significantly from $ \\mathbf{f}_{\\text{base}} $, indicating low confidence or contradiction.  \n\nThe gradient update for the denoising step becomes:  \n\n$$\n\\mathbf{x}_{t-1} = \\mathbf{x}_t + \\sqrt{\\kappa(\\mathbf{f})} \\cdot \\nabla_{\\mathbf{x}} \\log p_\\theta(\\mathbf{x}_t | \\mathbf{c}, \\mathbf{f}) + \\sqrt{1 - \\kappa(\\mathbf{f})} \\cdot \\boldsymbol{\\epsilon}\n$$  \n\nBy coupling the diffusion dynamics with factual consistency signals, SCDM suppresses hallucinatory generations that violate known truths while preserving diversity and quality in semantically valid regions of the output space. This formulation ensures that safety is embedded at the generative level, enabling real-time control over factual integrity without compromising expressive capacity."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 335,
+    "prompt_tokens": 1819,
+    "total_tokens": 2154,
+    "prompt_tokens_details": {
+     "cached_tokens": 1188
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed Safety-Conditioned Diffusion Model will be evaluated through a structured experimental framework designed to assess its ability to suppress hallucinations while maintaining generation quality. The design includes three primary components: data construction, evaluation metrics, and controlled ablation studies.  \n\nFirst, a synthetic dataset will be generated using a domain-specific knowledge graph covering high-stakes domains such as medicine, law, and education. This dataset will consist of factually correct prompts paired with known incorrect variants that induce hallucinations in baseline diffusion models. A subset will also include ambiguous prompts to test the model’s ability to defer to verified knowledge when certainty is low.  \n\nEvaluation will focus on two complementary metrics: factual accuracy, measured via automated fact-checking against the knowledge graph, and semantic coherence, assessed through human evaluation and language model-based coherence scores. Additionally, a hallucination detection rate will be computed as the proportion of generated outputs that are identified as incorrect by the factual signal conditioning mechanism.  \n\nAblation studies will compare three variants: (1) the baseline diffusion model without safety conditioning, (2) the proposed SCDM with integrated factual constraints, and (3) a post-hoc filtering version that applies the same constraints after generation. Performance across these variants will reveal whether embedding safety into the diffusion dynamics yields superior robustness compared to external correction.  \n\nFinally, scaling experiments will explore the impact of knowledge graph size and factual signal confidence on generation behavior, providing insights into the trade-offs between safety, diversity, and fidelity. This plan outlines a rigorous path for validating the core hypothesis that safety can be effectively embedded within diffusion models to mitigate hallucinations."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 185,
+    "prompt_tokens": 2194,
+    "total_tokens": 2379,
+    "prompt_tokens_details": {
+     "cached_tokens": 1772
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nThe proposed Safety-Conditioned Diffusion Model will be designed for full reproducibility. All code, model checkpoints, and data preprocessing pipelines will be released under an open-source license, hosted in a publicly accessible repository with detailed version control. The diffusion architecture, training objectives, and factual conditioning mechanism will be implemented using standard deep learning frameworks, ensuring compatibility with widely used libraries. The synthetic knowledge graph dataset will be constructed from publicly available, domain-specific ontologies, with clear documentation of schema design and data sources. Evaluation protocols, including prompt generation, fact-checking procedures, and human evaluation guidelines, will be fully specified in a methodological supplement. All random seeds, hyperparameters, and computational environments will be logged and shared to enable exact replication. By adhering to open science principles and providing comprehensive documentation, this work aims to facilitate independent verification and extension of the proposed safety framework."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 275,
+    "prompt_tokens": 2425,
+    "total_tokens": 2700,
+    "prompt_tokens_details": {
+     "cached_tokens": 2150
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe Safety-Conditioned Diffusion Model offers broad applicability across domains where factual accuracy is critical. In healthcare, it could generate patient-appropriate treatment summaries or clinical explanations grounded in verified medical knowledge, reducing the risk of erroneous advice. In legal contexts, the model might draft contract language or statutory interpretations consistent with codified law, enhancing reliability in high-stakes decision-making. Educational platforms could leverage the system to produce accurate instructional content aligned with curricular standards, minimizing misinformation.  \n\nBeyond traditional domains, the model’s ability to integrate factual constraints makes it suitable for trust-sensitive applications in journalism, where automated article generation must adhere to verified sources, and in scientific communication, where abstracts or summaries must reflect peer-reviewed findings. Its modular design also enables deployment in emerging areas such as synthetic data generation for training other AI systems, ensuring that training data remains factually coherent.  \n\nThe framework’s strength lies in its ability to embed safety at the generative level rather than relying on post-hoc correction, offering real-time control over factual integrity. By aligning diffusion dynamics with structured knowledge, the model supports scalable, responsible AI deployment across sectors where accuracy, trust, and accountability are paramount. This versatility positions it as a foundational tool for next-generation generative systems that prioritize both creativity and correctness."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 197,
+    "prompt_tokens": 2734,
+    "total_tokens": 2931,
+    "prompt_tokens_details": {
+     "cached_tokens": 2375
+    }
+   },
+   "content": "## 7. Limitations  \n\nWhile the Safety-Conditioned Diffusion Model represents a significant step toward integrating factual accuracy into generative AI, it is not without constraints. The approach relies on structured knowledge sources, which may be incomplete or domain-specific, limiting its effectiveness in novel or interdisciplinary contexts where reliable factual signals are scarce. Additionally, the model’s performance is contingent on the quality and coverage of the underlying knowledge graph, which may introduce biases or gaps in representation.  \n\nThe factual consistency signal, while designed to suppress hallucinations, may also overly constrain generation, reducing diversity or creativity in scenarios where multiple valid interpretations exist. Real-time computation of confidence-aware diffusion parameters may introduce latency, particularly in large-scale or low-resource settings. Finally, the method assumes that factual verification can be reliably encoded as latent embeddings, a simplification that may not capture the full complexity of semantic truth in open-ended generation. These limitations highlight the need for further refinement and domain-specific adaptation."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 150,
+    "prompt_tokens": 2965,
+    "total_tokens": 3115,
+    "prompt_tokens_details": {
+     "cached_tokens": 2696
+    }
+   },
+   "content": "## 8. Conclusion  \nThis work introduces a novel framework for embedding factual safety directly into diffusion models, addressing the critical challenge of hallucination in generative AI. By integrating verified knowledge into the denoising process, the proposed method shifts safety from post-hoc filtering to an intrinsic generative objective, enabling real-time control over factual integrity. Experimental design outlines a rigorous path for future validation, emphasizing reproducibility and domain-agnostic applicability. While limitations remain — particularly regarding knowledge coverage and creative constraint — the approach establishes a foundational paradigm for trustworthy generation. Future work will explore scaling, adaptation, and interdisciplinary deployment, advancing the path toward AI systems that are not only expressive but also accountable, accurate, and aligned with human expectations of truth."
+  }
+ ],
+ "time": "2026-10-01T19:48:11.195752"
+}

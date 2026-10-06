@@ -1,0 +1,181 @@
+{
+ "run_id": "ga_seed10",
+ "condition": "ga",
+ "seed": 10,
+ "writer_seed": 110,
+ "hypothesis": {
+  "method": "Diffusion Model",
+  "problem": "Miscalibrated Uncertainty",
+  "goal": "Sustainability"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 110,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 492.3,
+ "check": {
+  "words": 1737,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 186,
+    "prompt_tokens": 354,
+    "total_tokens": 540,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Diffusion Models and Miscalibrated Uncertainty in Sustainability Decision-Making\n\n## Abstract  \nThis paper investigates the application of diffusion models to address miscalibrated uncertainty in sustainability forecasting and decision support systems. While diffusion models have demonstrated exceptional performance in generating high-fidelity samples from complex data distributions, their probabilistic outputs often exhibit miscalibrated uncertainty — systematically overconfident or underconfident predictions — which undermines trust and safety in high-stakes domains such as climate modeling, resource management, and ecological forecasting. We propose a framework that integrates diffusion models with calibrated uncertainty quantification techniques, enabling more reliable risk assessment and adaptive policy design. By aligning model confidence with true predictive reliability, our approach supports sustainable decision-making under uncertainty. The proposed method emphasizes interpretability, robustness, and alignment with sustainability principles, offering a pathway to deploy diffusion-based systems in real-world environmental governance without compromising safety or accountability."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 279,
+    "prompt_tokens": 574,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nSustainability challenges increasingly require modeling complex, high-dimensional systems where uncertainty is not merely quantitative but qualitatively uncertain — involving competing models, evolving data, and value-laden decisions. Traditional statistical and machine learning approaches often fail to capture the full spectrum of uncertainty, leading to overreliance on point estimates and misguided policy actions. Recent advances in generative modeling, particularly diffusion models, offer a promising paradigm for representing complex distributions and generating diverse, high-quality samples. However, despite their representational power, diffusion models typically produce miscalibrated uncertainty estimates: their predicted variances do not align with true predictive reliability, resulting in overconfident outputs in regions of low data density. This miscalibration is especially problematic in sustainability contexts, where decisions affect ecological, social, and economic systems over long time horizons. An uncertain forecast that appears confident may conceal significant risk, while excessive caution may hinder necessary action. Bridging this gap requires a theoretical and practical framework that reconciles the strengths of diffusion models with rigorous uncertainty quantification. This paper introduces such a framework, grounded in the hypothesis that miscalibrated uncertainty in diffusion models can be systematically corrected to support sustainable decision-making. By aligning model confidence with empirical reliability, we aim to foster trustworthy, adaptive, and responsible use of generative models in environmental governance, resource planning, and climate resilience strategies."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 896,
+    "total_tokens": 1152,
+    "prompt_tokens_details": {
+     "cached_tokens": 536
+    }
+   },
+   "content": "## 2. Related Work  \nRecent advances in generative modeling have transformed how complex data distributions are represented and sampled. Diffusion models, in particular, have gained prominence for their ability to generate high-fidelity outputs from noisy latent representations, excelling in image, audio, and sequential data generation. Their training dynamics inherently capture intricate dependencies, making them well-suited for modeling high-dimensional environmental and socio-ecological systems. However, while generative capabilities are impressive, these models often produce miscalibrated uncertainty — their confidence scores do not reflect true predictive reliability, especially in extrapolation regions. This issue has been observed across diffusion-based systems, where overconfidence in low-probability events can lead to unsafe or misleading outputs. In sustainability science, uncertainty quantification is critical for decision-making under risk, yet most existing approaches rely on frequentist or Bayesian methods that struggle to scale to complex, nonlinear generative processes. Recent work has begun exploring conformal prediction, ensemble-based calibration, and epistemic uncertainty estimation to complement generative models, but these techniques are rarely integrated with diffusion architectures. This paper addresses this gap by proposing a framework that aligns diffusion model outputs with calibrated uncertainty, enabling more responsible deployment in sustainability-critical domains where miscalibration can have systemic consequences."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 473,
+    "prompt_tokens": 1195,
+    "total_tokens": 1668,
+    "prompt_tokens_details": {
+     "cached_tokens": 849
+    }
+   },
+   "content": "## 3. Proposed Method  \n\nWe propose a *Calibrated Diffusion Framework* that integrates diffusion model generation with principled uncertainty quantification to address miscalibrated uncertainty in sustainability forecasting. The core idea is to decouple the generative process — responsible for high-fidelity sampling — from the epistemic uncertainty estimation process, which is calibrated using conformal prediction. This separation preserves the strengths of diffusion models while ensuring that predicted uncertainties reflect true predictive reliability.\n\nThe framework operates in two stages. In the **generative stage**, a standard diffusion model $ p_\\theta(\\mathbf{x} \\mid \\mathbf{y}) $ is trained to map inputs $ \\mathbf{y} $ (e.g., climate variables, land-use data) to target distributions over future states $ \\mathbf{x} $. During inference, the model produces a sequence of noisy intermediates, culminating in a final sample $ \\mathbf{x}^* \\sim p_\\theta(\\cdot \\mid \\mathbf{y}) $.\n\nIn the **uncertification stage**, a set of *conformal calibration scores* $ s_i(\\mathbf{y}) $ is computed for a validation set of size $ n $. These scores quantify how well the model’s predicted quantiles conform to empirical coverage. For a new input $ \\mathbf{y} $, the calibrated predictive distribution is defined as:  \n$$\n\\widetilde{p}_\\theta(\\mathbf{x} \\mid \\mathbf{y}) = p_\\theta(\\mathbf{x} \\mid \\mathbf{y}) \\cdot \\exp\\left(-\\frac{s(\\mathbf{y})}{\\lambda}\\right),\n$$  \nwhere $ s(\\mathbf{y}) $ is the conformal score for $ \\mathbf{y} $, and $ \\lambda > 0 $ is a scaling parameter that balances sharpness and calibration. The uncertainty estimate is then derived from the tail probabilities of $ \\widetilde{p}_\\theta(\\cdot \\mid \\mathbf{y}) $, providing *calibrated variance* and *confidence intervals* that reflect true predictive reliability.\n\nBy integrating conformal calibration into diffusion models, we ensure that uncertainty quantification adapts to the model’s actual performance, rather than assuming i.i.d. errors. This approach supports sustainable decision-making by quantifying both aleatoric and epistemic uncertainty, enabling adaptive policies that respect ecological thresholds and socio-economic resilience."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 393,
+    "prompt_tokens": 1711,
+    "total_tokens": 2104,
+    "prompt_tokens_details": {
+     "cached_tokens": 1148
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed framework will be validated through a structured, multi-phase experimental plan designed to assess calibration accuracy, generative fidelity, and decision-relevant performance in sustainability contexts.  \n\n**Phase 1: Synthetic Benchmarking**  \nWe will generate synthetic datasets that model key sustainability systems — such as carbon emissions trajectories, deforestation patterns, and water quality indices — using known ground-truth distributions. Diffusion models will be trained on these datasets, and calibration scores will be computed using conformal prediction. Coverage experiments will evaluate whether calibrated uncertainty intervals achieve nominal coverage rates across varying input complexities and tail-event frequencies.  \n\n**Phase 2: Real-World Data Simulation**  \nTo account for non-i.i.d. and non-stationary environmental data, we will simulate real-world scenarios using publicly available climate and ecological datasets, anonymized and aggregated to preserve privacy. These simulations will include missing data, measurement noise, and regime shifts to test the framework’s robustness under practical conditions.  \n\n**Phase 3: Decision-Making Simulation**  \nA policy-simulation layer will be developed to evaluate how calibrated uncertainty influences risk-aware decision-making. For example, we will model adaptive resource allocation under climate uncertainty, where decisions trigger feedback loops in ecological and economic systems. Metrics will include false-negative rates (missing critical thresholds) and false-positive rates (overreacting to noise), balanced against sustainability objectives such as resilience and equity.  \n\n**Phase 4: Sensitivity and Ablation Studies**  \nWe will systematically vary conformal score scaling, diffusion architecture depth, and training data diversity to identify conditions under which calibration degrades. Ablation studies will isolate the contribution of each component — generative quality versus uncertainty calibration — to overall system performance.  \n\nThis design ensures that future validation will rigorously test both technical soundness and practical utility, without premature deployment in high-stakes environments."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 191,
+    "prompt_tokens": 2144,
+    "total_tokens": 2335,
+    "prompt_tokens_details": {
+     "cached_tokens": 1664
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nThe entire proposed framework will be designed for full reproducibility. All code, model checkpoints, and experimental configurations will be hosted in a public version-controlled repository (e.g., GitHub) under an open-source license. Data preprocessing pipelines, diffusion model architectures, conformal calibration procedures, and evaluation scripts will be modular and documented with clear version tags. Synthetic and simulated datasets will be generated using seeded random number generators to ensure reproducibility across runs. Hyperparameters, training schedules, and conformal calibration scales will be logged and shared as part of each experiment. Docker or containerized environments will be provided to standardize software dependencies. Evaluation metrics, including coverage rates, calibration plots, and decision outcomes, will be reported with confidence intervals derived from repeated resampling. By adhering to these practices, researchers will be able to replicate, extend, or critique our approach independently, fostering trust and advancing the field."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 248,
+    "prompt_tokens": 2381,
+    "total_tokens": 2629,
+    "prompt_tokens_details": {
+     "cached_tokens": 2100
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe calibrated diffusion framework offers transformative potential across diverse sustainability domains by enabling reliable uncertainty quantification in high-dimensional generative models. In climate modeling, it can improve the reliability of extreme event forecasting — such as heatwaves or wildfires — by distinguishing between model confidence and true predictive risk, supporting early warning systems that avoid overconfidence-induced complacency. In ecological forecasting, the approach can guide habitat restoration planning by quantifying uncertainty in species distribution shifts under climate change, ensuring interventions target areas with highest epistemic uncertainty rather than model artifacts. Resource management systems — such as water allocation or fisheries quotas — can integrate calibrated uncertainty to balance exploitation with conservation, adapting dynamically to changing environmental conditions. In urban sustainability, the framework can enhance smart infrastructure decision-making by forecasting demand and failure probabilities with calibrated confidence, reducing waste and increasing resilience. Across all domains, the method supports *adaptive governance*: policies can be refined not only based on point predictions but on the quality of uncertainty itself, fostering systems that are both ambitious and precautionary. By aligning generative power with epistemic humility, the framework advances a new paradigm for sustainable decision-making under deep uncertainty."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 187,
+    "prompt_tokens": 2663,
+    "total_tokens": 2850,
+    "prompt_tokens_details": {
+     "cached_tokens": 2331
+    }
+   },
+   "content": "## 7. Limitations  \n\nWhile the proposed calibrated diffusion framework represents a significant step toward reliable uncertainty quantification in sustainability modeling, it is not without constraints. Conformal calibration assumes that the training and validation data share a common data-generating process, which may be violated in non-stationary environmental systems experiencing regime shifts or structural breaks. The method also relies on sufficient validation data to compute stable conformal scores, which may be scarce in domains with sparse or high-dimensional inputs. Additionally, the calibration correction may dampen model expressiveness in regions of extreme uncertainty, potentially reducing generative fidelity. Computational costs increase with the need to maintain and evaluate calibration sets during inference. Finally, the framework’s effectiveness depends on careful hyperparameter tuning and domain-specific validation, which may require expert judgment beyond automated pipelines. These limitations highlight the need for continued research into adaptive calibration methods and integration with physical models to ensure robustness across evolving sustainability challenges."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 159,
+    "prompt_tokens": 2884,
+    "total_tokens": 3043,
+    "prompt_tokens_details": {
+     "cached_tokens": 2625
+    }
+   },
+   "content": "## 8. Conclusion  \nThis paper introduces a calibrated diffusion framework that reconciles the generative power of diffusion models with reliable uncertainty quantification, addressing a critical gap in sustainability decision-making. By integrating conformal prediction into diffusion architectures, we enable models to produce high-fidelity samples while maintaining calibrated confidence intervals that reflect true predictive reliability. The proposed method supports adaptive, risk-aware governance across climate, ecological, and resource systems, fostering policies that balance ambition with precaution. Though limitations remain — particularly in non-stationary environments and computational scalability — the framework establishes a principled foundation for trustworthy generative modeling in complex, high-stakes domains. Future work should focus on adaptive calibration techniques and hybrid integration with physical models to further enhance robustness and applicability in evolving sustainability challenges."
+  }
+ ],
+ "time": "2026-10-01T22:41:55.989963"
+}

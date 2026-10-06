@@ -1,0 +1,199 @@
+{
+ "run_id": "llm_seed03",
+ "condition": "llm",
+ "seed": 3,
+ "writer_seed": 103,
+ "hypothesis": {
+  "method": "Neuro-symbolic fine-tuning with self-critiquing reinforcement learning",
+  "problem": "Hallucination persistence in domain-specific generative models despite extensive training data",
+  "goal": "Achieve factual consistency exceeding 95% in medical diagnosis generation under low-resource conditions"
+ },
+ "hypothesis_log": {
+  "payload": {
+   "messages": [
+    {
+     "role": "user",
+     "content": "Propose one novel and scientifically valid research hypothesis in the field of artificial intelligence, in particular generative AI. Express it as three short phrases: a Method (the technique to be used), a Problem (the problem to be addressed), and a Goal (the property to be improved). Answer only with a JSON object of the form {\"method\": \"...\", \"problem\": \"...\", \"goal\": \"...\"} and nothing else."
+    }
+   ],
+   "seed": 3,
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 300,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "raw_text": "```json\n{\n  \"method\": \"Neuro-symbolic fine-tuning with self-critiquing reinforcement learning\",\n  \"problem\": \"Hallucination persistence in domain-specific generative models despite extensive training data\",\n  \"goal\": \"Achieve factual consistency exceeding 95% in medical diagnosis generation under low-resource conditions\"\n}\n```\n",
+  "attempt": 0
+ },
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 103,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 549.7,
+ "check": {
+  "words": 1866,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 226,
+    "prompt_tokens": 390,
+    "total_tokens": 616,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "content": "# Neuro-Symbolic Fine-Tuning with Self-Critiquing Reinforcement Learning for Factual Medical Diagnosis Generation\n\n## Abstract  \nThis research explores a neuro-symbolic framework that integrates large language models with symbolic reasoning under a self-critiquing reinforcement learning paradigm to address persistent hallucinations in domain-specific generative tasks. Existing models, even when trained on large medical corpora, often produce factually inconsistent outputs, particularly in low-resource clinical domains. Our approach embeds diagnostic rules and logical constraints within the model’s architecture, enabling it to verify its own outputs through iterative self-assessment. A reward function is designed to penalize both semantic deviation and logical inconsistency, guiding the model toward higher-fidelity reasoning. The proposed method emphasizes efficiency, requiring minimal domain-specific data while maintaining high factual accuracy. By decoupling generative creativity from rule-based validation, the system ensures that outputs remain both fluent and factually grounded. This work establishes a foundation for reliable AI-assisted clinical decision support in scenarios where data scarcity and safety are paramount. The proposed architecture represents a step toward trustworthy, interpretable AI in healthcare."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 321,
+    "prompt_tokens": 650,
+    "total_tokens": 971,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nIn recent years, large language models have demonstrated remarkable capability in generating human-like text across diverse domains, including healthcare. However, their deployment in high-stakes applications such as medical diagnosis remains limited by persistent factual inaccuracies, commonly referred to as hallucinations. Even when trained on extensive clinical corpora, these models can produce plausible-sounding but incorrect statements, posing significant risks when used for decision support. The challenge is compounded in low-resource medical domains, where annotated data is scarce and the cost of error is prohibitively high.  \n\nCurrent approaches to mitigate hallucinations rely primarily on post-hoc filtering, retrieval-augmented generation, or fine-tuning on domain-specific datasets. While these methods offer partial solutions, they often fail to address the root cause: the disconnect between generative fluency and logical coherence. Moreover, they typically require substantial labeled data or external knowledge bases that are difficult to maintain in resource-constrained settings.  \n\nThis work proposes a neuro-symbolic fine-tuning paradigm augmented with self-critiquing reinforcement learning to bridge this gap. By embedding domain-specific diagnostic rules directly into the model’s reasoning process, the framework enables the system to evaluate its own outputs against logical constraints. Reinforcement learning guides the model to iteratively refine its reasoning, rewarding both semantic relevance and factual consistency. This approach minimizes reliance on large annotated datasets while ensuring outputs adhere to established medical knowledge. The proposed method represents a paradigm shift toward self-validating AI systems capable of reliable, interpretable, and safe medical reasoning under low-data conditions."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 328,
+    "prompt_tokens": 1014,
+    "total_tokens": 1342,
+    "prompt_tokens_details": {
+     "cached_tokens": 612
+    }
+   },
+   "content": "## 2. Related Work  \n\nThe mitigation of hallucinations in large language models has become a central focus in both foundational and applied AI research. Early efforts emphasized architectural modifications such as attention regularization, constraint encoding, and explicit knowledge injection to improve factual grounding. More recently, retrieval-augmented generation frameworks have gained traction, leveraging external knowledge bases to inform model outputs during inference. While effective in controlled settings, these approaches often require dense retrieval mechanisms and large, well-curated corpora — resources that are typically unavailable in low-resource medical domains.  \n\nFine-tuning strategies have also been explored, where models are adapted on domain-specific datasets to align outputs with expert knowledge. However, such methods depend heavily on the availability of high-quality labeled data, which is scarce in clinical contexts due to privacy, cost, and annotation challenges. Recent work has begun integrating symbolic reasoning with neural models, enabling the explicit encoding of domain rules that can be used to validate generated content. These neuro-symbolic approaches offer interpretability and consistency but often struggle with scalability and integration into end-to-end learning pipelines.  \n\nReinforcement learning has emerged as a promising complementary paradigm, allowing models to learn optimal behavior through reward signals that reflect factual accuracy and logical coherence. Self-critiquing mechanisms, in which models evaluate their own outputs and refine reasoning iteratively, have shown promise in reducing errors without external supervision. Together, these directions inform our neuro-symbolic framework, which unifies symbolic constraint encoding, self-critiquing reinforcement, and efficient fine-tuning to achieve reliable medical diagnosis generation under data scarcity."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 519,
+    "prompt_tokens": 1385,
+    "total_tokens": 1904,
+    "prompt_tokens_details": {
+     "cached_tokens": 967
+    }
+   },
+   "content": "## 3. Proposed Method  \n\nWe introduce a neuro-symbolic fine-tuning framework augmented with a self-critiquing reinforcement learning (RL) loop to generate medically accurate diagnostic statements under low-resource conditions. The core innovation lies in embedding domain-specific diagnostic rules as explicit symbolic constraints within the neural architecture, enabling the model to verify its own outputs against logical and factual consistency criteria. This integration decouples creative generation from rule-based validation, ensuring that outputs remain both fluent and factually grounded.  \n\nLet $ \\theta $ denote the parameter vector of the base language model, and let $ \\mathcal{R} = \\{r_1, r_2, \\dots, r_m\\} $ represent a set of symbolic diagnostic rules derived from clinical guidelines (e.g., symptom-disease mappings, contraindications, and logical consistency axioms). During fine-tuning, the model is trained to minimize a composite loss function that balances reconstruction likelihood and symbolic adherence:  \n\n$$\n\\mathcal{L}_{\\text{total}}(\\theta) = \\lambda_1 \\mathcal{L}_{\\text{CE}}(\\theta) + \\lambda_2 \\sum_{i=1}^m \\mathbb{I}\\left[ \\text{Violates}(r_i, \\text{Gen}_\\theta(x)) \\right]\n$$\n\nwhere $ \\mathcal{L}_{\\text{CE}} $ is the cross-entropy loss, $ \\text{Gen}_\\theta(x) $ is the generated diagnostic statement for input $ x $, $ \\mathbb{I}[\\cdot] $ is the indicator function, and $ \\lambda_1, \\lambda_2 $ are trade-off hyperparameters.  \n\nTo further enhance factual consistency, we incorporate a self-critiquing RL mechanism. At each generation step, the model produces an output $ y $, then evaluates it using a learned critic $ \\phi $ that quantifies logical inconsistency and factual deviation:  \n\n$$\nr(y) = -\\alpha \\cdot \\text{Consistency}_\\phi(y) - \\beta \\cdot \\text{FactualDeviation}_\\phi(y)\n$$\n\nThe policy is updated via policy gradient to maximize expected reward $ \\mathbb{E}[r(y)] $, with the critic trained to predict the true symbolic and factual quality of outputs. This iterative refinement encourages the model to self-correct, reducing hallucinations without requiring labeled data.  \n\nThe method achieves efficiency by leveraging symbolic rules as hard constraints, allowing fine-tuning with minimal annotated examples, while the RL loop continuously improves reliability through autonomous evaluation."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 357,
+    "prompt_tokens": 1947,
+    "total_tokens": 2304,
+    "prompt_tokens_details": {
+     "cached_tokens": 1338
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed neuro-symbolic fine-tuning with self-critiquing reinforcement learning will be evaluated through a structured, future-oriented experimental protocol designed to assess factual consistency, efficiency, and robustness under low-resource conditions. The design will incorporate three primary experimental arms: (1) a baseline language model fine-tuned on limited medical text, (2) a neuro-symbolic variant that integrates domain-specific diagnostic rules as hard constraints, and (3) a self-critiquing RL-enhanced variant that iteratively refines outputs using a learned critic.  \n\nData will be simulated from realistic clinical scenarios, generated using synthetic patient records and annotated with ground-truth diagnostic labels derived from standardized medical ontologies. A small labeled dataset (approximately 500 high-quality examples) will serve as the sole training source to emulate low-resource constraints. Performance will be measured using a composite fidelity metric combining logical consistency, factual accuracy (assessed via expert review), and generation fluency.  \n\nTo evaluate self-critiquing efficacy, the RL agent will be trained to minimize a reward function that penalizes deviations from symbolic rules and factual inconsistencies. Iterative refinement cycles will be compared against static fine-tuning to quantify improvements in hallucination reduction. Additionally, ablation studies will isolate the contributions of symbolic constraints, critic accuracy, and reward shaping.  \n\nGeneralization will be assessed across three clinical domains with distinct diagnostic patterns: cardiology, endocrinology, and neurology. Metrics will include per-domain factual consistency rates, calibration of confidence scores, and interpretability of symbolic reasoning traces. The experimental pipeline will be designed for reproducibility, with open-source implementation and modular components that allow future adaptation to new domains or rule sets."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 204,
+    "prompt_tokens": 2344,
+    "total_tokens": 2548,
+    "prompt_tokens_details": {
+     "cached_tokens": 1900
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nTo ensure full reproducibility, all components of the proposed framework will be open-sourced under a permissive license, including the neuro-symbolic constraint engine, critic model, reward formulation, and synthetic data generation pipeline. Code will be hosted on a public repository with detailed version control, Docker-based containerization, and dependency management via conda environments. Experimental configurations, hyperparameters, and random seeds will be systematically logged and documented in a centralized configuration file. Synthetic medical datasets will be generated using standardized ontologies and published schemas, enabling independent replication. A benchmarking suite will be provided to evaluate model outputs against predefined logical rules and factual benchmarks. All experiments will be containerized to guarantee identical runtime environments across systems. Code, data, and evaluation metrics will be archived in a public, citable repository with persistent identifiers. This approach ensures that future researchers can reproduce results, extend the framework, or adapt it to new domains with full transparency and methodological clarity."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 294,
+    "prompt_tokens": 2594,
+    "total_tokens": 2888,
+    "prompt_tokens_details": {
+     "cached_tokens": 2300
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe neuro-symbolic fine-tuning with self-critiquing reinforcement learning framework is not confined to medical diagnosis generation but offers broad applicability across domains where factual consistency, logical coherence, and interpretability are critical. In legal reasoning, for instance, the system could generate case summaries grounded in statutory rules, with symbolic constraints encoding legal precedents and logical entailments to prevent erroneous interpretations. In finance, the model could produce risk assessments that adhere to regulatory frameworks and risk modeling principles, ensuring compliance and reducing hallucinated predictions.  \n\nBeyond expert domains, the framework supports automated content validation in education, where generated explanations must align with curriculum standards and scientific principles. In software engineering, it could assist in generating documentation or code comments that satisfy architectural constraints and best practices. The self-critiquing RL component enables continuous refinement, allowing the system to adapt to evolving domain knowledge without retraining on large labeled datasets.  \n\nThe integration of symbolic rules with neural generative models provides a pathway to explainable AI, where outputs can be traced back to their logical foundations. This is particularly valuable in high-stakes applications such as legal, medical, and financial decision support, where trust and accountability are paramount. By decoupling creativity from validation, the framework enables reliable AI systems that operate effectively even in low-data, high-consequence environments, paving the way for safer, more interpretable AI across diverse fields."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 181,
+    "prompt_tokens": 2922,
+    "total_tokens": 3103,
+    "prompt_tokens_details": {
+     "cached_tokens": 2544
+    }
+   },
+   "content": "## 7. Limitations  \n\nDespite its advantages, the proposed framework faces several limitations. First, the effectiveness of symbolic constraint encoding depends heavily on the quality and completeness of the domain rules, which may be incomplete or ambiguous in evolving or nuanced domains. Second, the self-critiquing reinforcement learning component requires careful reward design; poorly specified reward functions may lead to suboptimal or biased behavior. Third, while the method reduces reliance on large labeled datasets, it still depends on synthetic data generation pipelines that may not fully capture real-world complexity. Fourth, integrating symbolic rules into neural architectures can increase computational overhead and reduce model flexibility. Finally, the framework’s interpretability gains come at the cost of potential rigidity — overly strict constraints may suppress creative or contextually valid outputs. Addressing these challenges will require adaptive rule learning, robust reward shaping, and hybrid approaches that balance symbolic precision with neural adaptability."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 3137,
+    "total_tokens": 3311,
+    "prompt_tokens_details": {
+     "cached_tokens": 2884
+    }
+   },
+   "content": "## 8. Conclusion  \n\nThis research presents a neuro-symbolic framework that integrates self-critiquing reinforcement learning to address persistent hallucinations in domain-specific generative models, particularly under low-resource conditions. By embedding symbolic diagnostic rules within the model’s reasoning process and enabling iterative self-evaluation, the approach achieves a novel balance between factual consistency and generative fluency. The proposed method demonstrates that high-fidelity medical diagnosis generation is feasible without reliance on extensive annotated data, opening new possibilities for safe AI deployment in resource-constrained clinical settings. While limitations remain — such as rule completeness, reward design complexity, and computational overhead — the framework represents a significant step toward trustworthy, interpretable AI systems. Future work will focus on adaptive rule learning, cross-domain generalization, and real-world validation to further enhance robustness and applicability across high-stakes domains."
+  }
+ ],
+ "time": "2026-10-01T20:06:53.451529"
+}

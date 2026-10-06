@@ -1,0 +1,5 @@
+comparison,measure,GA,other,difference_other_minus_GA,boot_CI_low,boot_CI_high,p_perm,mean_f_GA,mean_f_other,p_holm
+GA vs Random,mean_pairwise_cos,0.29,0.452,0.162,0.071,0.248,0.0012,0.564,0.568,0.0048
+GA vs Random,distinct_hypotheses,19.0,14.0,-5.0,,,0.13045,0.564,0.568,0.3914
+GA vs HillClimb,mean_pairwise_cos,0.29,0.334,0.044,-0.03,0.118,0.2412,0.564,0.569,0.4824
+GA vs HillClimb,distinct_hypotheses,19.0,16.0,-3.0,,,0.3869,0.564,0.569,0.4824

@@ -1,0 +1,19 @@
+{
+    "seconds":  30.6,
+    "least_novel":  "C",
+    "least_useful":  "C",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "3",
+                     "rationale":  "H1 solves real-world energy issues"
+                 },
+    "attempt":  0,
+    "most_useful":  "A",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"3\", \"rationale\": \"H1 solves real-world energy issues\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "B",
+    "tid":  "T14",
+    "rotation":  "ABC"
+}

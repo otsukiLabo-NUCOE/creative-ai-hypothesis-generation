@@ -1,0 +1,19 @@
+{
+    "seconds":  38.4,
+    "least_novel":  "B",
+    "least_useful":  "B",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "3",
+                     "rationale":  "Hypothesis 1 balances accuracy and creativity, Hypothesis 2 uniquely applies quantum annealing"
+                 },
+    "attempt":  0,
+    "most_useful":  "C",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"3\", \"rationale\": \"Hypothesis 1 balances accuracy and creativity, Hypothesis 2 uniquely applies quantum annealing\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "A",
+    "tid":  "T28",
+    "rotation":  "CAB"
+}

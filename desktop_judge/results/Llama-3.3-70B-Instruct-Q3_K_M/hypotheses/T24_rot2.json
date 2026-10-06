@@ -1,0 +1,19 @@
+{
+    "seconds":  38,
+    "least_novel":  "A",
+    "least_useful":  "A",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "3",
+                     "rationale":  "H1 and H2 address important problems, but H1\u0027s method is more logically connected."
+                 },
+    "attempt":  0,
+    "most_useful":  "B",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"3\", \"rationale\": \"H1 and H2 address important problems, but H1\u0027s method is more logically connected.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "C",
+    "tid":  "T24",
+    "rotation":  "BCA"
+}

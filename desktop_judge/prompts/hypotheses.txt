@@ -1,0 +1,19 @@
+Below are three research hypotheses in artificial intelligence, numbered 1, 2, and 3. Compare them on two separate criteria.
+
+- Usefulness: Is the hypothesis worth pursuing as a research topic? Consider (i) whether the problem it addresses is important, (ii) whether the proposed method plausibly helps to solve the problem or reach the goal (are method, problem, and goal logically connected?), and (iii) whether it could realistically be investigated.
+- Novelty: How new and non-obvious is the idea (which method is applied to which problem for which goal) compared with research you know? Do not consider feasibility when judging novelty.
+
+Judge the two criteria independently. Do not reward wording, length, or technical jargon. The numbering is random and must not influence your judgment. Ties are not allowed.
+
+Answer ONLY with a JSON object of the form
+{"most_useful": "1|2|3", "least_useful": "1|2|3", "most_novel": "1|2|3", "least_novel": "1|2|3", "rationale": "at most 60 words"}
+where most_useful differs from least_useful and most_novel differs from least_novel.
+
+HYPOTHESIS 1:
+{H1}
+
+HYPOTHESIS 2:
+{H2}
+
+HYPOTHESIS 3:
+{H3}

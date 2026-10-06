@@ -1,0 +1,24 @@
+{
+ "hid": "H079",
+ "hypothesis": "Neural architecture search with evolutionary multi-objective optimization dynamically reconfigures transformer layers for each input to reduce inference latency and memory use without sacrificing output quality",
+ "description": "This approach evolves model architectures by balancing speed and accuracy objectives, allowing the system to select lightweight configurations suited to specific queries; by treating structure and performance as co-evolutionary traits, it avoids fixed heavy models while maintaining generation fidelity through diversified search and Pareto-based selection",
+ "attempt": 3,
+ "raw": "Hypothesis: Neural architecture search with evolutionary multi-objective optimization dynamically reconfigures transformer layers for each input to reduce inference latency and memory use without sacrificing output quality  \nDescription: This approach evolves model architectures by balancing speed and accuracy objectives, allowing the system to select lightweight configurations suited to specific queries; by treating structure and performance as co-evolutionary traits, it avoids fixed heavy models while maintaining generation fidelity through diversified search and Pareto-based selection\n",
+ "shortening_steps": [],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Neural architecture search with evolutionary multi-objective optimization\nProblem: Excessive computational cost and memory usage in large language model inference\nGoal: Dynamically adapt model structure per input to minimize latency while preserving generation quality"
+   }
+  ],
+  "seed": 3011,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 58.9
+}

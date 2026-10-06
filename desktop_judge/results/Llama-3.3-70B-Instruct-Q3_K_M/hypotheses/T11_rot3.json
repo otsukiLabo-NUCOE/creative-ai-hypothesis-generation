@@ -1,0 +1,19 @@
+{
+    "seconds":  32.9,
+    "least_novel":  "B",
+    "least_useful":  "B",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "3",
+                     "rationale":  "Hypothesis 1 addresses a critical AI issue."
+                 },
+    "attempt":  0,
+    "most_useful":  "C",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"3\", \"rationale\": \"Hypothesis 1 addresses a critical AI issue.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "A",
+    "tid":  "T11",
+    "rotation":  "CAB"
+}

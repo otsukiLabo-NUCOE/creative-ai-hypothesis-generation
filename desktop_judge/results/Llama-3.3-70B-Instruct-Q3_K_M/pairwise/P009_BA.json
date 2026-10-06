@@ -1,0 +1,18 @@
+{
+    "seconds":  74.6,
+    "shown_as_B":  "M009",
+    "shown_as_A":  "M020",
+    "judgment":  {
+                     "originality":  "B",
+                     "soundness":  "B",
+                     "reproducibility":  "A",
+                     "significance":  "B",
+                     "overall":  "B",
+                     "rationale":  "B\u0027s novelty in integrating neuro-symbolic feedback"
+                 },
+    "raw":  "{\"originality\": \"B\", \"soundness\": \"B\", \"reproducibility\": \"A\", \"significance\": \"B\", \"overall\": \"B\", \"rationale\": \"B\u0027s novelty in integrating neuro-symbolic feedback\"}",
+    "order":  "BA",
+    "attempt":  0,
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "pair_id":  "P009"
+}

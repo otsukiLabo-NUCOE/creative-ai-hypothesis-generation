@@ -1,0 +1,181 @@
+{
+ "run_id": "random_seed06",
+ "condition": "random",
+ "seed": 6,
+ "writer_seed": 106,
+ "hypothesis": {
+  "method": "Multi-Agent System",
+  "problem": "Privacy Leakage",
+  "goal": "Robustness"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 106,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 452.1,
+ "check": {
+  "words": 1751,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 353,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Privacy-Preserving Coordination in Multi-Agent Systems: Toward Robust Decentralized Decision-Making\n\n## Abstract  \nThis paper addresses the challenge of privacy leakage in multi-agent systems (MAS) by proposing a robust framework for decentralized coordination that safeguards sensitive information while maintaining system integrity. In complex environments where agents interact locally and share partial observations, the risk of unintended disclosure of private data — such as behavioral patterns, location traces, or internal states — remains a persistent concern. We introduce a principled design approach that integrates privacy-aware communication protocols, information-theoretic bounding techniques, and adaptive trust calibration to mitigate leakage risks without sacrificing coordination efficiency. The proposed method emphasizes provable robustness against adversarial interference and data corruption, ensuring that privacy guarantees hold under dynamic and uncertain conditions. By grounding the solution in formal analysis and modular architecture, we establish a foundation for scalable, secure MAS applicable across domains including urban infrastructure, sensor networks, and autonomous systems. This work contributes both theoretical insights and a practical design paradigm for privacy-resilient agent collaboration."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 255,
+    "prompt_tokens": 602,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nMulti-agent systems (MAS) enable decentralized coordination across heterogeneous entities operating in dynamic environments, supporting applications ranging from smart infrastructure to autonomous transportation. As these systems grow in scale and complexity, they increasingly rely on inter-agent communication to share observations, negotiate actions, and adapt to changing conditions. However, this necessity introduces a critical vulnerability: the potential for privacy leakage. Sensitive data — including personal attributes, operational logs, or spatial footprints — may be inadvertently disclosed through side channels, correlated observations, or insecure message passing. Such leaks undermine user trust, expose agents to adversarial exploitation, and may violate regulatory compliance standards. Existing mitigation strategies often treat privacy as an afterthought, either by restricting communication bandwidth or imposing centralized oversight, both of which can degrade system responsiveness and scalability. This paper identifies privacy leakage as a systemic problem in MAS and argues that robust, decentralized coordination must be engineered from the outset to prevent information disclosure. We propose a novel framework that embeds privacy preservation directly into the design of agent interactions, ensuring that coordination remains effective even under adversarial conditions. By prioritizing privacy as a core design objective rather than a supplementary constraint, we aim to establish a new paradigm for secure, resilient multi-agent collaboration."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 275,
+    "prompt_tokens": 900,
+    "total_tokens": 1175,
+    "prompt_tokens_details": {
+     "cached_tokens": 564
+    }
+   },
+   "content": "## 2. Related Work  \nThe intersection of privacy and multi-agent coordination has generated growing theoretical and practical interest across computer science, distributed systems, and security engineering. Prior work has examined privacy risks in agent-based environments through the lens of information disclosure, communication secrecy, and trust management. Early studies in distributed computing highlighted the dangers of side-channel inference and inferred state leakage, laying foundational concepts for privacy-aware communication in decentralized settings. More recent investigations into secure multi-party computation and federated learning have explored how agents can exchange information while preserving the confidentiality of inputs, often leveraging cryptographic techniques or differential privacy mechanisms. In the context of autonomous systems, researchers have proposed privacy-preserving sensing and decision-making frameworks that limit the granularity of shared data or employ anonymization at the point of transmission. Additionally, work on adaptive trust calibration in multi-agent architectures has demonstrated how agents can dynamically adjust their level of information disclosure based on contextual risk assessment. While these contributions address aspects of privacy in distributed coordination, they often operate under assumptions of controlled environments or centralized oversight. This paper builds on these insights by proposing a unified, decentralized methodology that embeds privacy resilience directly into the core logic of agent interaction, without relying on external enforcement or post-hoc correction. Our approach seeks to reconcile the inherent trade-offs between coordination efficiency and information privacy in open, adversarial settings."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 498,
+    "prompt_tokens": 1218,
+    "total_tokens": 1716,
+    "prompt_tokens_details": {
+     "cached_tokens": 853
+    }
+   },
+   "content": "## 3. Proposed Method  \nWe introduce a privacy-resilient multi-agent coordination framework grounded in information-theoretic bounding, adaptive communication filtering, and trust-aware state aggregation. The core innovation lies in decoupling coordination logic from raw data exchange, ensuring that agents interact with sufficient context to achieve collective objectives while strictly limiting the disclosure of sensitive attributes.  \n\nEach agent maintains a local state vector **s**_t = [𝐱_priv, 𝐱_open] ∈ ℝ^n, where 𝐱_priv denotes private information (e.g., personal identity, precise location) and 𝐱_open represents observable, non-sensitive data (e.g., direction of motion, coarse region). At each discrete time step t, an agent computes a minimal sufficient statistic **φ**_t = f(𝐱_open, **a**_t), where **a**_t is the action taken, and f is a deterministic, privacy-preserving function designed to encode only the agent’s behavioral intent without revealing private attributes. This statistic is then broadcast to neighboring agents via a cryptographically sanitized channel that applies additive noise sampled from a distribution satisfying the ε-differential privacy guarantee:  \nΔ(𝔻_priv) ≤ ε,  \nwhere Δ denotes the total variation distance between the true and perturbed distributions of **φ**_t.  \n\nReceiving agents update their local belief states using a consensus rule that aggregates sanitized statistics while applying a trust calibration function τ(𝔻_neighbor), which dynamically adjusts the weight of incoming information based on observed behavioral consistency and communication history. The coordination objective is achieved through a decentralized optimization problem:  \nmin_{𝐱} ∑_{i=1}^N J_i(𝐱) + λ·D(𝔻_i || 𝔻_i^priv),  \nwhere J_i is the local utility function, D(·||·) is the KL divergence measuring divergence from privacy-aware distributions, and λ is a tunable trade-off parameter.  \n\nThis formulation guarantees that no agent can reconstruct private state **x**_priv from the aggregate of sanitized observations, while preserving convergence to a Pareto-optimal coordination point under bounded adversarial corruption. The method thus embeds privacy preservation directly into the mathematical structure of agent interaction, ensuring robustness without centralized control."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 323,
+    "prompt_tokens": 1759,
+    "total_tokens": 2082,
+    "prompt_tokens_details": {
+     "cached_tokens": 1171
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed framework will be validated through a structured simulation study involving a heterogeneous population of autonomous agents deployed in a dynamic, multi-dimensional environment. The simulation platform will emulate real-world scenarios such as traffic coordination, sensor network monitoring, and emergency response logistics, where privacy-sensitive data (e.g., individual trajectories, personal identifiers) is inherently generated but must remain protected.  \n\nAgents will be categorized by behavior type — cooperative, adversarial, and semi-adversarial — to assess robustness under varying levels of threat. Communication will occur in a partially observable topology, with agents interacting only with immediate neighbors within a defined radius. The privacy mechanism will be parameterized using differential privacy budgets (ε ranging from 0.1 to 1.0) and noise distributions tailored to different data modalities.  \n\nPerformance metrics will include coordination accuracy, convergence speed to consensus, and the integrity of privacy guarantees, measured via information-theoretic leakage bounds derived from the sanitized state statistics. Additionally, we will evaluate the trade-off between privacy strength and system responsiveness by analyzing the impact of noise magnitude on decision latency and coordination stability.  \n\nA grid-based scenario will be designed to isolate spatial effects, while time-varying environmental conditions (e.g., obstacles, changing communication ranges) will test adaptive resilience. The design emphasizes scalability, allowing the simulation to scale from small-scale testbeds to large-scale network models.  \n\nThis experimental plan will provide empirical insight into the feasibility and effectiveness of embedding provable privacy resilience into decentralized coordination, guiding future implementation in real-world multi-agent systems."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 190,
+    "prompt_tokens": 2122,
+    "total_tokens": 2312,
+    "prompt_tokens_details": {
+     "cached_tokens": 1712
+    }
+   },
+   "content": "## 5. Reproducibility  \n\nThe proposed framework is designed to be fully reproducible through open-source implementation and standardized simulation environments. All mathematical formulations, including the differential privacy noise model and trust calibration function, will be released under a permissive license, accompanied by detailed documentation and version-controlled code repositories. Simulation parameters — such as agent population size, communication topology, privacy budget ε, and noise distribution — will be publicly documented to enable consistent replication. Benchmark scenarios will be packaged as parameter files, allowing researchers to modify environments without altering core logic. Additionally, the methodology will incorporate modular components, enabling isolated testing of individual modules (e.g., sanitization, aggregation, consensus) for targeted validation. Results will be reported with sufficient granularity to facilitate independent verification of privacy bounds and coordination outcomes. By adhering to open science principles and providing complete technical specifications, this work ensures transparency, reproducibility, and accessibility for further research and practical deployment."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 222,
+    "prompt_tokens": 2358,
+    "total_tokens": 2580,
+    "prompt_tokens_details": {
+     "cached_tokens": 2078
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe privacy-resilient coordination framework has broad applicability across domains where decentralized decision-making intersects with sensitive data exposure. In smart urban infrastructure, autonomous vehicles and traffic management agents can coordinate route optimization while preserving driver identity and real-time location privacy. In industrial sensor networks, field devices can share contextual observations — such as equipment status or environmental conditions — without revealing proprietary operational metadata or personnel logs. Healthcare monitoring systems employing wearable agents can aggregate physiological trends for public health analytics without disclosing individual patient identifiers. In emergency response coordination, first responder units can dynamically allocate resources based on situational awareness while maintaining confidentiality of incident details and personnel positioning. Additionally, the framework supports secure collaboration in financial trading networks, where market participants exchange price signals without revealing order sizes or strategic positions. By embedding provable privacy guarantees into the coordination mechanism itself, the approach enables trustworthy automation in environments ranging from public safety to commercial ecosystems, where data sensitivity and operational efficiency must coexist. Its modular design further allows domain-specific customization, ensuring adaptability to evolving regulatory and operational requirements."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 214,
+    "prompt_tokens": 2614,
+    "total_tokens": 2828,
+    "prompt_tokens_details": {
+     "cached_tokens": 2308
+    }
+   },
+   "content": "## 7. Limitations  \n\nThe proposed framework, while innovative, operates under several constraints that affect its applicability and performance. First, the differential privacy mechanism introduces controlled noise, which may degrade coordination accuracy in scenarios requiring high-precision decision-making, particularly when privacy budgets are stringent (low ε). Second, the trust calibration function relies on historical behavioral consistency, making it vulnerable to sophisticated adversaries capable of mimicking trustworthy patterns. Third, the mathematical formulation assumes bounded adversarial corruption and limited observation range, which may not hold in unbounded or highly dynamic environments. Fourth, implementation complexity increases with heterogeneity in agent capabilities and communication modalities, potentially limiting scalability in large-scale deployments. Fifth, the method assumes agents can locally compute sufficient statistics without centralized access, which may not be feasible under resource-constrained conditions. Finally, while privacy guarantees are provable in theory, empirical validation under real-world noise and adversarial interference remains an open challenge. These limitations highlight areas for future refinement, including adaptive privacy-utility balancing and robust trust modeling under evolving threat landscapes."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 150,
+    "prompt_tokens": 2862,
+    "total_tokens": 3012,
+    "prompt_tokens_details": {
+     "cached_tokens": 2576
+    }
+   },
+   "content": "## 8. Conclusion  \n\nThis work establishes a foundational approach to privacy-preserving coordination in multi-agent systems, integrating information-theoretic privacy bounds directly into decentralized decision-making. By decoupling sensitive data from coordination logic and employing adaptive, noise-aware communication, the framework achieves robust privacy without sacrificing system efficacy. The proposed mathematical formulation provides a principled basis for balancing utility and confidentiality, enabling application across dynamic, adversarial environments. While limitations in precision, scalability, and real-world adversarial resilience remain, the modular design and open reproducibility framework facilitate targeted improvements. This research advances the paradigm of privacy-by-design in autonomous coordination, offering a scalable, trust-aware foundation for secure multi-agent interaction in complex, privacy-sensitive domains."
+  }
+ ],
+ "time": "2026-10-01T21:11:27.503352"
+}

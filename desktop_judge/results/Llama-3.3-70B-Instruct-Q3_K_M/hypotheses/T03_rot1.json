@@ -1,0 +1,19 @@
+{
+    "seconds":  34.9,
+    "least_novel":  "A",
+    "least_useful":  "C",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "1",
+                     "rationale":  "Energy autonomy and uncertainty estimation are crucial, but diffusion models are unique."
+                 },
+    "attempt":  0,
+    "most_useful":  "A",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"1\", \"rationale\": \"Energy autonomy and uncertainty estimation are crucial, but diffusion models are unique.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "B",
+    "tid":  "T03",
+    "rotation":  "ABC"
+}

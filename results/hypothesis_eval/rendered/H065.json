@@ -1,0 +1,26 @@
+{
+ "hid": "H065",
+ "hypothesis": "Evolutionary Neural Architecture Search in latent space topology prevents mode collapse by preserving connectivity for diverse, coherent generation",
+ "description": "This approach uses evolutionary search guided by topological constraints on latent embeddings to discover architectures that maintain rich inter-subspace relationships, allowing the model to explore underutilized regions of the latent space; by favoring connectivity-preserving mutations, it reduces the risk of collapsing into localized modes while leveraging large datasets for generalization, potentially yielding more representative outputs across diverse conditions.",
+ "attempt": 0,
+ "raw": "Hypothesis: Neural Architecture Search with Evolutionary Constraints on Latent Space Topology searches for deep generative network structures that mitigate mode collapse in high-dimensional multimodal models by preserving latent space connectivity, to enable diverse and semantically coherent generation across subspaces without explicit regularization  \nDescription: This approach uses evolutionary search guided by topological constraints on latent embeddings to discover architectures that maintain rich inter-subspace relationships, allowing the model to explore underutilized regions of the latent space; by favoring connectivity-preserving mutations, it reduces the risk of collapsing into localized modes while leveraging large datasets for generalization, potentially yielding more representative outputs across diverse conditions.\n",
+ "shortening_steps": [
+  "Evolutionary Neural Architecture Search in latent space topology prevents mode collapse by preserving connectivity for diverse, coherent generation"
+ ],
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "You will be given a research hypothesis in artificial intelligence, consisting of a Method, a Problem, and a Goal.\nRewrite it for a reader who is a researcher but not necessarily an AI specialist, in exactly this format:\n\nHypothesis: <ONE sentence of 20 to 30 words stating concretely what is done with the method, for which problem, to achieve which goal>\nDescription: <two or three sentences, 50 to 70 words in total, explaining the mechanism and why it could work>\n\nRules: the hypothesis sentence must have between 20 and 30 words: if the input is short, make it concrete by stating how the method would be applied; if the input is long, condense it to its core idea; begin the hypothesis sentence directly with the method (never with \"This study\", \"This approach\", \"We\", or similar); use plain, neutral language and at most one technical term per noun phrase; do not exaggerate; do not invent results, numbers, datasets, or citations; do not mention how the hypothesis was obtained; output only the two lines.\n\nMethod: Neural Architecture Search with Evolutionary Constraints on Latent Space Topology\nProblem: Mode collapse in high-dimensional multimodal generative models despite large training data\nGoal: Achieve diverse, semantically coherent generation across latent subspaces without explicit regularization"
+   }
+  ],
+  "seed": 11,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 250,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "seconds": 40.1
+}

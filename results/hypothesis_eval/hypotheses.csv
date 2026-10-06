@@ -1,0 +1,94 @@
+hid,source,seed,method,problem,goal
+H001,ga,1,Multi-Agent System,Energy Consumption,Efficiency
+H002,ga,2,Contrastive Learning,Privacy Leakage,Creativity
+H003,ga,3,Diffusion Model,Hallucination,Safety
+H004,ga,4,Contrastive Learning,Reward Hacking,Personalization
+H005,ga,5,Evolutionary Strategy,Hallucination,Safety
+H006,ga,6,Multi-Agent System,Hallucination,Fairness
+H007,ga,7,Diffusion Model,Miscalibrated Uncertainty,Sustainability
+H008,ga,9,Diffusion Model,Hallucination,Sustainability
+H009,ga,11,Diffusion Model,Distribution Shift,Sustainability
+H010,ga,12,Contrastive Learning,Reward Hacking,Efficiency
+H011,ga,15,Contrastive Learning,Energy Consumption,Trustworthiness
+H012,ga,16,Reinforcement Learning,Hallucination,Trustworthiness
+H013,ga,18,Diffusion Model,Lack of Novelty,Generalization
+H014,ga,19,Transformer,Privacy Leakage,Safety
+H015,ga,24,Diffusion Model,Distribution Shift,Safety
+H016,ga,25,Reinforcement Learning,Long-Context Reasoning,Trustworthiness
+H017,ga,27,Diffusion Model,Distribution Shift,Autonomy
+H018,ga,28,Multi-Agent System,Catastrophic Forgetting,Fairness
+H019,ga,30,Evolutionary Strategy,Label Noise,Autonomy
+H020,ga,31,Multi-Agent System,Energy Consumption,Explainability
+H021,ga,33,Contrastive Learning,Lack of Novelty,Trustworthiness
+H022,ga,34,Diffusion Model,Lack of Novelty,Explainability
+H023,ga,37,Causal Inference,Lack of Novelty,Sustainability
+H024,ga,41,Multi-Agent System,Hallucination,Safety
+H025,ga,43,Transformer,Energy Consumption,Trustworthiness
+H026,ga,44,Diffusion Model,Catastrophic Forgetting,Creativity
+H027,ga,47,Retrieval-Augmented Generation,Energy Consumption,Safety
+H028,ga,52,Graph Neural Network,Hallucination,Fairness
+H029,ga,54,Contrastive Learning,Miscalibrated Uncertainty,Sustainability
+H030,ga,59,Transformer,Opaque Decision Making,Sustainability
+H031,random,1,Multi-Agent System,Reward Hacking,Robustness
+H032,random,2,Causal Inference,Miscalibrated Uncertainty,Personalization
+H033,random,3,Federated Learning,Distribution Shift,Safety
+H034,random,4,Graph Neural Network,Data Scarcity,Trustworthiness
+H035,random,5,Symbolic AI,Reward Hacking,Trustworthiness
+H036,random,6,Neural Architecture Search,Miscalibrated Uncertainty,Robustness
+H037,random,7,Retrieval-Augmented Generation,Miscalibrated Uncertainty,Fairness
+H038,random,8,Reinforcement Learning,Bias,Personalization
+H039,random,9,Transformer,Long-Context Reasoning,Autonomy
+H040,random,10,Quantum Annealing,Opaque Decision Making,Fairness
+H041,random,11,Neural Architecture Search,Reward Hacking,Scalability
+H042,random,12,Diffusion Model,Bias,Creativity
+H043,random,13,Evolutionary Strategy,Reward Hacking,Generalization
+H044,random,14,Evolutionary Strategy,Data Scarcity,Trustworthiness
+H045,random,15,Symbolic AI,Data Scarcity,Robustness
+H046,random,16,Contrastive Learning,Opaque Decision Making,Personalization
+H047,random,17,Graph Neural Network,Opaque Decision Making,Sustainability
+H048,random,18,Causal Inference,Long-Context Reasoning,Explainability
+H049,random,19,Reinforcement Learning,Reward Hacking,Trustworthiness
+H050,random,20,Graph Neural Network,Adversarial Vulnerability,Creativity
+H051,random,21,Bayesian Optimization,Hallucination,Fairness
+H052,random,22,Diffusion Model,Long-Context Reasoning,Trustworthiness
+H053,random,23,Evolutionary Strategy,Energy Consumption,Autonomy
+H054,random,24,Neural Architecture Search,Distribution Shift,Explainability
+H055,random,25,Transformer,Opaque Decision Making,Efficiency
+H056,random,26,Graph Neural Network,Miscalibrated Uncertainty,Robustness
+H057,random,27,Quantum Annealing,Opaque Decision Making,Personalization
+H058,random,28,Contrastive Learning,Label Noise,Efficiency
+H059,random,29,Evolutionary Strategy,High Latency,Robustness
+H060,random,30,Multi-Agent System,Hallucination,Fairness
+H061,llm,1,Neuro-symbolic feedback loops with self-correcting latent space regularization,Hallucination persistence in large language models under out-of-distribution reasoning demands,Achieve consistent factual coherence without explicit external verification triggers
+H062,llm,2,Neural architecture search with evolutionary selection and self-critical feedback loops,High computational cost and lack of interpretability in large language model fine-tuning,"Automate the discovery of efficient, interpretable, and adaptive fine-tuning strategies for domain-specific generative AI"
+H063,llm,3,Neuro-symbolic fine-tuning with self-critiquing reinforcement learning,Hallucination persistence in domain-specific generative models despite extensive training data,Achieve factual consistency exceeding 95% in medical diagnosis generation under low-resource conditions
+H064,llm,4,Neuro-symbolic fine-tuning of large language models using structured knowledge graphs derived from formal verification traces,Inconsistent factual alignment between generative outputs and domain-specific logical constraints in high-stakes applications,Achieve 99%+ factual consistency while preserving creative fluency in medical diagnosis generation
+H065,llm,5,Neural Architecture Search with Evolutionary Constraints on Latent Space Topology,Mode collapse in high-dimensional multimodal generative models despite large training data,"Achieve diverse, semantically coherent generation across latent subspaces without explicit regularization"
+H066,llm,6,Adversarial Multi-Modal Pre-Training with Dynamic Semantic Drift Injection,Generative AI models lose coherence and factual accuracy over extended interaction sessions due to unmodeled semantic drift in context windows,Achieve sustained factual consistency and contextual coherence across thousands of token generations without retraining or external retrieval
+H067,llm,7,Neural architecture search with evolutionary constraints on latent space continuity,Mode collapse and lack of diversity in high-dimensional generative model outputs,Systematically enhance sample diversity while preserving semantic coherence
+H068,llm,8,Neural Architecture Search with Reinforcement Learning guided by interpretability constraints,"Generative models produce high-quality outputs but remain opaque, limiting trust and debugging",Automatically discover architectures that maximize generation quality while ensuring locally interpretable decision pathways
+H069,llm,9,Neuro-symbolic fine-tuning with self-critiquing latent space regularization,Hallucinations in factual reasoning of large language models,Reduced factual errors while preserving creative fluency
+H070,llm,10,Neuro-symbolic fine-tuning of transformer-based language models using constraint-satisfied reward modeling,Generative AI systems produce factually incorrect or logically inconsistent outputs despite high fluency,Achieve human-level factual consistency and logical coherence in open-domain text generation
+H071,llm,11,Self-critical reinforcement learning with multi-agent feedback on model-generated rationales,Hallucinated confidence in generative AI outputs undermines trust in high-stakes domains,Demonstratively reduce unjustified high certainty in incorrect generations while preserving fluency and accuracy
+H072,llm,12,Neuro-Symbolic Fine-Tuning with Memory-Augmented Reinforcement Learning,Generative AI's inability to maintain consistent long-term context and factual coherence across extended multi-turn interactions,Achieve human-level factual consistency and context retention in open-domain dialogue systems
+H073,llm,13,Neuro-Symbolic Reinforcement Learning with Dynamic Knowledge Graphs,Generative AI models produce plausible but factually inconsistent or logically incoherent long-form content,Achieve factual consistency and logical coherence in generated narratives without compromising creativity
+H074,llm,14,Neuro-symbolic fine-tuning with self-consistency regularization on large language models,Inconsistent factual coherence in long-form generative outputs despite high surface fluency,Achieve 40% reduction in hallucinated entities while preserving creative diversity in open-domain generation
+H075,llm,15,Self-critique via multi-agent feedback loops using emotionally grounded large language models,Generative AI systems produce high-fidelity outputs that systematically lack emotional authenticity and nuanced interpersonal sensitivity,Automatically generate human-like emotionally coherent narratives that pass nuanced emotional Turing tests across diverse cultural contexts
+H076,llm,16,Neuro-symbolic reinforcement learning with self-critiquing generative models,Hallucination in open-ended AI-generated scientific hypotheses,"Produce falsifiable, domain-validated AI-generated research proposals"
+H077,llm,17,Neural architecture search with evolutionary multi-objective optimization,Generative models' tendency to produce factually incorrect or hallucinated content,Automatically discover architectures that maximize coherence and minimize factual errors while preserving creativity
+H078,llm,18,Neural Architecture Search with evolutionary constraints for dynamic prompt adaptation,Generative AI models exhibit inconsistent performance across semantically similar prompts due to static architectural biases,"Automatically evolve transformer architectures that adapt structure in real-time to prompt complexity, improving generalization and reducing hallucination rates"
+H079,llm,19,Neural architecture search with evolutionary multi-objective optimization,Excessive computational cost and memory usage in large language model inference,Dynamically adapt model structure per input to minimize latency while preserving generation quality
+H080,llm,20,Neural architecture search using differentiable reinforcement learning on transformer-based generative models,Inability of current models to consistently generate coherent long-form content with accurate factual grounding across domains,Automatically discover architectures that maximize both creativity and factual consistency in generated text
+H081,llm,21,Multi-modal latent space alignment via constrained diffusion with ethical adversarial regularization,Bias amplification in cross-cultural image generation due to underrepresented linguistic and visual semantics,Achieve equitable semantic fidelity across diverse cultural contexts without compromising generative quality
+H082,llm,22,Neuro-symbolic reinforcement learning with self-critiquing large language models,Generative AI systems produce plausible but factually incorrect or logically inconsistent outputs despite high fluency,Achieve human-level factual accuracy and logical coherence in open-domain text generation
+H083,llm,23,Neuro-symbolic architecture with causal reasoning modules integrated into diffusion transformer models,Generative AI systems produce plausible but causally inconsistent or factually inaccurate long-form content,Achieve factual coherence and causal consistency in generated narratives without compromising creativity
+H084,llm,24,Neuro-symbolic fine-tuning of diffusion models with constraint-based validation,Generated content violates domain-specific logical or factual constraints despite high surface coherence,Produce outputs that are both creatively diverse and semantically grounded in verified knowledge
+H085,llm,25,Neuro-symbolic reinforcement learning with self-critiquing generative models,Hallucination propagation in multi-turn open-domain dialogue systems,Achieve factual consistency while preserving creativity and coherence
+H086,llm,26,Self-critiquing reinforcement learning with synthetic adversarial feedback loops,Generative AI models produce plausible but factually inconsistent or biased long-form content despite large training data,Achieve statistically significant reduction in hallucination rates while preserving creative fluency across domain domains
+H087,llm,27,Neuro-symbolic reinforcement learning with dynamic schema adaptation,Inability of generative models to consistently produce logically coherent and domain-accurate long-form content under sparse supervision,Achieve human-level factual consistency and logical coherence in generated narratives without task-specific fine-tuning
+H088,llm,28,Neural Architecture Search with reinforcement learning guided by human preference gradients,Automatic generation of multimodal content that violates subtle cultural or ethical norms undetectable by current alignment metrics,"Producing AI systems that dynamically adapt their creative outputs to align with evolving, context-sensitive human values while preserving novelty and coherence"
+H089,llm,29,Multi-agent reinforcement learning with self-critiquing language models,Hallucination propagation in collaborative generative AI systems,Achieve consensus on factual consistency across agent-generated outputs
+H090,llm,30,Neuro-Symbolic Fine-Tuning of Transformer Language Models using Formal Concept Hierarchies,Generative AI systems produce coherent text but frequently fail to preserve logical consistency in multi-step reasoning across long contexts,Achieve human-level logical coherence in generated reasoning traces while maintaining fluency and creativity
+P01,ga,60,Reinforcement Learning,Adversarial Vulnerability,Creativity
+P02,random,777,Evolutionary Strategy,Adversarial Vulnerability,Safety
+P03,llm,31,Neural architecture search with evolutionary game theory guided by attention entropy minimization,Overfitting to dominant attention patterns in large language models leading to homogeneous output distributions,"Diversified, semantically rich, and contextually adaptive generative outputs with provable robustness to distribution shift"

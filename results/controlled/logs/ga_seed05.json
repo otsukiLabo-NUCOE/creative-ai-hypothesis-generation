@@ -1,0 +1,181 @@
+{
+ "run_id": "ga_seed05",
+ "condition": "ga",
+ "seed": 5,
+ "writer_seed": 105,
+ "hypothesis": {
+  "method": "Evolutionary Strategy",
+  "problem": "Hallucination",
+  "goal": "Safety"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 105,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 508.8,
+ "check": {
+  "words": 1812,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 245,
+    "prompt_tokens": 350,
+    "total_tokens": 595,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Evolving Strategies for Mitigating Hallucination in Generative Models\n\n## Abstract  \nThis paper introduces an evolutionary strategy designed to enhance the safety of generative models by systematically reducing hallucination — the generation of factually incorrect or fabricated content. Hallucination remains a critical challenge in large language models, particularly when deployed in high-stakes domains such as healthcare, law, and automated decision-making. Existing mitigation techniques often rely on post-hoc corrections or rule-based filters, which fail to address the root causes embedded in model training and architecture. We propose a novel evolutionary optimization framework that treats hallucination reduction as a multi-objective evolutionary search problem, where candidate model configurations are evolved based on their ability to balance generative fluency with factual consistency. The method leverages population-based search, mutation operators targeting attention patterns and confidence thresholds, and fitness evaluations derived from alignment with trusted knowledge sources. By iteratively exploring the trade-off between creativity and reliability, the proposed strategy aims to produce models that generate useful, diverse outputs while strictly adhering to factual accuracy. This work establishes a foundational approach for embedding safety directly into the evolutionary design process of generative systems, offering a scalable and adaptive pathway toward trustworthy AI."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 298,
+    "prompt_tokens": 629,
+    "total_tokens": 927,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nGenerative artificial intelligence systems have achieved remarkable fluency and versatility, enabling applications ranging from creative content generation to automated decision support. However, a persistent and systemic flaw — hallucination — undermines trust in these models. Hallucination refers to the production of plausible-sounding but factually erroneous information, often indistinguishable from truth to human users. This phenomenon arises from the statistical nature of language modeling, where patterns are inferred from training data rather than grounded in verified knowledge. As generative models are increasingly deployed in domains requiring precision — such as medical diagnosis, legal advice, and scientific communication — the consequences of hallucination can be severe, eroding confidence and enabling real-world harm. While post-hoc fact-checking and retrieval-augmented generation offer partial remedies, they treat hallucination as a surface symptom rather than a fundamental design challenge. There is a growing need for proactive, intrinsic mechanisms that embed reliability into the generative process itself. Evolutionary computation provides a promising paradigm for this task by enabling systematic exploration of model architectures, training objectives, and runtime behaviors that favor factual consistency. By framing hallucination reduction as an evolutionary optimization problem, we can discover adaptive strategies that balance creativity with truthfulness. This paper introduces an evolutionary strategy specifically designed to mitigate hallucination by co-evolving model parameters, confidence calibration rules, and alignment signals. Our approach moves beyond static interventions, offering a dynamic, self-improving framework for safer generative AI."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 260,
+    "prompt_tokens": 970,
+    "total_tokens": 1230,
+    "prompt_tokens_details": {
+     "cached_tokens": 591
+    }
+   },
+   "content": "## 2. Related Work  \nThe literature on hallucination in generative models spans multiple interdisciplinary domains, reflecting its broad relevance across AI safety, cognitive science, and information retrieval. Early observations highlighted the statistical nature of language generation, noting that models often extrapolate beyond training distributions, producing confident but incorrect claims. Subsequent research distinguished between types of hallucination — such as factual, contextual, and source attribution errors — and explored their emergence in large language models under conditions of ambiguity or sparse data. In response, a variety of mitigation strategies have been proposed. Rule-based filtering and keyword verification systems attempt to detect and correct false statements post-generation, while retrieval-augmented generation frameworks aim to ground outputs in external knowledge sources. Confidence calibration techniques, including temperature scaling and uncertainty estimation, seek to reduce overconfidence in erroneous predictions. More recently, alignment objectives have been integrated into training pipelines to encourage consistency with verified facts, often leveraging supervised fine-tuning on high-quality annotated data. Despite these advances, challenges remain: most approaches are reactive, require extensive external resources, or trade off fluency for accuracy. There is limited work that proactively shapes model behavior through evolutionary optimization, a gap this study seeks to address by treating hallucination reduction as a dynamic, population-based design problem."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 502,
+    "prompt_tokens": 1273,
+    "total_tokens": 1775,
+    "prompt_tokens_details": {
+     "cached_tokens": 923
+    }
+   },
+   "content": "## 3. Proposed Method  \n\nWe introduce an **Evolutionary Strategy for Hallucination Mitigation (ES-HM)**, a population-based optimization framework designed to co-evolve generative model parameters and runtime decision policies that prioritize factual consistency. The core idea is to treat hallucination not as a binary failure mode but as a continuous fitness landscape, where evolutionary operators explore configurations that trade off creativity, confidence, and truthfulness.\n\nThe generative model — typically a transformer-based language model — serves as the primary entity subject to evolution. At each generation, a population of candidate models is evaluated based on a composite fitness function that penalizes hallucinated outputs while preserving linguistic quality. The fitness $F$ for individual $i$ is defined as:  \n\n$$\nF_i = \\alpha \\cdot \\mathcal{L}_{\\text{fluency}}(i) - \\beta \\cdot \\mathcal{H}(i) - \\gamma \\cdot \\mathcal{C}(i)\n$$\n\nwhere:  \n- $\\mathcal{L}_{\\text{fluency}}(i)$ is the negative log-likelihood of the generated text under the model’s own distribution, measuring fluency;  \n- $\\mathcal{H}(i)$ is the hallucination score, computed as the proportion of tokens flagged by a calibrated fact-checking module (e.g., via alignment with a trusted knowledge graph or expert-reviewed corpus);  \n- $\\mathcal{C}(i)$ is a confidence calibration penalty, measuring deviation from calibrated entropy estimates, discouraging overconfidence in uncertain outputs;  \n- $\\alpha, \\beta, \\gamma > 0$ are weighting parameters tuned to balance objectives.\n\nEvolutionary operators include:  \n- **Mutation**: Small-scale parameter perturbations (e.g., weight adjustments in attention heads) and adaptive confidence thresholds;  \n- **Crossover**: Combining attention pattern configurations and calibration rules between parent models;  \n- **Elitism**: Preserving top-performing individuals to maintain high-fitness solutions.\n\nThe factorial experiment design (as detailed in Section 4) will systematically vary $\\alpha$, $\\beta$, $\\gamma$, and mutation strength across environments simulating low-resource, high-ambiguity, and multi-domain scenarios. By evolving both model architecture and decision policy, ES-HM aims to discover intrinsic mechanisms that suppress hallucination without sacrificing generative utility. This formulation positions hallucination mitigation as an adaptive, self-improving process rooted in evolutionary computation."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 345,
+    "prompt_tokens": 1818,
+    "total_tokens": 2163,
+    "prompt_tokens_details": {
+     "cached_tokens": 1226
+    }
+   },
+   "content": "## 4. Experimental Design  \n\nThe proposed Evolutionary Strategy for Hallucination Mitigation (ES-HM) will be validated through a structured factorial experimental design spanning multiple simulated environments. Three primary factors will be varied: (1) the weighting scheme of the fitness function — specifically, the relative influence of fluency, hallucination penalty, and confidence calibration (α, β, γ); (2) the diversity of training data domains — ranging from synthetic, curated datasets to low-resource, noisy corpora; and (3) the mutation strategy — including uniform parameter perturbation, attention-gate mutation, and confidence threshold adaptation.  \n\nEach experimental condition will generate a population of 50 candidate models, evolved over 20 generations using tournament selection. Fitness evaluations will be conducted across three benchmark scenarios: (a) factual consistency against a static knowledge base, (b) calibration accuracy measured via expected calibration error on held-out fact-checking samples, and (c) human-rated fluency on a 5-point Likert scale.  \n\nTo assess generalizability, the system will be tested on three distinct application domains: scientific summarization, legal document generation, and medical advisory text. Performance will be tracked across generations to identify convergence patterns and trade-offs between safety and utility.  \n\nStatistical analysis will employ ANOVA to compare conditions on key metrics, with post-hoc pairwise comparisons to detect significant interactions. Ablation studies will isolate the contribution of each evolutionary operator. The design avoids overfitting to any single domain or metric by emphasizing cross-condition robustness and interpretability of evolved policies. This experimental framework establishes a rigorous, reproducible plan for validating ES-HM as a scalable, adaptive approach to hallucination mitigation."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 184,
+    "prompt_tokens": 2203,
+    "total_tokens": 2387,
+    "prompt_tokens_details": {
+     "cached_tokens": 1771
+    }
+   },
+   "content": "## 5. Reproducibility  \nThe Experimental Design section above outlines a transparent, specification-rich plan that enables full reproducibility. All evolutionary operators, fitness function parameters (α, β, γ), population sizes, mutation strategies, and evaluation protocols will be implemented in open-source code, hosted in a version-controlled repository with documented dependencies. Training data sources will be specified by schema and licensing, and evaluation benchmarks will be defined via standardized task suites. Simulation environments will be containerized using Docker, ensuring consistent software versions across runs. Random seeds will be fixed for all stochastic operations, and results will be logged at each generation for statistical analysis. Code, configuration files, and evaluation scripts will be released under a permissive open license, allowing independent verification. This commitment to openness ensures that the proposed Evolutionary Strategy for Hallucination Mitigation can be replicated, extended, and audited by the broader research community."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 279,
+    "prompt_tokens": 2433,
+    "total_tokens": 2712,
+    "prompt_tokens_details": {
+     "cached_tokens": 2159
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \n\nThe Evolutionary Strategy for Hallucination Mitigation (ES-HM) is designed to generalize across domains where factual accuracy is critical but not uniform in structure or risk profile. In scientific communication, where concise yet precise summaries of complex literature are demanded, ES-HM can evolve models that balance technical fluency with alignment to peer-reviewed findings, reducing the risk of misrepresenting experimental results. In legal contexts, where interpretive flexibility must coexist with binding precedent, the method can be adapted to generate draft reasoning that respects statutory language while flagging speculative or unsupported claims. For medical advisory systems, ES-HM offers a pathway to generate patient-friendly explanations that remain grounded in evidence-based guidelines, mitigating the danger of algorithmic overconfidence in rare or off-label scenarios. Beyond these, the framework’s modular design allows deployment in financial forecasting, policy drafting, and educational content generation, where trust is earned through consistency rather than sheer volume of output. Because ES-HM evolves both model architecture and decision policy, it can be fine-tuned to the epistemic demands of each domain — whether prioritizing citations in academia, statutory fidelity in law, or safety margins in healthcare. This adaptability positions ES-HM as a scalable, domain-agnostic tool for embedding trustworthiness into generative AI systems."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 223,
+    "prompt_tokens": 2746,
+    "total_tokens": 2969,
+    "prompt_tokens_details": {
+     "cached_tokens": 2383
+    }
+   },
+   "content": "## 7. Limitations  \n\nThe Evolutionary Strategy for Hallucination Mitigation (ES-HM) faces several inherent limitations. First, its reliance on a fact-checking module introduces external dependency, which may be unavailable or inaccurate in low-resource or domain-specific contexts. Second, the fitness function’s weighting parameters (α, β, γ) require careful tuning; suboptimal values may over-penalize fluency or fail to suppress harmful hallucinations. Third, evolutionary search is computationally intensive and may converge to local optima, limiting the diversity of viable solutions. Fourth, the method assumes that hallucination can be reliably quantified — a challenge when ground-truth knowledge is ambiguous or contested. Fifth, ES-HM does not address systemic biases embedded in training data, which may persist even as factual consistency improves. Finally, while designed for adaptability, the framework’s generalizability across entirely novel domains remains untested. These constraints highlight the need for complementary approaches, including human-in-the-loop validation, bias audits, and domain-specific fine-tuning, to ensure robust and equitable deployment."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 189,
+    "prompt_tokens": 3003,
+    "total_tokens": 3192,
+    "prompt_tokens_details": {
+     "cached_tokens": 2708
+    }
+   },
+   "content": "## 8. Conclusion  \n\nThis paper proposes an Evolutionary Strategy for Hallucination Mitigation (ES-HM), a novel framework that treats factual accuracy as a dynamic, optimizable objective within generative models. By co-evolving model parameters, confidence calibration rules, and alignment signals through population-based search, ES-HM offers a proactive, adaptive mechanism to reduce hallucination while preserving fluency. The method’s mathematical formulation provides a clear, measurable fitness landscape, enabling systematic exploration of safety-utility trade-offs across domains. Though subject to computational and data-dependent constraints, ES-HM establishes a foundational approach for embedding trustworthiness directly into the design of generative systems. Future work will validate its effectiveness through controlled experiments and explore its scalability in real-world applications. ES-HM represents a step toward self-improving, safety-aware AI — where correctness is not an afterthought, but an evolved trait."
+  }
+ ],
+ "time": "2026-10-01T20:40:44.210496"
+}

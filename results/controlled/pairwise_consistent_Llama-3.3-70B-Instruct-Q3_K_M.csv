@@ -1,0 +1,6 @@
+criterion,pairs,consistent_pairs,consistent_share,GA_beats_LLM-proposed,LLM-proposed_beats_GA,p_GA_vs_LLM-proposed,GA_beats_Random,Random_beats_GA,p_GA_vs_Random,LLM-proposed_beats_Random,Random_beats_LLM-proposed,p_LLM-proposed_vs_Random
+originality,90,64,0.711,2,14,0.0042,7,9,0.8036,13,3,0.0213
+soundness,90,5,0.056,0,2,0.5,0,0,,2,0,0.5
+reproducibility,90,1,0.011,0,1,1.0,0,0,,0,0,
+significance,90,33,0.367,0,10,0.002,1,6,0.125,6,1,0.125
+overall,90,27,0.3,0,8,0.0078,1,5,0.2188,6,1,0.125

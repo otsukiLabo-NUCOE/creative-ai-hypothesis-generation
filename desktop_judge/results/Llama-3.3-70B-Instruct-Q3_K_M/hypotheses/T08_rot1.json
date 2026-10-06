@@ -1,0 +1,19 @@
+{
+    "seconds":  27.8,
+    "least_novel":  "A",
+    "least_useful":  "B",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "2",
+                     "most_novel":  "3",
+                     "least_novel":  "1",
+                     "rationale":  "Energy forecasting"
+                 },
+    "attempt":  0,
+    "most_useful":  "A",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"2\", \"most_novel\": \"3\", \"least_novel\": \"1\", \"rationale\": \"Energy forecasting\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "C",
+    "tid":  "T08",
+    "rotation":  "ABC"
+}

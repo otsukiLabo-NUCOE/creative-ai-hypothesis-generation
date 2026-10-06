@@ -1,0 +1,68 @@
+﻿ICLR 2024: 2260 papers (accepted 2260); prior arXiv 2598, prior ICLR 11215
+ICLR 2025: 3703 papers (accepted 3703); prior arXiv 2856, prior ICLR 13475
+ICLR 2023: 3792 papers (accepted 1573); prior arXiv 1834, prior ICLR 7423
+    year   reference            text        target     n  spearman_rho       p  ci95_lo  ci95_hi  AUC_novelty_predicts_accept
+0   2024       arXiv  title+abstract  contribution  2260        0.0343  0.1031  -0.0063   0.0751                          NaN
+1   2024       arXiv  title+abstract     soundness  2260        0.0369  0.0793  -0.0035   0.0788                          NaN
+2   2024       arXiv  title+abstract        rating  2260        0.0212  0.3128  -0.0218   0.0605                          NaN
+3   2024       arXiv           title  contribution  2260        0.0267  0.2044  -0.0142   0.0683                          NaN
+4   2024       arXiv           title     soundness  2260        0.0077  0.7144  -0.0345   0.0482                          NaN
+5   2024       arXiv           title        rating  2260        0.0112  0.5942  -0.0293   0.0554                          NaN
+6   2024       arXiv  first sentence  contribution  2260        0.0212  0.3137  -0.0216   0.0626                          NaN
+7   2024       arXiv  first sentence     soundness  2260        0.0070  0.7395  -0.0362   0.0486                          NaN
+8   2024       arXiv  first sentence        rating  2260        0.0143  0.4974  -0.0257   0.0560                          NaN
+9   2024  arXiv+ICLR  title+abstract  contribution  2260        0.0456  0.0303   0.0032   0.0869                          NaN
+10  2024  arXiv+ICLR  title+abstract     soundness  2260        0.0191  0.3651  -0.0220   0.0604                          NaN
+11  2024  arXiv+ICLR  title+abstract        rating  2260        0.0498  0.0178   0.0087   0.0896                          NaN
+12  2024  arXiv+ICLR           title  contribution  2260        0.0502  0.0169   0.0091   0.0927                          NaN
+13  2024  arXiv+ICLR           title     soundness  2260        0.0299  0.1548  -0.0122   0.0708                          NaN
+14  2024  arXiv+ICLR           title        rating  2260        0.0369  0.0794  -0.0057   0.0807                          NaN
+15  2024  arXiv+ICLR  first sentence  contribution  2260        0.0266  0.2059  -0.0137   0.0692                          NaN
+16  2024  arXiv+ICLR  first sentence     soundness  2260       -0.0051  0.8084  -0.0447   0.0359                          NaN
+17  2024  arXiv+ICLR  first sentence        rating  2260        0.0187  0.3750  -0.0249   0.0587                          NaN
+18  2025       arXiv  title+abstract  contribution  3703        0.0002  0.9908  -0.0319   0.0317                          NaN
+19  2025       arXiv  title+abstract     soundness  3703        0.0369  0.0249   0.0024   0.0713                          NaN
+20  2025       arXiv  title+abstract        rating  3703        0.0229  0.1634  -0.0086   0.0547                          NaN
+21  2025       arXiv           title  contribution  3703        0.0122  0.4595  -0.0200   0.0421                          NaN
+22  2025       arXiv           title     soundness  3703        0.0276  0.0926  -0.0053   0.0592                          NaN
+23  2025       arXiv           title        rating  3703        0.0182  0.2685  -0.0141   0.0485                          NaN
+24  2025       arXiv  first sentence  contribution  3703       -0.0149  0.3638  -0.0461   0.0155                          NaN
+25  2025       arXiv  first sentence     soundness  3703       -0.0019  0.9085  -0.0353   0.0300                          NaN
+26  2025       arXiv  first sentence        rating  3703        0.0036  0.8269  -0.0293   0.0369                          NaN
+27  2025  arXiv+ICLR  title+abstract  contribution  3703        0.0294  0.0733  -0.0017   0.0616                          NaN
+28  2025  arXiv+ICLR  title+abstract     soundness  3703        0.0448  0.0064   0.0101   0.0784                          NaN
+29  2025  arXiv+ICLR  title+abstract        rating  3703        0.0252  0.1251  -0.0072   0.0572                          NaN
+30  2025  arXiv+ICLR           title  contribution  3703        0.0206  0.2099  -0.0097   0.0520                          NaN
+31  2025  arXiv+ICLR           title     soundness  3703        0.0357  0.0297   0.0048   0.0679                          NaN
+32  2025  arXiv+ICLR           title        rating  3703        0.0183  0.2648  -0.0145   0.0511                          NaN
+33  2025  arXiv+ICLR  first sentence  contribution  3703        0.0098  0.5496  -0.0221   0.0410                          NaN
+34  2025  arXiv+ICLR  first sentence     soundness  3703        0.0056  0.7315  -0.0275   0.0379                          NaN
+35  2025  arXiv+ICLR  first sentence        rating  3703        0.0213  0.1942  -0.0094   0.0530                          NaN
+36  2023       arXiv  title+abstract        rating  3792        0.0063  0.6997  -0.0256   0.0375                          NaN
+37  2023       arXiv  title+abstract      accepted  3792        0.0175  0.2820  -0.0137   0.0502                       0.5102
+38  2023       arXiv           title        rating  3792        0.0483  0.0029   0.0187   0.0812                          NaN
+39  2023       arXiv           title      accepted  3792        0.0454  0.0052   0.0131   0.0757                       0.5266
+40  2023       arXiv  first sentence        rating  3792        0.0386  0.0175   0.0076   0.0721                          NaN
+41  2023       arXiv  first sentence      accepted  3792        0.0378  0.0200   0.0055   0.0710                       0.5221
+42  2023  arXiv+ICLR  title+abstract        rating  3792        0.0260  0.1095  -0.0055   0.0576                          NaN
+43  2023  arXiv+ICLR  title+abstract      accepted  3792        0.0138  0.3960  -0.0179   0.0445                       0.5081
+44  2023  arXiv+ICLR           title        rating  3792        0.0590  0.0003   0.0268   0.0901                          NaN
+45  2023  arXiv+ICLR           title      accepted  3792        0.0501  0.0020   0.0193   0.0820                       0.5294
+46  2023  arXiv+ICLR  first sentence        rating  3792        0.0257  0.1135  -0.0074   0.0556                          NaN
+47  2023  arXiv+ICLR  first sentence      accepted  3792        0.0232  0.1529  -0.0073   0.0538                       0.5136
+  N_quintile  year  contribution  soundness  rating  accepted
+0          1  2024         2.699      2.909   6.393       NaN
+1          2  2024         2.763      2.947   6.491       NaN
+2          3  2024         2.764      2.941   6.455       NaN
+3          4  2024         2.787      2.962   6.511       NaN
+4          5  2024         2.747      2.929   6.465       NaN
+0          1  2025         2.707      2.892   6.460       NaN
+1          2  2025         2.709      2.902   6.428       NaN
+2          3  2025         2.700      2.889   6.420       NaN
+3          4  2025         2.715      2.914   6.483       NaN
+4          5  2025         2.744      2.934   6.492       NaN
+0          1  2023           NaN        NaN   5.380     0.385
+1          2  2023           NaN        NaN   5.497     0.430
+2          3  2023           NaN        NaN   5.508     0.413
+3          4  2023           NaN        NaN   5.551     0.453
+4          5  2023           NaN        NaN   5.440     0.394

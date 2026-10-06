@@ -1,0 +1,7 @@
+who,criterion,source,mean_rank,share_ranked_best,share_ranked_worst,n_triplets
+human,usefulness,GA,1.833,0.417,0.25,30
+human,usefulness,Random,1.917,0.367,0.283,30
+human,usefulness,LLM-proposed,2.25,0.217,0.467,30
+human,novelty,GA,2.083,0.367,0.45,30
+human,novelty,Random,2.067,0.283,0.35,30
+human,novelty,LLM-proposed,1.85,0.35,0.2,30

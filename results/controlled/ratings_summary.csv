@@ -1,0 +1,16 @@
+condition,criterion,mean,sd,ci95_lo,ci95_hi,n
+GA,originality,4.0,0.0,4.0,4.0,10
+GA,soundness,4.0,0.0,4.0,4.0,10
+GA,reproducibility,5.0,0.0,5.0,5.0,10
+GA,significance,4.133,0.322,4.0,4.333,10
+GA,overall,4.283,0.081,4.25,4.333,10
+LLM-proposed,originality,4.0,0.0,4.0,4.0,10
+LLM-proposed,soundness,4.0,0.0,4.0,4.0,10
+LLM-proposed,reproducibility,5.0,0.0,5.0,5.0,10
+LLM-proposed,significance,4.167,0.36,4.0,4.4,10
+LLM-proposed,overall,4.292,0.09,4.25,4.35,10
+Random,originality,4.0,0.0,4.0,4.0,10
+Random,soundness,4.0,0.0,4.0,4.0,10
+Random,reproducibility,5.0,0.0,5.0,5.0,10
+Random,significance,4.033,0.105,4.0,4.1,10
+Random,overall,4.258,0.026,4.25,4.275,10

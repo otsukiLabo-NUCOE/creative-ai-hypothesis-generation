@@ -1,0 +1,19 @@
+{
+    "seconds":  31.6,
+    "least_novel":  "C",
+    "least_useful":  "C",
+    "judgment":  {
+                     "most_useful":  "1",
+                     "least_useful":  "2",
+                     "most_novel":  "3",
+                     "least_novel":  "2",
+                     "rationale":  "H1 and H3 address important problems."
+                 },
+    "attempt":  0,
+    "most_useful":  "B",
+    "raw":  "{\"most_useful\": \"1\", \"least_useful\": \"2\", \"most_novel\": \"3\", \"least_novel\": \"2\", \"rationale\": \"H1 and H3 address important problems.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "A",
+    "tid":  "T12",
+    "rotation":  "BCA"
+}

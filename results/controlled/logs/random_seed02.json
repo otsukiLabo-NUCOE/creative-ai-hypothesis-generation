@@ -1,0 +1,181 @@
+{
+ "run_id": "random_seed02",
+ "condition": "random",
+ "seed": 2,
+ "writer_seed": 102,
+ "hypothesis": {
+  "method": "Neural Architecture Search",
+  "problem": "Miscalibrated Uncertainty",
+  "goal": "Creativity"
+ },
+ "hypothesis_log": {},
+ "writer_model_file": "NVIDIA-Nemotron-Nano-9B-v2-Japanese-Q8_0.gguf",
+ "request_payload": {
+  "decoding": {
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "max_tokens": 4500,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "max_tokens_per_section": 1200,
+  "seed": 102,
+  "sections": [
+   "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'."
+  ]
+ },
+ "finish_reason": [
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop",
+  "stop"
+ ],
+ "seconds": 436.9,
+ "check": {
+  "words": 1729,
+  "missing_sections": []
+ },
+ "raw_response": [
+  {
+   "section": "Title and Abstract",
+   "instruction": "Write only the section 'Title and Abstract': a title line of the form '# <title>' followed by '## Abstract' and an abstract of about 150 words.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 187,
+    "prompt_tokens": 355,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "# Creativity in Neural Architecture Search Through Calibrating Uncertainty\n\n## Abstract  \nThis paper explores the intersection of creativity and automated neural architecture design by addressing the challenge of miscalibrated uncertainty in neural architecture search (NAS). Traditional NAS methods optimize for performance metrics while neglecting the reliability of uncertainty estimates, limiting their ability to generate novel and interpretable architectures. We hypothesize that deliberate calibration of uncertainty can enhance the diversity and imaginative potential of discovered models, fostering creativity in architectural evolution. By integrating uncertainty quantification with search objectives, our approach encourages the exploration of unconventional topologies that may not be found through performance-driven search alone. The proposed framework provides a theoretical foundation for using calibrated uncertainty as a proxy for architectural novelty, aligning with broader goals in generative modeling and open-ended discovery. This work sets the stage for a systematic investigation into how uncertainty-aware NAS can unlock new paradigms in AI system design."
+  },
+  {
+   "section": "1. Introduction",
+   "instruction": "Write only the section '1. Introduction': about 250 words. Begin with the heading '## 1. Introduction'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 270,
+    "prompt_tokens": 576,
+    "total_tokens": 846,
+    "prompt_tokens_details": {
+     "cached_tokens": 273
+    }
+   },
+   "content": "## 1. Introduction  \nThe design of effective neural networks has traditionally relied on human intuition, domain expertise, and extensive trial-and-error experimentation. Recent advances in neural architecture search (NAS) have automated this process, enabling the discovery of efficient and high-performing models across diverse tasks. However, most NAS frameworks prioritize optimization of accuracy or efficiency metrics, often overlooking the structural novelty and creative potential of discovered architectures. A key limitation arises from the miscalibration of uncertainty estimates during search: when uncertainty is poorly quantified, search algorithms tend to converge prematurely on familiar patterns, stifling exploration of unconventional topologies. This paper investigates how deliberate calibration of uncertainty can serve as a mechanism to enhance creativity in NAS. By framing architectural novelty not merely as performance deviation but as a measure of epistemic uncertainty, we propose a framework that encourages the generation of diverse, interpretable, and imaginative designs. Our approach aligns with emerging perspectives in generative AI, where uncertainty is leveraged to foster open-ended discovery rather than mere optimization. Through this lens, we argue that creativity in AI system design emerges not from maximizing a single objective, but from balancing exploration, uncertainty awareness, and the capacity to produce unexpected, yet viable, solutions. This introduction sets the foundation for a systematic study of uncertainty-driven creativity in neural architecture evolution."
+  },
+  {
+   "section": "2. Related Work",
+   "instruction": "Write only the section '2. Related Work': about 200 words, as qualitative background without specific citations. Begin with the heading '## 2. Related Work'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 221,
+    "prompt_tokens": 889,
+    "total_tokens": 1110,
+    "prompt_tokens_details": {
+     "cached_tokens": 538
+    }
+   },
+   "content": "## 2. Related Work  \nRecent research in neural architecture search has focused on automating model design through reinforcement learning, evolutionary strategies, and differentiable optimization. These methods have yielded architectures that outperform handcrafted baselines in efficiency and accuracy. A complementary line of work explores interpretability and modularity in discovered networks, emphasizing how architectural structure influences learning dynamics. Within this context, uncertainty quantification has emerged as a critical tool for understanding model confidence and reliability, particularly in Bayesian NAS and Monte Carlo dropout approaches. These techniques treat uncertainty not as a nuisance but as a source of information about model robustness and generalization. More recently, the concept of creativity in AI has been revisited, linking architectural diversity, surprise, and the ability to generate non-obvious solutions. Some studies propose using entropy-based metrics or topology variation as proxies for novelty. However, few explicitly connect uncertainty calibration to creative exploration in NAS. Our work builds on these foundations by proposing that calibrated uncertainty can act as a guiding signal for divergent architectural evolution, fostering designs that are not only accurate but also imaginative and structurally distinctive."
+  },
+  {
+   "section": "3. Proposed Method",
+   "instruction": "Write only the section '3. Proposed Method': about 350 words, including a mathematical formulation. Begin with the heading '## 3. Proposed Method'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 431,
+    "prompt_tokens": 1153,
+    "total_tokens": 1584,
+    "prompt_tokens_details": {
+     "cached_tokens": 842
+    }
+   },
+   "content": "## 3. Proposed Method  \nWe propose a novel framework for enhancing creativity in neural architecture search (NAS) by integrating calibrated uncertainty into the search objective. Traditional NAS optimizes a performance metric such as validation accuracy, often leading to premature convergence on well-known architectures. Our approach modifies the search objective to include a regularization term that penalizes low uncertainty estimates, encouraging the exploration of structurally diverse and epistemically uncertain topologies. This dual-objective formulation balances accuracy with architectural novelty, fostering creativity in the discovery process.  \n\nLet $ \\mathcal{A} $ denote the space of neural architectures, and let $ \\mathcal{L}(\\theta; \\mathcal{A}) $ be the loss function trained on a given dataset with parameters $ \\theta $. The uncertainty of an architecture $ \\mathcal{A} $ is quantified using Monte Carlo dropout, yielding an estimated predictive variance $ \\sigma^2(\\mathcal{A}; \\mathcal{D}_{\\text{val}}) $ over a validation dataset $ \\mathcal{D}_{\\text{val}} $. The proposed search objective is:  \n\n$$\n\\min_{\\mathcal{A} \\in \\mathcal{A}} \\left[ \\mathcal{L}(\\theta; \\mathcal{A}) + \\lambda \\cdot \\frac{1}{\\sigma^2(\\mathcal{A}; \\mathcal{D}_{\\text{val}})} \\right],\n$$  \n\nwhere $ \\lambda > 0 $ controls the trade-off between performance and uncertainty. By maximizing $ \\sigma^2 $, the regularizer promotes architectures that are not only accurate but also exhibit high epistemic uncertainty, indicating potential for further refinement or structural novelty. During the search, architectures with high calibrated uncertainty are preferentially sampled, enabling the evolution of unconventional topologies that may be overlooked by performance-driven methods alone.  \n\nThis formulation assumes that uncertainty is well-calibrated — meaning that high predicted variance corresponds to true model ignorance — a property enforced through temperature scaling or ensemble-based calibration techniques. By aligning uncertainty with creativity, our method aims to generate architectures that are not merely efficient or accurate, but also imaginative and structurally distinctive, advancing the frontier of open-ended AI design."
+  },
+  {
+   "section": "4. Experimental Design",
+   "instruction": "Write only the section '4. Experimental Design': about 250 words, as a plan for future validation. Begin with the heading '## 4. Experimental Design'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 328,
+    "prompt_tokens": 1627,
+    "total_tokens": 1955,
+    "prompt_tokens_details": {
+     "cached_tokens": 1106
+    }
+   },
+   "content": "## 4. Experimental Design  \nFuture validation of the proposed uncertainty-calibrated neural architecture search framework will follow a structured, modular experimental plan designed to assess its impact on architectural creativity, diversity, and performance.  \n\nThe study will begin with a benchmark suite of standard NAS tasks, including image classification (e.g., CIFAR-10, CIFAR-100) and segmentation challenges, using established search spaces such as NAS-Bench or custom differentiable topologies. Two variants of the search algorithm will be compared: a baseline performance-driven NAS that optimizes solely for validation accuracy, and the proposed uncertainty-regularized variant that incorporates the calibrated uncertainty term.  \n\nTo quantify creativity, multiple diversity metrics will be employed, including topology entropy, structural Hamming distance, and the proportion of non-isomorphic architectures discovered within the top-performing candidates. Additionally, a human evaluation protocol will be designed to assess the perceived novelty and imaginative quality of architectures, using crowdsourced judgments on structural surprise and interpretability.  \n\nThe experimental protocol will also include systematic analysis of uncertainty calibration across training runs, employing temperature scaling and ensemble-based methods to ensure that high uncertainty corresponds to true model ignorance. Calibration error metrics, such as the expected calibration error (ECE), will be tracked to validate the reliability of uncertainty estimates.  \n\nAll experiments will be conducted in a reproducible open-source environment, with source code, hyperparameters, and random seeds documented. While this section outlines a plan for future validation, the proposed design enables rigorous evaluation of how uncertainty-aware search influences architectural creativity and long-term system adaptability."
+  },
+  {
+   "section": "5. Reproducibility",
+   "instruction": "Write only the section '5. Reproducibility': about 120 words. Begin with the heading '## 5. Reproducibility'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 1995,
+    "total_tokens": 2210,
+    "prompt_tokens_details": {
+     "cached_tokens": 1580
+    }
+   },
+   "content": "## 5. Reproducibility  \nThis work is designed to ensure full reproducibility through open-source implementation, transparent documentation, and version-controlled experimental settings. All code will be hosted on a public repository with a clearly specified license, and the codebase will include detailed README files outlining dependencies, installation instructions, and configuration options. Experimental configurations — including hyperparameters, random seeds, hardware specifications, and data preprocessing pipelines — will be stored in a dedicated configuration management system (e.g., JSON or YAML files) and integrated into the codebase. Training runs will be logged using standardized tools that record model checkpoints, loss curves, uncertainty estimates, and architectural representations at each iteration. All datasets will be sourced from publicly available repositories, with checksums provided to verify data integrity. The experimental design will be documented in a machine-readable format (e.g., JSON schema or Open Science Framework entries), enabling automated reproducibility checks. By adhering to these practices, this research promotes transparency, allows independent validation, and supports the broader goal of reproducible and creative AI system design."
+  },
+  {
+   "section": "6. Discussion of Applications Across Multiple Domains",
+   "instruction": "Write only the section '6. Discussion of Applications Across Multiple Domains': about 200 words. Begin with the heading '## 6. Discussion of Applications Across Multiple Domains'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 241,
+    "prompt_tokens": 2256,
+    "total_tokens": 2497,
+    "prompt_tokens_details": {
+     "cached_tokens": 1951
+    }
+   },
+   "content": "## 6. Discussion of Applications Across Multiple Domains  \nThe uncertainty-aware neural architecture search framework proposed herein holds transformative potential across diverse domains where creativity, adaptability, and structural novelty are valued. In medical imaging, for instance, the method could generate novel network topologies tailored to rare disease patterns, where conventional performance-driven search may overlook subtle diagnostic cues. In robotics, the approach may enable the discovery of adaptive control architectures that balance efficiency with uncertain environmental interactions, fostering resilient and imaginative motion planning systems. Creative content generation — such as procedural music composition or generative art — could benefit from architectures that explore non-traditional signal transformations, guided by calibrated uncertainty as a measure of expressive divergence. In scientific discovery, uncertainty-driven search may accelerate hypothesis generation by proposing experimental designs or simulation models that deviate from established paradigms. Moreover, in edge computing and IoT, the method could prioritize interpretable, low-complexity architectures with quantifiable uncertainty bounds, enhancing trust and safety. By treating uncertainty as a creative signal rather than a reliability metric, this framework supports open-ended discovery across domains where innovation emerges from the interplay of performance, diversity, and epistemic exploration."
+  },
+  {
+   "section": "7. Limitations",
+   "instruction": "Write only the section '7. Limitations': about 120 words. Begin with the heading '## 7. Limitations'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 199,
+    "prompt_tokens": 2531,
+    "total_tokens": 2730,
+    "prompt_tokens_details": {
+     "cached_tokens": 2206
+    }
+   },
+   "content": "## 7. Limitations  \nWhile the proposed uncertainty-calibrated neural architecture search framework offers a novel approach to fostering creativity in model design, several limitations must be acknowledged. First, the method assumes that calibrated epistemic uncertainty reliably reflects architectural novelty, yet uncertainty may also arise from data scarcity or poor training dynamics, confounding its interpretation. Second, the regularization term introduces a hyperparameter trade-off that may bias search toward high-uncertainty but suboptimal architectures if not carefully tuned. Third, the framework has not yet been evaluated on large-scale, real-world datasets, limiting its generalizability across domains with complex or imbalanced data distributions. Additionally, human evaluation of architectural creativity remains subjective and resource-intensive, complicating objective validation. Finally, the computational cost of uncertainty estimation — particularly through ensemble or Monte Carlo methods — may hinder scalability in high-dimensional search spaces. Addressing these challenges will be critical for realizing the full potential of uncertainty-driven creativity in neural architecture evolution."
+  },
+  {
+   "section": "8. Conclusion",
+   "instruction": "Write only the section '8. Conclusion': about 100 words. Begin with the heading '## 8. Conclusion'.",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 179,
+    "prompt_tokens": 2764,
+    "total_tokens": 2943,
+    "prompt_tokens_details": {
+     "cached_tokens": 2493
+    }
+   },
+   "content": "## 8. Conclusion  \nThis work introduces a novel framework for enhancing creativity in neural architecture search by integrating calibrated uncertainty into the optimization process. By treating uncertainty not as a measure of error but as a proxy for structural novelty, our approach encourages the exploration of unconventional and imaginative architectures that may be overlooked by performance-driven methods alone. The proposed mathematical formulation establishes a principled link between epistemic uncertainty and architectural diversity, offering a theoretical foundation for creativity in AI design. While the method remains in the experimental design phase, the outlined validation plan provides a clear path for future empirical investigation. The framework has broad implications across domains where innovation and adaptability are paramount, from medical imaging to robotics and generative arts. By advancing the paradigm of uncertainty-aware search, this research contributes to a deeper understanding of how AI systems can evolve through imaginative, rather than merely efficient, discovery."
+  }
+ ],
+ "time": "2026-10-01T19:30:29.788719"
+}

@@ -1,0 +1,19 @@
+{
+    "seconds":  29.7,
+    "least_novel":  "C",
+    "least_useful":  "B",
+    "judgment":  {
+                     "most_useful":  "2",
+                     "least_useful":  "3",
+                     "most_novel":  "3",
+                     "least_novel":  "1",
+                     "rationale":  "H2 addresses trustworthiness"
+                 },
+    "attempt":  0,
+    "most_useful":  "A",
+    "raw":  "{\"most_useful\": \"2\", \"least_useful\": \"3\", \"most_novel\": \"3\", \"least_novel\": \"1\", \"rationale\": \"H2 addresses trustworthiness\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "B",
+    "tid":  "T05",
+    "rotation":  "CAB"
+}

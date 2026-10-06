@@ -1,0 +1,19 @@
+{
+    "seconds":  36.4,
+    "least_novel":  "B",
+    "least_useful":  "A",
+    "judgment":  {
+                     "most_useful":  "2",
+                     "least_useful":  "3",
+                     "most_novel":  "2",
+                     "least_novel":  "1",
+                     "rationale":  "Hypothesis 2 uniquely combines self-critical reinforcement learning with multi-agent feedback."
+                 },
+    "attempt":  0,
+    "most_useful":  "C",
+    "raw":  "{\"most_useful\": \"2\", \"least_useful\": \"3\", \"most_novel\": \"2\", \"least_novel\": \"1\", \"rationale\": \"Hypothesis 2 uniquely combines self-critical reinforcement learning with multi-agent feedback.\"}",
+    "model":  "Llama-3.3-70B-Instruct-Q3_K_M",
+    "most_novel":  "C",
+    "tid":  "T11",
+    "rotation":  "BCA"
+}

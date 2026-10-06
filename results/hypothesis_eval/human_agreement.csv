@@ -1,0 +1,3 @@
+who,criterion,raters,kripp_alpha_interval,same_best_share,same_worst_share,mean_kendall_tau,chance_same_best
+human,usefulness,2,0.138,0.267,0.567,0.111,0.333
+human,novelty,2,-0.243,0.233,0.2,-0.222,0.333

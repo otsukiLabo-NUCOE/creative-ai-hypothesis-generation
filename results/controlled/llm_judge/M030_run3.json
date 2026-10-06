@@ -1,0 +1,25 @@
+{
+ "code": "M030",
+ "run": 3,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "Unsure",
+  "confidence": 5,
+  "rationale": "The manuscript presents a novel federated learning framework that addresses a critical gap in AI reliability under privacy constraints. The proposed method embeds consistency regularization into federated updates and leverages locally verified knowledge to reduce erroneous outputs. The framework is architecture-agnostic, scalable, and applicable across multiple domains. The experimental plan is well-designed and reproducible."
+ },
+ "log": {
+  "payload_seed": 3,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"Unsure\", \"confidence\": 5, \"rationale\": \"The manuscript presents a novel federated learning framework that addresses a critical gap in AI reliability under privacy constraints. The proposed method embeds consistency regularization into federated updates and leverages locally verified knowledge to reduce erroneous outputs. The framework is architecture-agnostic, scalable, and applicable across multiple domains. The experimental plan is well-designed and reproducible.\"}",
+  "seconds": 16.4
+ }
+}

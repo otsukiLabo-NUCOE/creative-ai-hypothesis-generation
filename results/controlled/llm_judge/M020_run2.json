@@ -1,0 +1,25 @@
+{
+ "code": "M020",
+ "run": 2,
+ "judge_model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "decoding": {
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 500
+ },
+ "judgment": {
+  "originality": 4,
+  "soundness": 5,
+  "reproducibility": 5,
+  "significance": 5,
+  "already_known": "Unsure",
+  "confidence": 4,
+  "rationale": "The proposed framework offers a novel perspective on evolutionary computation, leveraging self-adaptive mechanisms to promote novelty while maintaining scalability. The mathematical formulation is clear and well-supported, and the experimental design is rigorous and well-planned. While the method has not been empirically validated, its potential impact on scalable optimization is significant and far-reaching."
+ },
+ "log": {
+  "payload_seed": 2,
+  "attempt": 0,
+  "raw": "{\"originality\": 4, \"soundness\": 5, \"reproducibility\": 5, \"significance\": 5, \"already_known\": \"Unsure\", \"confidence\": 4, \"rationale\": \"The proposed framework offers a novel perspective on evolutionary computation, leveraging self-adaptive mechanisms to promote novelty while maintaining scalability. The mathematical formulation is clear and well-supported, and the experimental design is rigorous and well-planned. While the method has not been empirically validated, its potential impact on scalable optimization is significant and far-reaching.\"}",
+  "seconds": 15.7
+ }
+}

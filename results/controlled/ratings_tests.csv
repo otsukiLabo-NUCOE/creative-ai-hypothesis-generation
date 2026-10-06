@@ -1,0 +1,13 @@
+criterion,kruskal_H,kruskal_p,comparison,A12,p,p_holm
+soundness,0.5854,0.7463,GA vs LLM-proposed,0.59,0.5141,1.0
+soundness,0.5854,0.7463,GA vs Random,0.545,0.7497,1.0
+soundness,0.5854,0.7463,LLM-proposed vs Random,0.435,0.6334,1.0
+reproducibility,0.7366,0.6919,GA vs LLM-proposed,0.54,0.7813,1.0
+reproducibility,0.7366,0.6919,GA vs Random,0.445,0.6971,1.0
+reproducibility,0.7366,0.6919,LLM-proposed vs Random,0.385,0.388,1.0
+significance,0.6454,0.7242,GA vs LLM-proposed,0.425,0.5818,1.0
+significance,0.6454,0.7242,GA vs Random,0.535,0.8169,1.0
+significance,0.6454,0.7242,LLM-proposed vs Random,0.595,0.4798,1.0
+overall,0.1568,0.9246,GA vs LLM-proposed,0.515,0.9391,1.0
+overall,0.1568,0.9246,GA vs Random,0.465,0.8188,1.0
+overall,0.1568,0.9246,LLM-proposed vs Random,0.45,0.7292,1.0
