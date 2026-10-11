@@ -18,6 +18,9 @@ Every table and figure of the revised article can be regenerated from this repos
 | `code/run_experiments.py` | Experiments 1–3 (30 seeds, baselines, ablations, temporal hold-out, corpus-size sensitivity) | §4.2–4.4, Tables 8–10, Figs. 1–3 |
 | `code/llm_hypothesis_metrics.py` | Outcome measures and diversity of the LLM-proposed hypotheses | §4.3, Table 9 |
 | `code/diversity_tests.py` | Permutation tests of the diversity of GA vs. random search / hill climbing | §4.3 |
+| `code/run_llm_robustness.py`, `code/analyze_llm_robustness.py` | Robustness of the LLM-proposed hypotheses (2 models × 2 prompts × 2 temperatures, scope-matched selection) | §4.3, Appendix B, Table A1 |
+| `results/robustness/` | Raw answers (one JSON per seed and configuration) and `robustness_summary.csv` | Table A1 |
+| `PREREGISTRATION_round2_experiments.md` | Design of the robustness experiments, fixed before the data were generated | §4.1 |
 | `code/link_examples.py` | Examples of literature support for pairwise links | Table 6 |
 | `code/make_figures.py`, `code/F1-2.py` | Figures from `results/*.csv` | Figs. 1–3 |
 | `code/run_manuscript_experiment.py` | Experiment 4: controlled manuscript generation (local LLM writer, fully logged) | §4.5 |
@@ -50,6 +53,7 @@ python run_experiments.py            # Experiments 1-3, ~5 min on CPU (uses data
 python make_figures.py
 python llm_hypothesis_metrics.py
 python diversity_tests.py
+python analyze_llm_robustness.py     # Table A1 (uses the archived answers in results/robustness/)
 python analyze_hypothesis_eval.py ../results/hypothesis_eval/ratings/ratings_hyp_R1.csv ../results/hypothesis_eval/ratings/ratings_hyp_R2.csv --llm ../desktop_judge/results/Llama-3.3-70B-Instruct-Q3_K_M/hypothesis_rankings.csv
 python pairwise_consistency.py ../desktop_judge/results/Llama-3.3-70B-Instruct-Q3_K_M
 python pilot_manuscript_evaluator.py ../pilot_manuscripts/A.docx ../pilot_manuscripts/B.docx ../pilot_manuscripts/C.docx

@@ -1,0 +1,32 @@
+{
+ "config": "llama8b_P1_t0.7",
+ "model_file": "Meta-Llama-3.1-8B-Instruct-Q8_0.gguf",
+ "seed": 8,
+ "hypothesis": {
+  "method": "Meta-Learning with Multimodal Attention",
+  "problem": "Unsupervised Transfer Learning in Heterogeneous Domain Adaptation",
+  "goal": "Improved Generalizability and Robustness to Out-of-Distribution Data"
+ },
+ "payload": {
+  "messages": [
+   {
+    "role": "user",
+    "content": "Propose one novel and scientifically valid research hypothesis in the field of artificial intelligence and machine learning. Express it as three short phrases: a Method (the technique to be used), a Problem (the problem to be addressed), and a Goal (the property to be improved). Answer only with a JSON object of the form {\"method\": \"...\", \"problem\": \"...\", \"goal\": \"...\"} and nothing else."
+   }
+  ],
+  "seed": 8,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 300,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "attempts": [
+  {
+   "attempt": 0,
+   "raw_text": "{\"method\": \"Meta-Learning with Multimodal Attention\", \"problem\": \"Unsupervised Transfer Learning in Heterogeneous Domain Adaptation\", \"goal\": \"Improved Generalizability and Robustness to Out-of-Distribution Data\"}",
+   "seconds": 5.0
+  }
+ ]
+}
