@@ -21,6 +21,7 @@ Every table and figure of the revised article can be regenerated from this repos
 | `code/make_concepts.py` | Builds the Method/Problem/Goal vocabulary (`concepts.py`) for any research field from OpenAlex keywords (no LLM needed) | — |
 | `code/build_knowledge_space_openalex.py` | Builds the knowledge space (`data/corpus.jsonl`) from OpenAlex, for fields with few arXiv papers | — |
 | `code/top_hypotheses.py` | Prints GA results and the top hypotheses of the whole space | — |
+| `prompts/writer_with_references_system_prompt.txt` | Writer prompt that allows citing only the real papers retrieved from the knowledge space (`creative_ai_agent_local_llm.py --refs K`, default 8; `--refs 0` reproduces the paper) | — |
 | `code/run_llm_robustness.py`, `code/analyze_llm_robustness.py` | Robustness of the LLM-proposed hypotheses (2 models × 2 prompts × 2 temperatures, scope-matched selection) | §4.3, Appendix B, Table A1 |
 | `results/robustness/` | Raw answers (one JSON per seed and configuration) and `robustness_summary.csv` | Table A1 |
 | `PREREGISTRATION_round2_experiments.md` | Design of the robustness experiments, fixed before the data were generated | §4.1 |
