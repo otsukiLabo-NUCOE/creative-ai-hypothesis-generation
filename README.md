@@ -18,6 +18,9 @@ Every table and figure of the revised article can be regenerated from this repos
 | `code/run_experiments.py` | Experiments 1–3 (30 seeds, baselines, ablations, temporal hold-out, corpus-size sensitivity) | §4.2–4.4, Tables 8–10, Figs. 1–3 |
 | `code/llm_hypothesis_metrics.py` | Outcome measures and diversity of the LLM-proposed hypotheses | §4.3, Table 9 |
 | `code/diversity_tests.py` | Permutation tests of the diversity of GA vs. random search / hill climbing | §4.3 |
+| `code/make_concepts.py` | Builds the Method/Problem/Goal vocabulary (`concepts.py`) for any research field from OpenAlex keywords (no LLM needed) | — |
+| `code/build_knowledge_space_openalex.py` | Builds the knowledge space (`data/corpus.jsonl`) from OpenAlex, for fields with few arXiv papers | — |
+| `code/top_hypotheses.py` | Prints GA results and the top hypotheses of the whole space | — |
 | `code/run_llm_robustness.py`, `code/analyze_llm_robustness.py` | Robustness of the LLM-proposed hypotheses (2 models × 2 prompts × 2 temperatures, scope-matched selection) | §4.3, Appendix B, Table A1 |
 | `results/robustness/` | Raw answers (one JSON per seed and configuration) and `robustness_summary.csv` | Table A1 |
 | `PREREGISTRATION_round2_experiments.md` | Design of the robustness experiments, fixed before the data were generated | §4.1 |
