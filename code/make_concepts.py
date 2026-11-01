@@ -9,12 +9,15 @@
 #   python make_concepts.py --search "management information systems"
 #   python make_concepts.py --subfield 1404 --dry-run              # show the lists without writing
 import argparse
+import datetime
 import os
 import re
 import shutil
 
 import numpy as np
 import requests
+
+from pipeline_checks import notice_api_key, save_vocabulary_info
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 API = "https://api.openalex.org/works"
@@ -109,6 +112,7 @@ def main():
     args = ap.parse_args()
     if not (args.subfield or args.search):
         ap.error("give --subfield or --search")
+    notice_api_key()
 
     kws = fetch_keywords(args)
     print(f"{len(kws)} keywords fetched from OpenAlex")
@@ -146,6 +150,8 @@ def main():
     other = [k for (k, _), r in zip(kws, assign) if r == "other"][:15]
     print("\nexcluded as context/noise (first 15):", other)
     if args.dry_run:
+        print("\n(dry run: concepts.py was NOT changed. If the lists look right, run the same command without "
+              "--dry-run to write them, then build the knowledge space.)")
         return
 
     path = os.path.join(HERE, "concepts.py")
@@ -157,6 +163,14 @@ def main():
     open(path, "w", encoding="utf-8").write(src[:s] + body + src[e:])
     n = len(picked["Method"]) * len(picked["Problem"]) * len(picked["Goal"])
     print(f"\nconcepts.py updated ({n} hypotheses); the previous version is saved as concepts.py.bak")
+    save_vocabulary_info({"subfield": args.subfield, "search": args.search, "from": args.date_from,
+                          "to": args.date_to, "n_hypotheses": n,
+                          "written_at": datetime.datetime.now().isoformat(timespec="seconds")})
+    if args.subfield:
+        print(f"next step: python build_knowledge_space_openalex.py   "
+              f"(FIELDS at its top should include {int(args.subfield) // 100})")
+    else:
+        print("next step: python build_knowledge_space_openalex.py   (set FIELDS at its top for your field)")
 
 
 if __name__ == "__main__":

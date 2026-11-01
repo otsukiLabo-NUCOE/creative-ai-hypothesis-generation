@@ -6,7 +6,7 @@ authors:
   - family-names: Otsuki
     given-names: Akira
     affiliation: "College of Economics, Nihon University"
-version: 1.0.3
+version: 1.0.4
 date-released: 2026-10-30
 license: MIT
 repository-code: "https://github.com/otsukiLabo-NUCOE/creative-ai-hypothesis-generation"

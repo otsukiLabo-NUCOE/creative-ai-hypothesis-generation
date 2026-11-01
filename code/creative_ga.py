@@ -67,6 +67,35 @@ def load_corpus(path=os.path.join(DATA_DIR, "corpus.jsonl")) -> List[dict]:
         return [json.loads(line) for line in f]
 
 
+def check_corpus_vocabulary(min_share=0.5):
+    """v1.0.4: warns when the knowledge space (data/corpus.jsonl) was not built with the current vocabulary
+    (concepts.py), e.g. when make_concepts.py was run but build_knowledge_space_openalex.py was not. The terms
+    queried when the corpus was built are read from data/corpus_build_log.json. Returns (found, total), or
+    None when there is no build log (e.g. a corpus prepared by the user)."""
+    import sys
+    log_path = os.path.join(DATA_DIR, "corpus_build_log.json")
+    if not os.path.exists(log_path):
+        return None
+    with open(log_path, encoding="utf-8") as f:
+        queries = [q.get("q", "") for q in json.load(f).get("queries", []) if q.get("route") == "targeted"]
+    terms = [t for words in CONCEPTS.values() for t in words]
+    found = sum(any(f'"{t}"'.lower() in q.lower() for q in queries) for t in terms)
+    if terms and found / len(terms) < min_share:
+        print("\n" + "!" * 78 + "\n"
+              f"WARNING: the knowledge space was not built with the current vocabulary\n"
+              f"  ({found} of {len(terms)} terms of concepts.py were used to collect data/corpus.jsonl).\n"
+              "  Novelty, utility, and references will then compare your hypotheses with papers of another\n"
+              "  field. After changing concepts.py (e.g. with make_concepts.py), rebuild the knowledge space:\n"
+              "      python build_knowledge_space_openalex.py\n"
+              + "!" * 78 + "\n", file=sys.stderr, flush=True)
+    elif found < len(terms):
+        missing = [t for t in terms if not any(f'"{t}"'.lower() in q.lower() for q in queries)]
+        print(f"NOTE: {len(missing)} term(s) of concepts.py were not used to build the knowledge space: {missing}.\n"
+              "  If you added them by hand, rebuild the knowledge space (python build_knowledge_space_openalex.py)\n"
+              "  so that papers on them are included.", file=sys.stderr, flush=True)
+    return found, len(terms)
+
+
 class Embedder:
     """phi: text -> R^384 (unit norm). Embeddings are cached on disk keyed by a hash of the
     text list so repeated experiments are fast and bit-identical."""
@@ -112,6 +141,8 @@ class KnowledgeSpace:
 
     @classmethod
     def build(cls, embedder: Embedder, corpus: Optional[List[dict]] = None):
+        if corpus is None:
+            check_corpus_vocabulary()
         corpus = corpus or load_corpus()
         past = [p for p in corpus if p["window"] == "past"]
         future = [p for p in corpus if p["window"] == "future"]

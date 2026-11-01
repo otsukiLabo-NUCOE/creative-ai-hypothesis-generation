@@ -2,14 +2,17 @@
 # Builds data/corpus.jsonl from OpenAlex instead of arXiv (for fields with few arXiv papers,
 # e.g. management information systems). Same output format as build_knowledge_space.py.
 #   python build_knowledge_space_openalex.py
+import argparse
 import datetime
 import json
 import os
+import sys
 import time
 
 import requests
 
 from concepts import CONCEPTS
+from pipeline_checks import check_before_building, notice_api_key
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "..", "data")
@@ -63,6 +66,12 @@ def to_record(w, window, route, query):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--force", action="store_true", help="continue without asking when a check fails")
+    args = ap.parse_args()
+    notice_api_key()
+    if not check_before_building(CONCEPTS, FIELDS, args.force):
+        sys.exit(1)
     os.makedirs(DATA_DIR, exist_ok=True)
     terms = [t for cat in CONCEPTS.values() for t in cat]
     records, log = {}, {"source": "OpenAlex", "started": datetime.datetime.now().isoformat(), "queries": []}
@@ -94,6 +103,7 @@ def main():
     with open(os.path.join(DATA_DIR, "corpus_build_log.json"), "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=1)
     print("done:", log["n_records"])
+    print("next step: python top_hypotheses.py")
 
 
 if __name__ == "__main__":

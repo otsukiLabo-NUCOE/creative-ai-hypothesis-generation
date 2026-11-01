@@ -21,7 +21,10 @@ Every table and figure of the revised article can be regenerated from this repos
 | `code/make_concepts.py` | Builds the Method/Problem/Goal vocabulary (`concepts.py`) for any research field from OpenAlex keywords (no LLM needed) | — |
 | `code/build_knowledge_space_openalex.py` | Builds the knowledge space (`data/corpus.jsonl`) from OpenAlex, for fields with few arXiv papers | — |
 | `code/top_hypotheses.py` | Prints GA results and the top hypotheses of the whole space | — |
+| `code/pipeline_checks.py` | Warns when a step of the workflow was skipped (vocabulary not written, FIELDS not matching, knowledge space not rebuilt) | — |
 | `prompts/writer_with_references_system_prompt.txt` | Writer prompt that allows citing only the real papers retrieved from the knowledge space (`creative_ai_agent_local_llm.py --refs K`, default 8; `--refs 0` reproduces the paper) | — |
+| `prompts/related_work_system_prompt.txt`, `prompts/formulation_system_prompt.txt`, `prompts/experimental_design_system_prompt.txt` | Prompts of the separate LLM calls that rewrite the Related Work, the Mathematical Formulation and the Experimental Design of a manuscript in detail (`creative_ai_agent_local_llm.py`; `--no-detail` skips them, `--detail FILE.md` rewrites an existing manuscript) | — |
+| `examples/sample_manuscript_MIS_seed03.*` | Example output (unedited): a manuscript draft for management information systems written by `creative_ai_agent_local_llm.py --seed 3 --source ga` with Llama-3.1-8B-Instruct (Markdown, PDF, and the writer log) | — |
 | `code/run_llm_robustness.py`, `code/analyze_llm_robustness.py` | Robustness of the LLM-proposed hypotheses (2 models × 2 prompts × 2 temperatures, scope-matched selection) | §4.3, Appendix B, Table A1 |
 | `results/robustness/` | Raw answers (one JSON per seed and configuration) and `robustness_summary.csv` | Table A1 |
 | `PREREGISTRATION_round2_experiments.md` | Design of the robustness experiments, fixed before the data were generated | §4.1 |
