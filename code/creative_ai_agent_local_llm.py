@@ -21,6 +21,8 @@
 #     papers as [n]. The reference list is appended by this script (not written by the LLM), and citation
 #     numbers outside the list are reported. --refs 0 reproduces Condition A of the pilot case study
 #     (no citations; prompts/condition_A_system_prompt.txt).
+#   * v1.0.5: an error returned by the LLM server in a detailed-section call no longer stops the run: the
+#     call is retried once with half the tokens, and otherwise the section of the first call is kept.
 #   * v1.0.4: the Related Work, the Mathematical Formulation and the Experimental Design are rewritten in
 #     separate LLM calls (prompts/related_work_system_prompt.txt, formulation_system_prompt.txt,
 #     experimental_design_system_prompt.txt), which replace the usually thin versions of the first call. The
@@ -193,6 +195,8 @@ def call_llm(system_prompt, user_prompt, seed, max_tokens=LLM_MAX_TOKENS):
         raise RuntimeError(f"Could not reach llama.cpp server at {LLM_ENDPOINT} ({e})")
     except requests.exceptions.Timeout:
         raise RuntimeError(f"No response within {LLM_TIMEOUT_S}s; raise LLM_TIMEOUT_S.")
+    except requests.exceptions.HTTPError:
+        raise RuntimeError(f"llama.cpp server returned HTTP {r.status_code}: {r.text[:300]}")
     data = r.json()
     choice = data["choices"][0]
     return payload, choice["message"]["content"], choice.get("finish_reason"), data
@@ -273,13 +277,26 @@ def write_detail_section(body, spec, facts, refs, seed):
     # a small model sometimes returns a formulation without real equations: retry with another sampling seed
     # (at most MAX_RETRIES times) and keep the attempt with the most numbered equations
     best, attempts = None, []
+    max_tokens = DETAIL_MAX_TOKENS
     for attempt in range(1 + (MAX_RETRIES if spec.get("min_equations") else 0)):
         try:
             payload, text, finish, raw = call_llm(read_prompt(spec["prompt"]), user_prompt,
-                                                  seed + 1000 * attempt, DETAIL_MAX_TOKENS)
+                                                  seed + 1000 * attempt, max_tokens)
         except RuntimeError as e:
-            print(f"[WARNING] {title} not rewritten: {e}", file=sys.stderr)
-            break
+            # e.g. the prompt plus max_tokens does not fit the server's context (-c): retry once with half
+            # the tokens; if that fails too, the section of the first call is kept and the run goes on
+            if max_tokens == DETAIL_MAX_TOKENS:
+                print(f"[WARNING] {title}: {e}\n  retrying with max_tokens={max_tokens // 2} ...", file=sys.stderr)
+                max_tokens //= 2
+                try:
+                    payload, text, finish, raw = call_llm(read_prompt(spec["prompt"]), user_prompt,
+                                                          seed + 1000 * attempt, max_tokens)
+                except RuntimeError as e2:
+                    print(f"[WARNING] {title} not rewritten (kept as written): {e2}", file=sys.stderr)
+                    break
+            else:
+                print(f"[WARNING] {title} not rewritten further: {e}", file=sys.stderr)
+                break
         n_eq = len(re.findall(r"\\tag\{", text))
         attempts.append({"seed": seed + 1000 * attempt, "numbered_equations": n_eq})
         if best is None or n_eq > best[4]:
