@@ -2,11 +2,15 @@
 
 Code, data, prompts and logs for the article
 
-> Otsuki, A. *Comparing Genetic Algorithms and LLMs for Research-Hypothesis Generation: Mainstream Convergence of
+> Otsuki A. Comparing Genetic Algorithms and LLMs for Research-Hypothesis Generation: Mainstream Convergence of
 > LLMs, Wider Hypothesis Exploration by Combinatorial Search, and the Limits of Literature-Distance Novelty
-> Metrics.* Informatics (MDPI), manuscript informatics-4591240 (revised version).
+> Metrics. Informatics. 2026; 13(10):174. https://doi.org/10.3390/informatics13100174
 
-Every table and figure of the revised article can be regenerated from this repository.
+Every table and figure of the article can be regenerated from this repository.
+
+**Tutorial — generating research hypotheses for your own field:**
+[English (docs/tutorial_en.md)](docs/tutorial_en.md) ·
+[日本語 (Zenn)](https://zenn.dev/otsukilabo_nuce/articles/0d8bdf741c27c5)
 
 ## Layout
 
